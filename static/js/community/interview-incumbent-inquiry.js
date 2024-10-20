@@ -23,11 +23,11 @@ for (let i = 0; i < 3; i++) {
     tr.innerHTML = `
             <td class="notification-info">
                 <div class="job-tit">
-                    <a class="str-tit" title="재무회계 과장급 채용"
-                       href="/zf-user/jobs/relay/view?view-type=etc&rec-idx=49214578"
+                    <a class="str-tit" title="재무회계 포지셔너"
+                       href=""
                        target="-blank"
                        onmousedown="try{n-trackEvent('public', 'job-interview' , 'view-company', '');}catch(e){}">
-                        <span>재무회계 과장급 채용</span>
+                        <span>재무회계 포지셔너 채용</span>
                     </a>
                  <a 
                     title="스크랩" 
@@ -48,11 +48,11 @@ for (let i = 0; i < 3; i++) {
                 </div>
             </td>
             <td class="recruit-condition">
-                <p class="career">경력 7년↑</p>
-                <p class="education">대학교(4년)↑</p>
+                <p class="career">만 19세↑</p>
+                <p class="education">-</p>
             </td>
             <td class="company-info">
-                <p class="employment-type">정규직</p>
+                <p class="employment-type">포지셔너</p>
                 <p class="work-place">서울 강서구</p>
             </td>
             <td class="support-info">
