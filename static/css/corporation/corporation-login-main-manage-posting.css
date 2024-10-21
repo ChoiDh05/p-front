@@ -63,6 +63,7 @@
     height: 100%;
     scrollbar-width: none;
 }
+
 /* 뒤로가기 버튼 */
 #first-tit::after {
     position: absolute;
