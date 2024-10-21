@@ -344,7 +344,9 @@ const handleDeleteButtonClick = (event) => {
         "none"
     ); // resume-edit 숨김
 };
-
+document
+    .getElementById("skill-save-btn")
+    .addEventListener("click", handleDeleteButtonClick);
 // 모든 삭제 버튼에 이벤트 리스너 등록
 document
     .getElementById("skill-close-btn")
@@ -454,22 +456,7 @@ function createViewA() {
         </div>
     `;
 
-    const selectElement = div1.querySelector("select");
-    selectElement.addEventListener("change", (event) => {
-        const value = event.target.value;
-
-        if (value === "primary") {
-            showView("B"); // View B 표시
-        } else if (value === "university") {
-            showView("C"); // View C 표시
-        } else if (value === "academy") {
-            showView("D"); // View D 표시
-        } else if (value === "middle") {
-            showView("B_1"); // View B_1 표시
-        } else if (value === "high") {
-            showView("B_2"); // View B_2 표시
-        }
-    });
+    attachSelectEventHandlers(div1, showView); // 공통 이벤트 핸들러 적용
 
     return div1;
 }
@@ -638,26 +625,7 @@ function createViewB() {
             </div>
     `;
 
-    const selectElements = div2.querySelectorAll("select"); // 모든 select 요소 선택
-
-    selectElements.forEach((selectElement) => {
-        selectElement.addEventListener("change", (event) => {
-            const value = event.target.value;
-            if (value === "basic") {
-                showView("A"); // View A 표시
-            } else if (value === "primary") {
-                showView("B"); // View B 표시
-            } else if (value === "university") {
-                showView("C"); // View C 표시
-            } else if (value === "academy") {
-                showView("D"); // View D 표시
-            } else if (value === "middle") {
-                showView("B_1"); // View B_1 표시
-            } else if (value === "high") {
-                showView("B_2"); // View B_2 표시
-            }
-        });
-    });
+    attachSelectEventHandlers(div2, showView); // 공통 이벤트 핸들러 적용
 
     return div2;
 }
@@ -825,26 +793,7 @@ function createViewB_1() {
             </div>
     `;
 
-    const selectElements = div2_1.querySelectorAll("select"); // 모든 select 요소 선택
-
-    selectElements.forEach((selectElement) => {
-        selectElement.addEventListener("change", (event) => {
-            const value = event.target.value;
-            if (value === "basic") {
-                showView("A"); // View A 표시
-            } else if (value === "primary") {
-                showView("B"); // View B 표시
-            } else if (value === "university") {
-                showView("C"); // View C 표시
-            } else if (value === "academy") {
-                showView("D"); // View D 표시
-            } else if (value === "middle") {
-                showView("B_1"); // View B_1 표시
-            } else if (value === "high") {
-                showView("B_2"); // View B_2 표시
-            }
-        });
-    });
+    attachSelectEventHandlers(div2_1, showView); // 공통 이벤트 핸들러 적용
 
     return div2_1;
 }
@@ -1012,26 +961,7 @@ function createViewB_2() {
             </div>
     `;
 
-    const selectElements = div2_2.querySelectorAll("select"); // 모든 select 요소 선택
-
-    selectElements.forEach((selectElement) => {
-        selectElement.addEventListener("change", (event) => {
-            const value = event.target.value;
-            if (value === "basic") {
-                showView("A"); // View A 표시
-            } else if (value === "primary") {
-                showView("B"); // View B 표시
-            } else if (value === "university") {
-                showView("C"); // View C 표시
-            } else if (value === "academy") {
-                showView("D"); // View D 표시
-            } else if (value === "middle") {
-                showView("B_1"); // View B_1 표시
-            } else if (value === "high") {
-                showView("B_2"); // View B_2 표시
-            }
-        });
-    });
+    attachSelectEventHandlers(div2_2, showView); // 공통 이벤트 핸들러 적용
 
     return div2_2;
 }
@@ -1148,23 +1078,7 @@ function createViewC() {
 
     `;
 
-    const selectElement = div3.querySelector("select");
-    selectElement.addEventListener("change", (event) => {
-        const value = event.target.value;
-        if (value === "basic") {
-            showView("A"); // View A 표시
-        } else if (value === "primary") {
-            showView("B"); // View B 표시
-        } else if (value === "university") {
-            showView("C"); // View C 표시
-        } else if (value === "academy") {
-            showView("D"); // View D 표시
-        } else if (value === "middle") {
-            showView("B_1"); // View B_1 표시
-        } else if (value === "high") {
-            showView("B_2"); // View B_2 표시
-        }
-    });
+    attachSelectEventHandlers(div3, showView); // 공통 이벤트 핸들러 적용
 
     return div3;
 }
@@ -1271,26 +1185,43 @@ function createViewD() {
         </div>
     `;
 
-    const selectElement = div4.querySelector("select");
-    selectElement.addEventListener("change", (event) => {
-        const value = event.target.value;
-        if (value === "basic") {
-            showView("A"); // View A 표시
-        } else if (value === "primary") {
-            showView("B"); // View B 표시
-        } else if (value === "university") {
-            showView("C"); // View C 표시
-        } else if (value === "academy") {
-            showView("D"); // View D 표시
-        } else if (value === "middle") {
-            showView("B_1"); // View B_1 표시
-        } else if (value === "high") {
-            showView("B_2"); // View B_2 표시
-        }
-    });
+    attachSelectEventHandlers(div4, showView); // 공통 이벤트 핸들러 적용
 
     return div4;
 }
+
+// 공통 함수: 선택한 select 요소에 이벤트 핸들러 추가
+function attachSelectEventHandlers(container, showView) {
+    const selectElements = container.querySelectorAll("select");
+
+    selectElements.forEach((selectElement) => {
+        selectElement.addEventListener("change", (event) => {
+            const value = event.target.value;
+            switch (value) {
+                case "basic":
+                    showView("A");
+                    break;
+                case "primary":
+                    showView("B");
+                    break;
+                case "university":
+                    showView("C");
+                    break;
+                case "academy":
+                    showView("D");
+                    break;
+                case "middle":
+                    showView("B_1");
+                    break;
+                case "high":
+                    showView("B_2");
+                    break;
+            }
+        });
+    });
+}
+// 이벤트 핸들러 해제 함수를 저장할 변수
+let removeEventHandlers = null;
 // 특정 뷰를 표시하는 함수
 function showView(viewName) {
     app.innerHTML = ""; // 기존 콘텐츠 비우기
@@ -1305,8 +1236,122 @@ function showView(viewName) {
 
     const viewFunction = views[viewName];
     if (viewFunction) {
-        app.appendChild(viewFunction());
+        const view = viewFunction(); // 뷰 생성
+        app.appendChild(view); // 뷰를 DOM에 추가
+
+        // 기존 이벤트 핸들러 제거 (있다면)
+        if (removeEventHandlers) {
+            removeEventHandlers();
+            removeEventHandlers = null; // 초기화
+        }
+
+        // View A가 아닌 경우에만 공통 이벤트 핸들러 설정
+        if (viewName !== "A") {
+            removeEventHandlers = setupSchoolEventHandlers(view); // 해제 함수 저장
+        }
     }
+}
+// 학력을 입력한 데이터를 화면에 뿌려주는 함수
+function setupSchoolEventHandlers(container) {
+    const selectSchoolType = container.querySelector("#schoolType");
+    const selectGraduationStatus = container.querySelector(
+        "#schoolGraduationGb"
+    );
+    const careerTxtSpan = document.querySelector(".career-txt span");
+    const date = document.querySelector(".date");
+
+    // 저장 버튼 클릭 시 유효성 검사 및 학력 텍스트 업데이트
+    const saveButton = container.querySelector(".evtLayerSave");
+    saveButton.addEventListener("click", () => {
+        console.log("Save button clicked");
+        if (performValidation(container, careerTxtSpan)) {
+            console.log("Validation passed");
+            // 유효성 검사를 통과한 경우에만 텍스트 업데이트
+            const schoolTypeText =
+                selectSchoolType.options[
+                    selectSchoolType.selectedIndex
+                ].text.split(" ")[0];
+            const graduationText =
+                selectGraduationStatus.options[
+                    selectGraduationStatus.selectedIndex
+                ].text;
+
+            // 학력과 졸업 여부 조합된 텍스트를 표시
+            careerTxtSpan.textContent = `${schoolTypeText} (${graduationText})`;
+            date.textContent = `${graduationText}`;
+        } else {
+            console.log("Validation failed");
+        }
+    });
+
+    // 이벤트 핸들러 해제 함수 반환 (View A로 전환 시 사용)
+    return function removeHandlers() {
+        saveButton.removeEventListener("click", performValidation);
+    };
+}
+
+// 유효성 검사 함수
+function performValidation(container, careerTxtSpan) {
+    let valid = true; // 유효성 검사 결과 플래그
+
+    // Typo SizeL 클래스와 check 클래스를 가진 모든 input 요소 선택
+    const typoInputs = document.querySelectorAll("input.Typo.SizeL.check");
+
+    // item-career 클래스를 가진 요소 찾기
+    const careerItem = document.querySelector(".item-career");
+
+    // item-close 클래스가 careerItem에 포함되어 있는지 확인
+    if (careerItem && careerItem.classList.contains("item-close")) {
+        // item-close가 있을 경우 두 번째 input 검사
+        if (typoInputs.length > 1) {
+            const input2 = typoInputs[0]; // 두 번째 input
+            console.log(`Checking input2: ${input2.value}`); // 현재 input 값 로그
+            const isValid2 = input2.value.trim(); // 입력값 검사
+            input2.classList.toggle("Invalid", !isValid2); // Invalid 클래스 추가 또는 제거
+            valid = valid && isValid2; // 전체 유효성 검사 결과 업데이트
+            if (valid) {
+                // Chk SizeL 클래스에서 체크된 항목의 레이블 추가
+                const chkLabels = container.querySelectorAll(
+                    ".Chk.SizeL input[type='checkbox']:checked + label"
+                );
+                const checkedQualifications = Array.from(chkLabels)
+                    .map((label) => label.textContent)
+                    .join(", ");
+
+                // 체크된 항목이 있을 경우 careerTxtSpan에 추가
+                if (checkedQualifications) {
+                    careerTxtSpan.textContent = `${checkedQualifications}`; // 학력 텍스트에 추가
+                }
+            }
+        }
+    } else {
+        // item-close가 없을 경우 첫 번째 input 검사
+        if (typoInputs.length > 0) {
+            const input1 = typoInputs[1]; // 첫 번째 input
+            console.log(`Checking input1: ${input1.value}`); // 현재 input 값 로그
+            const isValid1 = input1.value.trim(); // 입력값 검사
+            input1.classList.toggle("Invalid", !isValid1); // Invalid 클래스 추가 또는 제거
+            valid = valid && isValid1; // 전체 유효성 검사 결과 업데이트
+        }
+    }
+
+    // 2. InpBox SizeL item-s 내부의 select 요소들 검사
+    const inpBoxSelects = container.querySelectorAll(
+        ".InpBox.SizeL.item-s.check select"
+    );
+    inpBoxSelects.forEach((selectElement) => {
+        console.log(`Checking select: ${selectElement.value}`); // 현재 select 값 로그
+        const closestInpBox = selectElement.closest(".InpBox.SizeL.item-s");
+        if (selectElement.value === "") {
+            if (closestInpBox) closestInpBox.classList.add("Invalid");
+            valid = false; // 유효성 검사 실패
+        } else {
+            if (closestInpBox) closestInpBox.classList.remove("Invalid");
+        }
+    });
+
+    console.log(`Validation result: ${valid}`); // 최종 유효성 검사 결과 로그
+    return valid; // 유효성 검사 결과 반환
 }
 
 // Add 버튼 클릭 시 View A 표시
@@ -1326,43 +1371,43 @@ evtEditItem.addEventListener("click", () => {
     showView("C"); // View A 표시
 });
 
-// 1. Typo SizeL input 요소들에 실시간 입력 이벤트 위임
-document.addEventListener("input", (event) => {
-    if (event.target.matches("input.Typo.SizeL.check")) {
-        const input = event.target;
-        if (!input.value.trim()) {
-            input.classList.add("Invalid"); // 값이 비어있으면 Invalid 추가
-        } else {
-            input.classList.remove("Invalid"); // 값이 있으면 Invalid 제거
-        }
-    }
-    if (
-        event.target.matches(".Typo.SizeL.onlyNumber.DatePic.datePicker.check")
-    ) {
-        const input = event.target;
-        if (!input.value.trim()) {
-            input.classList.add("Invalid"); // 값이 비어있으면 Invalid 추가
-        } else {
-            input.classList.remove("Invalid"); // 값이 있으면 Invalid 제거
-        }
-    }
-});
+// // 1. Typo SizeL input 요소들에 실시간 입력 이벤트 위임
+// document.addEventListener("input", (event) => {
+//     if (event.target.matches("input.Typo.SizeL.check")) {
+//         const input = event.target;
+//         if (!input.value.trim()) {
+//             input.classList.add("Invalid"); // 값이 비어있으면 Invalid 추가
+//         } else {
+//             input.classList.remove("Invalid"); // 값이 있으면 Invalid 제거
+//         }
+//     }
+//     if (
+//         event.target.matches(".Typo.SizeL.onlyNumber.DatePic.datePicker.check")
+//     ) {
+//         const input = event.target;
+//         if (!input.value.trim()) {
+//             input.classList.add("Invalid"); // 값이 비어있으면 Invalid 추가
+//         } else {
+//             input.classList.remove("Invalid"); // 값이 있으면 Invalid 제거
+//         }
+//     }
+// });
 
-// 2. InpBox SizeL item-s 내부 select 요소들에 실시간 변경 이벤트 위임
-document.addEventListener("change", (event) => {
-    if (event.target.matches(".InpBox.SizeL.item-s.check select")) {
-        const selectElement = event.target;
-        const closestInpBox = selectElement.closest(".InpBox.SizeL.item-s");
+// // 2. InpBox SizeL item-s 내부 select 요소들에 실시간 변경 이벤트 위임
+// document.addEventListener("change", (event) => {
+//     if (event.target.matches(".InpBox.SizeL.item-s.check select")) {
+//         const selectElement = event.target;
+//         const closestInpBox = selectElement.closest(".InpBox.SizeL.item-s");
 
-        if (selectElement.value === "") {
-            // 값이 선택되지 않은 경우 Invalid 추가
-            if (closestInpBox) closestInpBox.classList.add("Invalid");
-        } else {
-            // 값이 선택된 경우 Invalid 제거
-            if (closestInpBox) closestInpBox.classList.remove("Invalid");
-        }
-    }
-});
+//         if (selectElement.value === "") {
+//             // 값이 선택되지 않은 경우 Invalid 추가
+//             if (closestInpBox) closestInpBox.classList.add("Invalid");
+//         } else {
+//             // 값이 선택된 경우 Invalid 제거
+//             if (closestInpBox) closestInpBox.classList.remove("Invalid");
+//         }
+//     }
+// });
 
 // 동적 취소 버튼 이벤트 처리
 document.addEventListener("click", (event) => {
@@ -1381,40 +1426,75 @@ document.addEventListener("click", (event) => {
         restoreUI(); // UI 상태 복원
     }
 
-    // 버튼에 클릭 이벤트 추가
-    if (event.target.classList.contains("evtLayerSave")) {
-        // 1. Typo SizeL 클래스가 있는 input 요소들 검사
-        const typoInputs = document.querySelectorAll("input.Typo.SizeL.check");
-        typoInputs.forEach((input) => {
-            if (!input.value.trim()) {
-                // 값이 비어있을 경우
-                input.classList.add("Invalid"); // input에 Invalid 추가
-            } else {
-                input.classList.remove("Invalid"); // 값이 있으면 Invalid 제거
-            }
-        });
+    // // 버튼에 클릭 이벤트 추가
+    // if (event.target.classList.contains("evtLayerSave")) {
+    //     // 1. Typo SizeL 클래스가 있는 input 요소들 검사
+    //     const typoInputs = document.querySelectorAll("input.Typo.SizeL.check");
+    //     typoInputs.forEach((input) => {
+    //         if (!input.value.trim()) {
+    //             // 값이 비어있을 경우
+    //             input.classList.add("Invalid"); // input에 Invalid 추가
+    //         } else {
+    //             input.classList.remove("Invalid"); // 값이 있으면 Invalid 제거
+    //         }
+    //     });
 
-        // 2. InpBox SizeL item-s 내부의 select 요소들 검사
-        const inpBoxSelects = document.querySelectorAll(
-            ".InpBox.SizeL.item-s.check select"
-        );
-        inpBoxSelects.forEach((selectElement) => {
-            const closestInpBox = selectElement.closest(".InpBox.SizeL.item-s");
-            if (selectElement.value === "") {
-                // 값이 선택되지 않은 경우
-                if (closestInpBox) closestInpBox.classList.add("Invalid");
-            } else {
-                // 값이 선택된 경우 Invalid 제거
-                if (closestInpBox) closestInpBox.classList.remove("Invalid");
-            }
-        });
-    }
+    //     // 2. InpBox SizeL item-s 내부의 select 요소들 검사
+    //     const inpBoxSelects = document.querySelectorAll(
+    //         ".InpBox.SizeL.item-s.check select"
+    //     );
+    //     inpBoxSelects.forEach((selectElement) => {
+    //         const closestInpBox = selectElement.closest(".InpBox.SizeL.item-s");
+    //         if (selectElement.value === "") {
+    //             // 값이 선택되지 않은 경우
+    //             if (closestInpBox) closestInpBox.classList.add("Invalid");
+    //         } else {
+    //             // 값이 선택된 경우 Invalid 제거
+    //             if (closestInpBox) closestInpBox.classList.remove("Invalid");
+    //         }
+    //     });
+    // }
+    // if (event.target.classList.contains("evtLayerSave")) {
+    //     let allValid = true; // 유효성 검사 플래그
+
+    //     // 1. Typo SizeL 클래스가 있는 input 요소들 검사
+    //     const typoInputs = document.querySelectorAll("input.Typo.SizeL.check");
+    //     typoInputs.forEach((input) => {
+    //         if (!input.value.trim()) {
+    //             // 값이 비어있을 경우 Invalid 클래스 추가
+    //             input.classList.add("Invalid");
+    //             allValid = false; // 유효하지 않은 상태로 플래그 설정
+    //         } else {
+    //             input.classList.remove("Invalid");
+    //         }
+    //     });
+
+    //     // 2. InpBox SizeL item-s 내부의 select 요소들 검사
+    //     const inpBoxSelects = document.querySelectorAll(
+    //         ".InpBox.SizeL.item-s.check select"
+    //     );
+    //     inpBoxSelects.forEach((selectElement) => {
+    //         const closestInpBox = selectElement.closest(".InpBox.SizeL.item-s");
+    //         if (selectElement.value === "") {
+    //             // 값이 선택되지 않은 경우 Invalid 클래스 추가
+    //             if (closestInpBox) closestInpBox.classList.add("Invalid");
+    //             allValid = false; // 유효하지 않은 상태로 플래그 설정
+    //         } else {
+    //             if (closestInpBox) closestInpBox.classList.remove("Invalid");
+    //         }
+    //     });
+
+    //     // 3. 모든 입력이 유효한 경우 학력 텍스트 업데이트
+    //     if (allValid) {
+    //         updateCareerText(); // 학력 텍스트 업데이트 함수 호출
+    //     }
+    // }
 });
 
 document.addEventListener("click", (event) => {
     // 클릭된 요소의 클래스 로그
     console.log("클릭된 요소:", event.target);
-    console.log("클릭된 요소의 클래스:", event.target.className);
+    // console.log("클릭된 요소의 클래스:", event.target.className);
 
     // 클릭된 요소가 "Lbl"인 경우
     if (event.target.classList.contains("Lbl")) {

@@ -326,7 +326,7 @@ input[type="checkbox"].btn-type {
     color: #96a0b5;
 }
 
-.searching-list li .menu-box {
+ .fixed .menu_box {
     position: absolute;
     top: 24px;
     right: 20px;
@@ -336,9 +336,821 @@ input[type="checkbox"].btn-type {
     transition-property: top;
 }
 
-.searching-list li .menu-box .more-btn {
+.fixed .menu_box .more_btn {
     width: 24px;
     height: 24px;
     border-radius: 4px;
-    background: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(-1054 -310) translate(472 292) translate(316) translate(24 18) translate(242)'%3E%3Cpath fill='%23AFBAC8' d='M12.5 16c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm0-5c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm0-5c.828 0 1.5.672 1.5 1.5S13.328 9 12.5 9 11 8.328 11 7.5 11.672 6 12.5 6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A) no-repeat center center;
+    background: url(/static/images/cover-letter/more-btn.svg);
+}
+
+.hidden, .blind {
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+}
+
+.menu_box .menu_list {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 32px;
+    right: -20px;
+    z-index: 10;
+    padding: 8px 0;
+    width: 168px;
+    border: 1px solid #eaedf4;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 2px 6px 16px 0 rgba(17, 42, 128, 0.08);
+}
+
+.searching_list li {
+    display: inline-block;
+    position: relative;
+    margin-right: 6px;
+    padding: 6px 0 10px;
+    width: 310px;
+    font-size: 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+.menu_box .menu_list li {
+    display: block;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.menu_box .menu_list li button {
+    z-index: 20;
+    padding-left: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #5c667b;
+    line-height: 40px;
+    text-align: left;
+}
+
+.menu_box .menu_list li button:before {
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    content: "";
+}
+
+.menu_box .menu_list li button.alarm:before {
+    background: url(/static/images/cover-letter/bell-bedge.svg) no-repeat center center;
+}
+
+li:after {
+    display: table;
+    clear: both;
+    content: "";
+    table-layout: fixed;
+}
+
+.menu_box .menu_list li button.delete:before {
+    background: url(/static/images/cover-letter/delete-bedge.svg) no-repeat center center;
+}
+
+.bx-controls {
+    position: absolute;
+    right: 19px;
+    bottom: -34px;
+}
+
+.bx-controls button {
+    display: inline-block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #eaedf4;
+    border-radius: 16px;
+    text-indent: -9999px;
+    background: #fff;
+}
+
+.bx-controls button.disabled {
+    background: #fff;
+    cursor: default;
+}
+
+.bx-controls button:after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    border-style: solid;
+    border-color: #5c667b;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    content: "";
+}
+
+.bx-controls button.disabled:after {
+    border-color: #afbac8;
+}
+
+.bx-controls button.bx-prev:after {
+    margin-left: 2px;
+    border-width: 0 0 2px 2px;
+}
+
+.bx-controls button.bx-next {
+    margin-left: 8px;
+}
+
+.bx-controls button.bx-next:after {
+    margin-left: -2px;
+    border-width: 2px 2px 0 0;
+}
+
+.support-announce .top_btns {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d7dce5;
+}
+
+.top_btns .align {
+    display: flex;
+    align-items: center;
+}
+
+.InpBox {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.support_announce .top_btns .align .InpBox, .support_announce .top_btns .align .BtnType {
+    margin-right: 8px;
+}
+
+.InpBox .Chk {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+
+input, button, textarea, select {
+    line-height: normal;
+}
+
+.InpBox .Chk input {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.InpBox .Chk .Lbl {
+    display: block;
+    position: relative;
+    color: var(--gray100);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.InpBox .Chk.Hide .Lbl {
+    visibility: visible;
+    overflow: visible;
+    font-size: 0;
+}
+
+.InpBox .Chk .Lbl:before {
+    display: inline-block;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--gray70);
+    border-radius: 4px;
+    vertical-align: top;
+    background: #fff;
+    content: '';
+}
+
+[class*="BtnType"] {
+    display: inline-flex;
+    position: relative;
+    border: 1px solid var(--blue90);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: var(--white);
+    text-align: center;
+    vertical-align: top;
+    background-color: var(--blue90);
+    justify-content: center;
+    align-items: center;
+}
+
+[class*="BtnType"].SizeM {
+    padding: 6px 11px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+[class*="BtnType"].GrayInvert {
+    border-color: var(--gray80);
+    color: var(--gray100);
+    background: var(--white);
+}
+
+.top_btns .align .BtnType {
+    margin-right: 8px;
+}
+
+.support-announce .top_btns .align {
+    display: flex;
+    align-items: center;
+}
+
+.InpBox select {
+    padding: 0 28px 0 12px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--gray70);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: var(--gray100);
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    background: var(--white) url(/static/images/cover-letter/status-btn.svg) no-repeat right 12px top 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.InpBox.Line {
+    display: inline-flex;
+    padding: 0 12px 0 10px;
+    height: 40px;
+    border: 1px solid var(--gray70);
+    border-radius: 4px;
+    box-sizing: border-box;
+    vertical-align: top;
+    align-items: center;
+}
+
+.support_announce .top_btns .align .InpBox, .support_announce .top_btns .align .BtnType {
+    margin-right: 8px;
+}
+
+.InpBox .Chk {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.InpBox .Chk input {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.InpBox .Chk .Lbl {
+    display: block;
+    position: relative;
+    color: var(--gray100);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.InpBox .Chk .Lbl:before {
+    display: inline-block;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--gray70);
+    border-radius: 4px;
+    vertical-align: top;
+    background: #fff;
+    content: '';
+}
+
+.InpBox.Line .Chk .Lbl:before {
+    margin-right: 4px;
+    border-color: var(--white);
+}
+
+.InpBox .Chk .Lbl:after {
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 5px;
+    border-bottom: 2px solid var(--white);
+    border-left: 2px solid var(--white);
+    border-radius: 1px;
+    transform: rotate(-45deg);
+    content: '';
+}
+
+.InpBox.Line span .Lbl:after {
+    top: 5px;
+    left: 5px;
+}
+
+.InpBox.Line .Chk .Lbl:after {
+    display: inline-block;
+    border-color: var(--gray80);
+}
+
+.TypoBox {
+    display: inline-block;
+    position: relative;
+    border: 1px solid var(--gray70);
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: var(--white);
+}
+
+.support-announce .top_btns .search_area {
+    width: 160px;
+}
+
+.TypoBox .Typo {
+    padding: 8px 12px;
+    width: 100%;
+    height: 38px;
+    border: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: var(--gray100);
+    font-size: 14px;
+    line-height: 20px;
+    background: none;
+}
+
+.top_btns .search_area button {
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 32px;
+    height: 32px;
+}
+
+.top_btns .search_area button .icon_search {
+    width: 24px;
+    height: 24px;
+    color: #575d6d;
+}
+
+svg:not(:root) {
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+
+.activity_list ul {
+    display: block;
+}
+
+.activity_list .row {
+    display: inline-block;
+    position: relative;
+    padding: 32px 0 32px 12px;
+    width: 100%;
+    border-bottom: 1px solid #eaedf4;
+    box-sizing: border-box;
+    color: #383e4f;
+}
+
+.activity_list.basic .row {
+    padding-left: 32px;
+}
+
+.row .scrap_check {
+    position: absolute;
+    top: 42px;
+    left: 4px;
+}
+
+.InpBox .Chk {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.InpBox .Chk input {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.InpBox .Chk .Lbl {
+    display: block;
+    position: relative;
+    color: var(--gray100);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.InpBox .Chk .Lbl:before {
+    display: inline-block;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--gray70);
+    border-radius: 4px;
+    vertical-align: top;
+    background: #fff;
+    content: '';
+}
+
+.activity_list .row .col_corp {
+    display: inline-block;
+    overflow: hidden;
+    float: left;
+    margin: 0 24px 0 20px;
+    width: 132px;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activity_list .row .col_corp a {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    color: var(--gray80);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activity_list .row .col_informs {
+    display: inline-block;
+    position: relative;
+    max-width: 545px;
+    font-size: 0;
+}
+
+.activity_list.basic .row .col_informs {
+    margin-bottom: 32px;
+    width: 865px;
+}
+
+.activity_list .row .col_informs .tit {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 4px;
+    padding-right: 18px;
+    max-width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    color: #373f57;
+    font-size: 20px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activity_list .row .col_informs .tit a {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    color: var(--gray120);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activity_list .row .col_informs .inform {
+    display: block;
+    font-size: 0;
+}
+
+.activity_list .row .col_informs .inform li {
+    display: inline-block;
+    margin-right: 12px;
+    color: var(--gray100);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.activity_list .row .col_btns {
+    position: absolute;
+    top: 32px;
+    right: 40px;
+    width: 120px;
+    text-align: center;
+}
+
+.sri_btn_ml {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    height: 40px;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.sri_btn_ml span {
+    display: inline-block;
+    width: 118px;
+    height: 38px;
+    border: 1px solid var(--gray80);
+    border-radius: 4px;
+    color: var(--gray100);
+    font-size: 14px !important;
+    line-height: 36px;
+    background: var(--white);
+}
+
+.sri_btn_ml span.sri_btn_immediately, .sri_btn_ml span.sri_btn_recruitin_apply {
+    position: relative;
+    border: 1px solid var(--coral110);
+    color: var(--coral110);
+}
+
+.activity_list .row .col_btns .date {
+    display: block;
+    margin-top: 4px;
+    width: 100%;
+    color: var(--gray100);
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.activity_list .row .col_delete {
+    position: absolute;
+    top: 40px;
+    right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.activity_list .row .col_delete>button>svg {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    color: #96a0b5;
+}
+
+.activity_list .row .col_annonce {
+    padding-right: 40px;
+    min-height: 24px;
+    font-size: 0;
+    text-align: right;
+}
+
+.activity_list .row .col_annonce>.txt {
+    display: inline-block;
+    position: relative;
+    margin-right: 12px;
+    padding-left: 24px;
+    color: #5c667b;
+    font-size: 13px;
+    line-height: 40px;
+}
+
+.activity_list .row .col_annonce>.txt:before {
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 5px;
+    width: 14px;
+    height: 14px;
+    background: url(/static/images/cover-letter/new-bedge.svg) no-repeat center center;
+    content: "";
+}
+
+.activity_list .row .col_annonce>.txt span {
+    font-weight: bold;
+}
+
+.activity_list .row .col_annonce>.txt span {
+    font-weight: bold;
+}
+
+.activity_list .row .col_annonce .btnText {
+    position: relative;
+    padding-right: 20px;
+    width: 70px;
+    height: 40px;
+    text-align: right;
+}
+
+.activity_list .row .col_annonce .btnText:before {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    bottom: 0;
+    width: 10px;
+    background: url(//www.saraminimage.co.kr/sri/person/spr/bg_select_txt.png) no-repeat center center;
+    content: "";
+}
+
+.activity_list .row .col_annonce .btnText>span {
+    display: block;
+    color: var(--gray80);
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.activity_list .row .col_annonce .btnText>span {
+    display: block;
+    color: var(--gray80);
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.activity_list .row .col_annonce .btnText .on_txt {
+    display: none;
+}
+
+.activity_list .row .col_annonce .anounce_list {
+    display: none;
+    margin-bottom: -8px;
+    padding: 0 35px 0 176px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row .col_annonce .anounce_list li {
+    display: inline-block;
+    position: relative;
+    padding-right: 162px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #f4f6fa;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.activity_list .row .col_annonce .anounce_list li .txt {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 515px;
+    font-size: 14px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activity_list.basic .row .col_annonce .anounce_list li .txt {
+    max-width: 100%;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+.activity_list .row .col_annonce .anounce_list li .date {
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    right: 104px;
+    color: #8491a7;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.sri_btn_sm {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 88px;
+    height: 24px;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.activity_list .row .col_annonce .anounce_list li .sri_btn_sm {
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.sri_btn_sm span {
+    display: inline-block;
+    width: 86px;
+    height: 22px;
+    border: 1px solid var(--gray80);
+    border-radius: 4px;
+    color: var(--gray100);
+    font-size: 13px !important;
+    line-height: 22px;
+    background: var(--white);
+}
+
+.sri_btn_sm span.sri_btn_immediately, .sri_btn_sm span.sri_btn_recruitin_apply {
+    position: relative;
+    border: 1px solid var(--coral110);
+    color: var(--coral110);
+}
+
+.PageBox {
+    display: flex;
+    margin: 40px 0 80px;
+    justify-content: center;
+}
+
+.PageBox .BtnType {
+    display: flex;
+    position: relative;
+    width: 32px;
+    border: 0;
+    color: var(--gray80);
+    background: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.PageBox span.BtnType {
+    border: 1px solid var(--gray60);
+    font-weight: bold;
+}
+
+.NotiBox {
+    display: flex;
+    position: relative;
+    padding: 32px;
+    border-radius: 16px;
+    background: var(--gray20);
+    align-items: flex-start;
+}
+
+.NotiBox .NotiTit {
+    display: flex;
+    width: 178px;
+    box-sizing: border-box;
+    color: var(--gray70);
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.NotiBox .NotiTit:before {
+    display: inline-block;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(/static/images/cover-letter/nottit-before.svg) 0 0 no-repeat;
+    content: "";
+}
+
+.NotiBox .NotiCont .list>li {
+    display: block;
+    position: relative;
+    padding-left: 8px;
+    color: var(--gray70);
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.NotiBox .NotiCont .list>li:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    line-height: 22px;
+    content: "·";
 }
