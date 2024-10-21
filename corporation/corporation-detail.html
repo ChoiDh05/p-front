@@ -8,17 +8,17 @@
             href="/static/css/matching/corporation-detail.css"
         />
         <link rel="stylesheet" href="/static/css/main.css" />
-        <title>기업 메인페이지</title>
+        <title>기업 상세 페이지</title>
     </head>
     <body>
-        <div id="position-section" class="layout-full">
-            <div id="position-wrap">
+        <div id="sri_section" class="layout_full">
+            <div id="sri_wrap">
                 <div id="content">
-                    <div class="wrap-company-view fixed">
+                    <div class="wrap_company_view fixed">
                         <div class="sidebar recommendation">
                             <div class="scroller">
-                                <div class="company-info">
-                                    <div class="box-logo">
+                                <div class="company_info">
+                                    <div class="box_logo">
                                         <img
                                             id="쿠팡(주)의 기업로고"
                                             alt="쿠팡(주)의 기업로고"
@@ -27,33 +27,34 @@
                                             height="38"
                                         />
                                     </div>
-                                    <div class="box-title">
+                                    <div class="box_title">
                                         <h1
-                                            class="tit-company"
+                                            class="tit_company"
                                             title="쿠팡(주)"
                                         >
-                                            쿠팡(주)<span class="txt-info"
+                                            쿠팡(주)<span class="txt_info"
                                                 >기업정보</span
                                             >
                                         </h1>
-                                        <p class="txt-job">전자상거래 소매업</p>
+                                        <p class="txt_job">전자상거래 소매업</p>
                                     </div>
-                                    <div class="box-btns">
+                                    <div class="box_btns">
                                         <!-- onclick부분 나중에 js 작업 할 때 참고하기 
-                                            interested-on되면 하트-->
+                                            interested_on되면 하트-->
                                         <button
                                             type="button"
-                                            class="interested-corp ga-data-layer interested-on"
+                                            class="interested_corp ga_data_layer"
                                             csn="RzBaRnNqKzJuWVdVeHNDLzlFVjcrQT09"
-                                            onclick="try{Saramin.btnJob('favor', this, '', 'company-view');}catch(e){}"
-                                            aria-pressed="true"
+                                            del_fl="n"
+                                            first_nudge="off"
+                                            onclick="try{Saramin.btnJob('favor', this, '', 'company_view');}catch(e){}"
                                         >
                                             <svg
                                                 width="16"
                                                 height="16"
                                                 viewBox="0 0 16 16"
                                                 fill="none"
-                                                class="icon-interested"
+                                                class="icon_interested"
                                             >
                                                 <path
                                                     d="M6.02498 12.7861L5.64593 12.4305L5.26661 12.0676L4.9045 11.7145L4.57727 11.3886L4.30315 11.1078L4.09798 10.8878L3.60986 10.3434L3.3016 9.99345L3.02797 9.67542L2.79004 9.38984L2.58897 9.13749L2.42437 8.91736L2.35722 8.8214C2.09522 8.43618 1.89245 8.04622 1.73708 7.6185C1.41094 6.38491 1.4304 5.39882 1.73942 4.62739C2.06107 3.82442 2.56896 3.24401 3.25465 2.87112C3.97841 2.47923 4.74412 2.39639 5.56989 2.63105C6.18765 2.82443 6.71818 3.1964 7.16412 3.7682L7.29598 3.94787L7.58589 4.37863L8.00062 4.99485L8.41545 4.3787L8.71259 3.93737C9.13803 3.32866 9.65597 2.91815 10.2666 2.68825L10.4462 2.62682C11.2606 2.39707 12.0242 2.47999 12.7465 2.87106C13.4323 3.24395 13.9403 3.82439 14.262 4.62745C14.5705 5.39767 14.5909 6.3831 14.2537 7.6522C14.1088 8.04661 13.9058 8.43727 13.6424 8.82404C13.6227 8.85295 13.6015 8.88333 13.5787 8.9152L13.4124 9.13756L13.2113 9.38998L12.9737 9.67507L12.549 10.1656L12.1189 10.6483L12.1177 10.6497L11.8097 10.99L11.569 11.2414L11.2664 11.5467L10.7343 12.0681L10.3555 12.4306L9.97658 12.786L9.61564 13.1169L9.28863 13.4077C9.1893 13.4942 9.09986 13.57 9.0226 13.6331C9.02237 13.6333 9.02214 13.6335 9.02192 13.6336L8.00223 14.461L7.999 14.4634L6.85007 13.5257C6.76132 13.4504 6.66238 13.3642 6.55569 13.2693L6.20886 12.9558C6.20844 12.9554 6.20801 12.955 6.20759 12.9546C6.148 12.9 6.08733 12.844 6.02592 12.787C6.02561 12.7867 6.0253 12.7864 6.02498 12.7861Z"
@@ -63,15 +64,146 @@
                                             </svg>
                                             <span>3.2만+ 관심기업</span>
                                         </button>
+                                        <button
+                                            type="button"
+                                            class="btn_share ga_data_layer"
+                                        >
+                                            <svg
+                                                width="16"
+                                                height="16"
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                class="icon_share"
+                                            >
+                                                <path
+                                                    d="M11 3.5L4.625 7.25V8.375L11 12.5"
+                                                    stroke="#8491A7"
+                                                ></path>
+                                                <circle
+                                                    cx="12.127"
+                                                    cy="3.125"
+                                                    r="2.125"
+                                                    fill="white"
+                                                    stroke="#8491A7"
+                                                ></circle>
+                                                <circle
+                                                    cx="12.127"
+                                                    cy="12.875"
+                                                    r="2.125"
+                                                    fill="white"
+                                                    stroke="#8491A7"
+                                                ></circle>
+                                                <circle
+                                                    cx="3.875"
+                                                    cy="7.62476"
+                                                    r="2.125"
+                                                    fill="white"
+                                                    stroke="#8491A7"
+                                                ></circle>
+                                            </svg>
+                                            <span class="blind">공유하기</span>
+                                        </button>
+                                        <!-- layer_share뒤에 show 붙으면 보임 -->
+                                        <div class="layer_share">
+                                            <div class="cont_share">
+                                                <ul class="list_sns">
+                                                    <li class="sns_facebook">
+                                                        <button
+                                                            type="button"
+                                                            class="btn_facebook"
+                                                        >
+                                                            <svg
+                                                                width="24"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                            >
+                                                                <path
+                                                                    d="M13.789 22.4999V12.9208H17.3269L17.8566 9.18765H13.789V6.80415C13.789 5.72334 14.1192 4.98672 15.8248 4.98672L18 4.9858V1.64694C17.6236 1.60161 16.3325 1.5 14.8304 1.5C11.6942 1.5 9.54712 3.23966 9.54712 6.43462V9.18775H6V12.9209H9.54701V22.5L13.789 22.4999Z"
+                                                                    fill="#3C5A9A"
+                                                                ></path>
+                                                            </svg>
+                                                            <span class="blind"
+                                                                >페이스북
+                                                                공유하기</span
+                                                            >
+                                                        </button>
+                                                    </li>
+                                                    <li class="sns_twitter">
+                                                        <button
+                                                            type="button"
+                                                            class="btn_twitter"
+                                                        >
+                                                            <svg
+                                                                width="24"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                            >
+                                                                <path
+                                                                    d="M22.1698 3.34731C20.8415 4.01809 19.6792 4.04603 19.2642 4.18578C18.7107 3.34731 16.3585 2.50883 14.283 3.34731C11.6487 4.41156 11.5157 6.9807 11.7925 8.37816C7.1434 8.37816 3.7673 5.4435 2.66038 3.76655C1 7.53969 3.21384 9.35638 4.32075 10.0551C3.32453 10.0551 2.24528 9.49613 1.83019 9.21664C1.83019 11.8998 4.32075 13.409 5.56604 13.8283C4.56981 14.1636 3.49057 13.968 3.07547 13.8283C3.73962 16.5114 6.1195 17.1822 7.22642 17.1822C4.90189 18.5237 1.96855 19.2783 1 19.2783C14.283 25.1477 20.9245 14.6667 20.5094 7.95892C21.7547 7.12045 22.8616 5.86274 23 5.02426L20.5094 5.86274C21.6542 5.09403 21.9539 4.52187 22.1698 3.34731Z"
+                                                                    fill="#00ACEE"
+                                                                ></path>
+                                                            </svg>
+                                                            <span class="blind"
+                                                                >트위터
+                                                                공유하기</span
+                                                            >
+                                                        </button>
+                                                    </li>
+                                                    <li class="sns_copyurl">
+                                                        <button
+                                                            type="button"
+                                                            class="btn_url"
+                                                        >
+                                                            <svg
+                                                                width="24"
+                                                                height="24"
+                                                                viewBox="0 0 24 24"
+                                                                fill="none"
+                                                            >
+                                                                <path
+                                                                    d="M7.30237 18.7765C6.74243 19.046 6.11266 19.1349 5.50004 19.031C4.88741 18.9271 4.32216 18.6355 3.88237 18.1965C3.60269 17.9178 3.38078 17.5867 3.22936 17.222C3.07794 16.8573 3 16.4664 3 16.0715C3 15.6767 3.07794 15.2857 3.22936 14.9211C3.38078 14.5564 3.60269 14.2253 3.88237 13.9465L9.54237 8.29655C10.1049 7.73475 10.8674 7.41919 11.6624 7.41919C12.4574 7.41919 13.2199 7.73475 13.7824 8.29655C14.3442 8.85905 14.6597 9.62155 14.6597 10.4165C14.6597 11.2116 14.3442 11.974 13.7824 12.5365L11.6624 14.6565"
+                                                                    stroke="#67738E"
+                                                                    stroke-width="1.5"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                ></path>
+                                                                <path
+                                                                    d="M16.0214 6.29665C16.5814 6.02724 17.2111 5.93834 17.8237 6.04224C18.4364 6.14613 19.0016 6.43769 19.4414 6.87665C19.7211 7.15536 19.943 7.48654 20.0944 7.85119C20.2458 8.21585 20.3238 8.6068 20.3238 9.00165C20.3238 9.39649 20.2458 9.78745 20.0944 10.1521C19.943 10.5168 19.7211 10.8479 19.4414 11.1266L13.7814 16.7766C13.2189 17.3384 12.4564 17.654 11.6614 17.654C10.8664 17.654 10.1039 17.3384 9.54142 16.7766C8.97962 16.2141 8.66406 15.4516 8.66406 14.6566C8.66406 13.8616 8.97962 13.0991 9.54142 12.5366L11.6614 10.4166"
+                                                                    stroke="#67738E"
+                                                                    stroke-width="1.5"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                                ></path>
+                                                            </svg>
+                                                            <span class="blind"
+                                                                >URL
+                                                                공유하기</span
+                                                            >
+                                                        </button>
+                                                    </li>
+                                                </ul>
+                                                <button
+                                                    type="button"
+                                                    class="btn_close"
+                                                >
+                                                    <span class="blind"
+                                                        >닫기</span
+                                                    >
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <nav class="company-navi">
-                                    <ul class="menu-list">
+                                <nav class="company_navi">
+                                    <ul class="menu_list">
                                         <!-- li가 selected되면 -->
-                                        <li class="menu-item selected">
+                                        <li class="menu_item selected">
                                             <button
                                                 type="button"
-                                                class="btn-menu ga-data-layer"
+                                                class="btn_menu ga_data_layer"
+                                                data-ga_data_layer="ga_lead|company_view|tab|com_intro"
                                             >
                                                 <svg class="ico">
                                                     <use
@@ -81,50 +213,50 @@
                                                 기업소개
                                             </button>
                                         </li>
-                                        <li class="menu-item">
+                                        <li class="menu_item">
                                             <button
                                                 type="button"
-                                                class="btn-menu"
-                                            >
-                                                <svg class="ico">
-                                                    <use
-                                                        xlink:href="#ico_supporting"
-                                                    ></use>
-                                                </svg>
-                                                공고 등록
-                                                <span class="badge"
-                                                    >진행중</span
-                                                >
-                                            </button>
-                                        </li>
-                                        <li class="menu-item ga-data-layer">
-                                            <button
-                                                type="button"
-                                                class="btn-menu ga-data-layer"
+                                                class="btn_menu ga_data_layer"
                                             >
                                                 <svg class="ico">
                                                     <use
                                                         xlink:href="#ico_person"
                                                     ></use>
                                                 </svg>
-                                                공고·지원자 관리
+                                                채용정보
+                                                <span class="badge"
+                                                    >진행중</span
+                                                >
+                                            </button>
+                                        </li>
+                                        <li class="menu_item ga_data_layer">
+                                            <button
+                                                type="button"
+                                                class="btn_menu ga_data_layer"
+                                            >
+                                                <svg class="ico">
+                                                    <use
+                                                        xlink:href="#ico_supporting"
+                                                    ></use>
+                                                </svg>
+                                                직무 리포트
 
-                                                <span class="badge badge-new"
+                                                <span class="badge badge_new"
                                                     >N</span
                                                 >
                                             </button>
                                         </li>
-                                        <li class="menu-item">
+                                        <li class="menu_item">
                                             <button
                                                 type="button"
-                                                class="btn-menu ga-data-layer"
+                                                class="btn_menu ga_data_layer"
                                             >
                                                 <svg class="ico">
                                                     <use
                                                         xlink:href="#ico_chart"
                                                     ></use>
                                                 </svg>
-                                                문의하기
+                                                재무정보
                                             </button>
                                         </li>
                                     </ul>
@@ -132,22 +264,22 @@
                                 <!-- <div class="banner"></div> -->
                             </div>
                         </div>
-                        <div class="main-content cont-introduce">
+                        <div class="main_content cont_introduce">
                             <!-- 기업 개요 -->
-                            <section class="section first-section">
-                                <div class="section-content">
-                                    <div class="favor-company">
-                                        <div class="favor-company-header">
+                            <section class="section first_section">
+                                <div class="section_content">
+                                    <div class="favor_company">
+                                        <div class="favor_company_header">
                                             <strong class="title">
                                                 관심기업을 설정하여 기업의 최근
                                                 소식을 받아보세요
                                             </strong>
                                             <div
-                                                class="TipBox tooltip-favor-company"
+                                                class="TipBox tooltip_favor_company"
                                             >
                                                 <button
                                                     type="button"
-                                                    class="btn-infomation"
+                                                    class="btn_infomation"
                                                 >
                                                     <span class="blind"
                                                         >도움말</span
@@ -155,7 +287,7 @@
                                                 </button>
                                                 <div class="TipCont TopCenter">
                                                     <span class="Tail">
-                                                        <svg class="icon-tail">
+                                                        <svg class="icon_tail">
                                                             <use
                                                                 xlink:href="#TipBox_tail"
                                                             ></use>
@@ -164,7 +296,7 @@
                                                     <div class="TipTxt">
                                                         조회기간 2024.09.10 ~
                                                         2024.10.09
-                                                        <p class="txt-info">
+                                                        <p class="txt_info">
                                                             본 정보는 사람인
                                                             빅데이터를 분석한
                                                             결과이며,
@@ -176,8 +308,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <ul class="favor-company-infos">
-                                            <li class="favor-company-item">
+                                        <ul class="favor_company_infos">
+                                            <li class="favor_company_item">
                                                 <span class="tit">조회수</span>
                                                 <div class="counting">
                                                     <sapn class="count">
@@ -188,7 +320,7 @@
                                                     </sapn>
                                                 </div>
                                             </li>
-                                            <li class="favor-company-item">
+                                            <li class="favor_company_item">
                                                 <span class="tit"
                                                     >관심기업</span
                                                 >
@@ -201,7 +333,7 @@
                                                     </span>
                                                 </div>
                                             </li>
-                                            <li class="favor-company-item">
+                                            <li class="favor_company_item">
                                                 <span class="tit"
                                                     >기업 키워드 검색 횟수</span
                                                 >
@@ -216,86 +348,428 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="section-header">
-                                    <h2 class="section-tit">
-                                        공고 진행사항을 한눈에 확인해 보세요!
-                                    </h2>
-                                </div>
-                                <div class="home-row">
-                                    <div
-                                        class="home-board-box recruit-action-wrap"
-                                        id="recruitActionWrap"
-                                    >
-                                        <dl>
-                                            <dt>진행중 공고</dt>
-                                            <dd>
-                                                <a
-                                                    href=""
-                                                    class="ga-data-layer"
-                                                    title="본창이동"
-                                                    >0</a
-                                                >
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>미열람 지원자</dt>
-                                            <dd>
-                                                <a
-                                                    href=""
-                                                    class="ga-data-layer"
-                                                    title="본창이동"
-                                                    >0</a
-                                                >
-                                            </dd>
-                                        </dl>
-                                        <dl>
-                                            <dt>미등록 후기</dt>
-                                            <dd>
-                                                <a
-                                                    href=""
-                                                    class="ga-data-layer"
-                                                    title="본창이동"
-                                                    >0</a
-                                                >
-                                            </dd>
-                                        </dl>
-                                    </div>
-
-                                    <div
-                                        class="home-board-box my-benefit-wrap ga-data-layer"
-                                        id="myBenefitWrap"
-                                    >
-                                        <a
-                                            href=""
-                                            title="본창이동"
-                                            class="none-member"
-                                        >
-                                            <strong class="title"
-                                                >MY 혜택</strong
+                                    <ul class="company_curation">
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_hot"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >관심기업 TOP100</strong
                                             >
-                                            <p class="desc">
-                                                회원가입만 해도<br />
-                                                10,000포인트 드려요!
-                                            </p>
-                                        </a>
-                                    </div>
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_hot"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >조회수 TOP100</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_subway"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >역세권 기업</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >커리어매치 MVP</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >대세는 문화 회식!</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >휴양지에서 원격근무!</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >출퇴근을 자유롭게</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >일상이 된 재택근무</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >사내 카페 보유 기업</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >너도나도 찜한 기업</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >경조사 챙겨주는 기업</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >구내식당 복지 기업!</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >월급을 사수하자!</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >직원대출제도 운영기업</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >주차 고민은 끝!</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >매출 20조 클럽</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >1만 명의 관심</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >배부른 퇴근길</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >커피는 회사가 쏜다</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >야근 눈치 보지마요</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >사람인1000대기업</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >백신휴가 지급 기업</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >포지션매치 MVP</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >야근 멈춰!</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >사원수 끝판왕</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >직원 건강이 우선!
+                                            </strong>
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >채용중 쿠팡 그룹사</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >단체상해보험 기업!</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >편의시설이 아닌 인권</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >성장하기 좋은 기업↑</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >슬기로운 육아휴직기업</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >업무도 식후경</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >자유 복장 기업 모음</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >회식 멈춰!</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >조직의 틀을 깼다!</strong
+                                            >
+                                        </li>
+                                        <li class="company_curation_item">
+                                            <svg class="ico">
+                                                <use
+                                                    xlink:href="#search_tag_svg_curation"
+                                                ></use>
+                                            </svg>
+                                            <strong class="txt"
+                                                >서울에 있는 대기업</strong
+                                            >
+                                        </li>
+                                    </ul>
                                 </div>
                             </section>
-
+                            <!-- 직무 리포트 배너 -->
+                            <div class="banner_area">
+                                <a href="" class="link_banner ga_data_layer">
+                                    <img
+                                        src="/static/images/corporation/body_banner.png"
+                                        alt="내 직무로 이 기업에 이직하고 싶다면?? 직무 리포트에서 확인하기"
+                                    />
+                                </a>
+                            </div>
                             <!-- 사내 근무 환경 -->
-                            <section class="section Workplace-section">
-                                <div class="section-header">
-                                    <h2 class="section-tit">
+                            <section class="section Workplace_section">
+                                <div class="section_header">
+                                    <h2 class="section_tit">
                                         한눈에 보는 우리 회사, 미리 확인해
                                         보세요!
                                     </h2>
                                 </div>
-                                <div class="section-content">
-                                    <div class="wrap-photo">
-                                        <ul class="list-thumb">
+                                <div class="section_content">
+                                    <ul class="list_workplace">
+                                        <li>
+                                            <div class="box_workplace">
+                                                <span class="txt">#역세권</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box_workplace">
+                                                <span class="txt">#잠실역</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box_workplace">
+                                                <span class="txt">
+                                                    #서울지하철2호선
+                                                    <span
+                                                        class="subway_line subway_line102"
+                                                    >
+                                                        2
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box_workplace">
+                                                <span class="txt">
+                                                    #서울지하철8호선
+                                                    <span
+                                                        class="subway_line subway_line108"
+                                                    >
+                                                        8
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="wrap_photo">
+                                        <ul class="list_thumb">
                                             <li class="hover">
-                                                <div class="thumb-inner">
+                                                <div class="thumb_inner">
                                                     <span class="cover">
                                                         쿠팡
                                                     </span>
@@ -309,7 +783,7 @@
                                                 </div>
                                                 <button
                                                     type="button"
-                                                    class="btn-open-company-photo ga-data-layer"
+                                                    class="btn_open_company_photo ga_data_layer"
                                                 >
                                                     <span class="blind"
                                                         >레이어 열림</span
@@ -317,7 +791,7 @@
                                                 </button>
                                             </li>
                                             <li class="hover">
-                                                <div class="thumb-inner">
+                                                <div class="thumb_inner">
                                                     <span class="cover">
                                                         쿠팡
                                                     </span>
@@ -331,7 +805,7 @@
                                                 </div>
                                                 <button
                                                     type="button"
-                                                    class="btn-open-company-photo ga-data-layer"
+                                                    class="btn_open_company_photo ga_data_layer"
                                                 >
                                                     <span class="blind"
                                                         >레이어 열림</span
@@ -339,10 +813,10 @@
                                                 </button>
                                             </li>
                                             <li class="indicator">
-                                                <div class="thumb-inner">
-                                                    <!-- <span class="cover">
+                                                <div class="thumb_inner">
+                                                    <span class="cover">
                                                         + 4
-                                                    </span> -->
+                                                    </span>
                                                     <span class="frame">
                                                         <img
                                                             src="https://pds.saramin.co.kr/workenv-bg/202306/15/rwa8zx_2b1r-xr4xqm_workenv-bg.jpg/sri/resize/306x220"
@@ -353,7 +827,7 @@
                                                 </div>
                                                 <button
                                                     type="button"
-                                                    class="btn-open-company-photo ga-data-layer"
+                                                    class="btn_open_company_photo ga_data_layer"
                                                 >
                                                     <span class="blind"
                                                         >레이어 열림</span
@@ -361,7 +835,7 @@
                                                 </button>
                                             </li>
                                             <li class="hover">
-                                                <div class="thumb-inner">
+                                                <div class="thumb_inner">
                                                     <span class="cover">
                                                         쿠팡
                                                     </span>
@@ -375,7 +849,7 @@
                                                 </div>
                                                 <button
                                                     type="button"
-                                                    class="btn-open-company-photo ga-data-layer"
+                                                    class="btn_open_company_photo ga_data_layer"
                                                 >
                                                     <span class="blind"
                                                         >레이어 열림</span
@@ -383,7 +857,7 @@
                                                 </button>
                                             </li>
                                             <li class="hover">
-                                                <div class="thumb-inner">
+                                                <div class="thumb_inner">
                                                     <span class="cover">
                                                         쿠팡
                                                     </span>
@@ -397,7 +871,7 @@
                                                 </div>
                                                 <button
                                                     type="button"
-                                                    class="btn-open-company-photo ga-data-layer"
+                                                    class="btn_open_company_photo ga_data_layer"
                                                 >
                                                     <span class="blind"
                                                         >레이어 열림</span
@@ -405,7 +879,7 @@
                                                 </button>
                                             </li>
                                             <li class="hover">
-                                                <div class="thumb-inner">
+                                                <div class="thumb_inner">
                                                     <span class="cover">
                                                         쿠팡
                                                     </span>
@@ -419,7 +893,7 @@
                                                 </div>
                                                 <button
                                                     type="button"
-                                                    class="btn-open-company-photo ga-data-layer"
+                                                    class="btn_open_company_photo ga_data_layer"
                                                 >
                                                     <span class="blind"
                                                         >레이어 열림</span
@@ -427,7 +901,7 @@
                                                 </button>
                                             </li>
                                             <li class="hover">
-                                                <div class="thumb-inner">
+                                                <div class="thumb_inner">
                                                     <span class="cover">
                                                         쿠팡
                                                     </span>
@@ -441,7 +915,7 @@
                                                 </div>
                                                 <button
                                                     type="button"
-                                                    class="btn-open-company-photo ga-data-layer"
+                                                    class="btn_open_company_photo ga_data_layer"
                                                 >
                                                     <span class="blind"
                                                         >레이어 열림</span
@@ -450,9 +924,9 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="area-company-infos">
-                                        <ul class="company-summary">
-                                            <li class="company-summary-item">
+                                    <div class="area_company_infos">
+                                        <ul class="company_summary">
+                                            <li class="company_summary_item">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     width="44"
@@ -497,14 +971,14 @@
                                                     </defs>
                                                 </svg>
                                                 <strong
-                                                    class="company-summary-tit"
+                                                    class="company_summary_tit"
                                                     >업력 12년차
                                                 </strong>
-                                                <p class="company-summary-desc">
+                                                <p class="company_summary_desc">
                                                     2013년 2월 15일 설립
                                                 </p>
                                             </li>
-                                            <li class="company-summary-item">
+                                            <li class="company_summary_item">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     width="44"
@@ -568,15 +1042,15 @@
                                                     </defs>
                                                 </svg>
                                                 <div
-                                                    class="TipBox tooltip-company-type"
+                                                    class="TipBox tooltip_company_type"
                                                 >
                                                     <button
                                                         type="button"
-                                                        class="btn-open-tooltip"
+                                                        class="btn_open_tooltip"
                                                     >
                                                         <strong
-                                                            class="company-summary-tit"
-                                                            >대기업</strong
+                                                            class="company_summary_tit"
+                                                            >1000대기업</strong
                                                         >
                                                     </button>
                                                     <div
@@ -584,7 +1058,7 @@
                                                     >
                                                         <span class="Tail">
                                                             <svg
-                                                                class="icon-tail"
+                                                                class="icon_tail"
                                                             >
                                                                 <use
                                                                     xlink:href="#TipBox_tail"
@@ -599,11 +1073,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="company-summary-desc">
+                                                <p class="company_summary_desc">
                                                     기업형태
                                                 </p>
                                             </li>
-                                            <li class="company-summary-item">
+                                            <li class="company_summary_item">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     width="44"
@@ -637,16 +1111,16 @@
                                                         stroke-linecap="round"
                                                     ></path>
                                                 </svg>
-                                                <div class="box-align">
+                                                <div class="box_align">
                                                     <strong
-                                                        class="company-summary-tit"
+                                                        class="company_summary_tit"
                                                     >
                                                         10,985 명
                                                     </strong>
                                                     <div class="TipBox">
                                                         <button
                                                             type="button"
-                                                            class="btn-open-tooltip"
+                                                            class="btn_open_tooltip"
                                                         >
                                                             <svg
                                                                 width="16"
@@ -676,7 +1150,7 @@
                                                         >
                                                             <span class="Tail">
                                                                 <svg
-                                                                    class="icon-tail"
+                                                                    class="icon_tail"
                                                                 >
                                                                     <use
                                                                         xlink:href="#TipBox_tail"
@@ -689,11 +1163,11 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p class="company-summary-desc">
+                                                <p class="company_summary_desc">
                                                     사원수
                                                 </p>
                                             </li>
-                                            <li class="company-summary-item">
+                                            <li class="company_summary_item">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
                                                     width="44"
@@ -745,19 +1219,20 @@
                                                     </defs>
                                                 </svg>
                                                 <strong
-                                                    class="company-summary-tit"
+                                                    class="company_summary_tit"
                                                     >30조 6,640억
                                                     300만원</strong
                                                 >
-                                                <p class="company-summary-desc">
+                                                <p class="company_summary_desc">
                                                     매출액
                                                 </p>
                                             </li>
                                         </ul>
-                                        <div class="content-fold active">
-                                            <dl class="company-details">
+                                        <!-- expand 붙이고 -->
+                                        <div class="content_fold active">
+                                            <dl class="company_details">
                                                 <div
-                                                    class="company-details-group"
+                                                    class="company_details_group"
                                                 >
                                                     <dt class="tit">업종</dt>
                                                     <dd class="desc">
@@ -765,7 +1240,7 @@
                                                     </dd>
                                                 </div>
                                                 <div
-                                                    class="company-details-group"
+                                                    class="company_details_group"
                                                 >
                                                     <dt class="tit">
                                                         대표자명
@@ -775,7 +1250,7 @@
                                                     </dd>
                                                 </div>
                                                 <div
-                                                    class="company-details-group"
+                                                    class="company_details_group"
                                                 >
                                                     <dt class="tit">
                                                         홈페이지
@@ -789,7 +1264,7 @@
                                                     </dd>
                                                 </div>
                                                 <div
-                                                    class="company-details-group"
+                                                    class="company_details_group"
                                                 >
                                                     <dt class="tit">
                                                         사업내용
@@ -804,7 +1279,7 @@
                                                     </dd>
                                                 </div>
                                                 <div
-                                                    class="company-details-group"
+                                                    class="company_details_group"
                                                 >
                                                     <dt class="tit">주소</dt>
                                                     <dd class="desc">
@@ -818,7 +1293,7 @@
                                                         <!-- 지도보기 하면 카카오맵으로 이동함 -->
                                                         <a
                                                             href="http://map.kakao.com/link/map/%EC%BF%A0%ED%8C%A1%28%EC%A3%BC%29,37.51587323015464,127.09906683920855"
-                                                            class="BtnType SizeXS link-map ga-data-layer"
+                                                            class="BtnType SizeXS link_map ga_data_layer"
                                                             target="_blank"
                                                             title="새 창 열림"
                                                         >
@@ -828,7 +1303,7 @@
                                                 </div>
 
                                                 <div
-                                                    class="company-details-group wide"
+                                                    class="company_details_group wide"
                                                 >
                                                     <dt class="tit">
                                                         사내동호회
@@ -843,18 +1318,158 @@
                                                     </dd>
                                                 </div>
                                             </dl>
+                                            <div class="company_introduce">
+                                                <strong class="tit">
+                                                    "쿠팡 없이 어떻게 살았을까?"
+                                                </strong>
+                                                <p class="txt">
+                                                    우리는 계속해서 혁신하고
+                                                    있으며, 이러한 우리의 업적은
+                                                    수차례에 걸쳐
+                                                    인정받았습니다. MIT
+                                                    Technology Review의
+                                                    ‘세계에서 가장 스마트한 50대
+                                                    기업(50 Smartest Companies
+                                                    in the World)’에
+                                                    선정되었으며 Forbes의
+                                                    ‘글로벌 게임 체인저(Global
+                                                    Game Changers) 30인’
+                                                    명단에도 오른 바 있습니다.
+                                                    현재까지 이렇게 MIT와 Forbes
+                                                    명단 모두에 거명된 기업은
+                                                    아마존, 구글, 페이스북,
+                                                    테슬라 모터스 등 9개 기업에
+                                                    불과한데 그 중에 쿠팡이
+                                                    포함된 것입니다.
+                                                </p>
+                                            </div>
+                                            <div class="company_introduce">
+                                                <strong class="tit">
+                                                    기업비전
+                                                </strong>
+                                                <p class="txt">
+                                                    쿠팡은...<br />
+                                                    글로벌 이커머스 시장을
+                                                    선도하는 글로벌 기업이며
+                                                    한국 최대 인터넷
+                                                    기업입니다.<br />
+                                                    <br />
+                                                    쿠팡의 미션은...<br />
+                                                    고객이 '쿠팡 없이 어떻게
+                                                    살았을까'라고 생각하는
+                                                    세상을 만드는 것입니다.
+                                                    쿠팡은 고객을 최우선에 두고
+                                                    고객에게 제시할 수 있는
+                                                    최상의 상품을 최상의
+                                                    가격으로 매우 편리한 맞춤형
+                                                    쇼핑 환경에서 제공하고
+                                                    있습니다. 쿠팡은 우리의
+                                                    목표를 함께 달성해나갈 열정
+                                                    넘치는 직원을 끊임없이 찾고
+                                                    있습니다.<br />
+                                                    한국 시장은 이커머스 산업이
+                                                    성장할 수 있는 유리한 조건을
+                                                    갖추고 있습니다. 한국의
+                                                    이커머스 시장은 세계 5위
+                                                    규모이며, 2020년이면 시장 내
+                                                    매출 규모가 천억 달러에 이를
+                                                    것으로 예상됩니다. 게다가
+                                                    서울은 전 세계에서 가장 인구
+                                                    밀도가 높은 도시 중의
+                                                    하나입니다. 이러한 여건은
+                                                    새로운 상품 배송 수단 및
+                                                    방법을 찾아내려는 기업에
+                                                    있어 흥미로운 기회를
+                                                    제공합니다. 따라서 한국
+                                                    시장은 쿠팡과 같은 진취적인
+                                                    기업에 있어 완벽한 환경이라
+                                                    할 수 있습니다.<br />
+                                                    쿠팡은 2010년 8월 서비스를
+                                                    개시했습니다.<br />
+                                                    사업 초기에는 딜 기반
+                                                    비즈니스로 운영하다가
+                                                    2014년에 온라인 유통업으로
+                                                    방향을 전환했습니다.
+                                                    2015년에는 연매출 10억
+                                                    달러를 달성했고, 이는 아시아
+                                                    이커머스 기업 중 최단기간에
+                                                    이룬 성과입니다. 2016년에는
+                                                    매출이 두 배로 뛰어 약 17억
+                                                    달러에 이르렀고, 2017년에는
+                                                    25억 달러를 돌파하며1 전년
+                                                    대비 40% 성장을
+                                                    기록했습니다. 쿠팡의 이러한
+                                                    경이적인 성공에 투자자들도
+                                                    주목했습니다. 2018년 11월
+                                                    소프트뱅크 비전펀드는 쿠팡에
+                                                    20억 달러를 투자한다고
+                                                    발표했습니다. 이는 2015년
+                                                    6월 소프트뱅크그룹으로부터
+                                                    10억 달러를 투자 받은 뒤
+                                                    이뤄진 추가 투자입니다. 이번
+                                                    투자를 바탕으로 쿠팡은
+                                                    고객을 위한 기술 혁신을 계속
+                                                    이어갈 계획입니다. 쿠팡은
+                                                    블랙록 및 세쿼이아 캐피털
+                                                    등에서도 상당 규모의 투자를
+                                                    유치했습니다. <br />
+                                                    <br />
+                                                    쿠팡의 기술은 성장을
+                                                    가속하고 있습니다.<br />
+                                                    쿠팡의 결제 서비스인
+                                                    로켓페이(전년대비 200%
+                                                    성장)는 ‘원터치 결제’와 같은
+                                                    더욱 편리한 쇼핑 경험을
+                                                    제공하는데, 수백만 명의
+                                                    고객들이 매년 수십억 달러를
+                                                    로켓페이로 결제하고
+                                                    있습니다. 쿠팡의 데이터
+                                                    플랫폼은 매일 3억 건 이상의
+                                                    상품 검색 결과를 눈 깜박할
+                                                    새에 고객에게 제시합니다.
+                                                    한국인 두 명 중 한 명이
+                                                    쿠팡의 모바일 앱을
+                                                    설치했으며, 쿠팡의 매출 90%
+                                                    이상이 모바일 기기를 통해
+                                                    발생합니다. 쿠팡은
+                                                    풀필먼트센터, 자체 배송
+                                                    트럭, 자체 배송 인력 등을
+                                                    통해 배송의 첫 단계부터 최종
+                                                    배송지에 상품이 도착하는
+                                                    단계까지 아우르는 자체
+                                                    인프라를 갖추고 있습니다.
+                                                    쿠팡의 배송/물류 인프라 전체
+                                                    규모는 무려 축구장 150개
+                                                    이상에 달합니다. 로켓배송은
+                                                    이미 하루 100만 상자 이상을
+                                                    배송하고 있고, 하룻밤 사이에
+                                                    배송량이 두 배로 늘어나는
+                                                    갑작스러운 수요 증가도
+                                                    순식간에 대응해 냅니다.
+                                                    <br />
+                                                </p>
+                                            </div>
+                                            <div class="box_btn gradient">
+                                                <button
+                                                    type="button"
+                                                    class="BtnType BtnTypeRd SizeM BlueInvert btn_fold"
+                                                >
+                                                    <span class="txt"
+                                                        >펼쳐보기</span
+                                                    >
+                                                </button>
+                                            </div>
                                         </div>
-                                        <!--  -->
                                     </div>
                                 </div>
                                 <cite class="citation">
-                                    <div class="TipBox direct-cp-input">
+                                    <div class="TipBox direct_cp_input">
                                         <button type="button">
                                             출처 :&nbsp;
                                             <a
                                                 target="_blank"
                                                 title="새 창 열림"
-                                                class="link ga-data-layer"
+                                                class="link ga_data_layer"
                                                 >NICE평가정보</a
                                             >
                                             , 국민연금, 기업 직접입력
@@ -883,7 +1498,7 @@
                                         </button>
                                         <div class="TipCont BottomRight">
                                             <span class="Tail">
-                                                <svg class="icon-tail">
+                                                <svg class="icon_tail">
                                                     <use
                                                         xlink:href="#TipBox_tail_side"
                                                     ></use>
@@ -904,26 +1519,114 @@
                                     </div>
                                 </cite>
                             </section>
-
+                            <!-- 연혁 -->
+                            <section class="section">
+                                <h2 class="section_tit">
+                                    우리는 단단하게 성장하고 있어요
+                                </h2>
+                                <div class="section_content">
+                                    <div class="content_fold">
+                                        <ul class="list_company_history">
+                                            <li class="company_history_item">
+                                                <div class="company_history">
+                                                    <strong class="history_year"
+                                                        >2013</strong
+                                                    >
+                                                    <ul
+                                                        class="list_company_history_cont"
+                                                    >
+                                                        <li
+                                                            class="history_cont_item"
+                                                        >
+                                                            <strong
+                                                                class="history_month"
+                                                                >10월</strong
+                                                            >
+                                                            <p
+                                                                class="history_txt"
+                                                            >
+                                                                한국지점의
+                                                                주요자산과
+                                                                부채를 현물출자
+                                                                받음<br />
+                                                            </p>
+                                                        </li>
+                                                        <li
+                                                            class="history_cont_item"
+                                                        >
+                                                            <strong
+                                                                class="history_month"
+                                                                >10월</strong
+                                                            >
+                                                            <p
+                                                                class="history_txt"
+                                                            >
+                                                                지배회사인
+                                                                포워드벤처스엘엘씨(Forward
+                                                                Ventures,
+                                                                LLC)로부터
+                                                                포워드벤처스엘엘씨(Forward
+                                                                Ventures,
+                                                                LLC)<br />
+                                                            </p>
+                                                        </li>
+                                                        <li
+                                                            class="history_cont_item"
+                                                        >
+                                                            <strong
+                                                                class="history_month"
+                                                                >02월</strong
+                                                            >
+                                                            <p
+                                                                class="history_txt"
+                                                            >
+                                                                회사 설립
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="box_btn gradient">
+                                            <button
+                                                type="button"
+                                                class="BtnType BtnTypeRd SizeM BlueInvert btn_fold"
+                                            >
+                                                <span class="txt">
+                                                    펼쳐보기
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <cite class="citation">
+                                    <a
+                                        target="_blank"
+                                        title="새 창 열림"
+                                        class="link ga_data_layer"
+                                        >출처 : NICE평가정보</a
+                                    >
+                                </cite>
+                            </section>
                             <!-- 채용중 공고 -->
                             <section
                                 class="section"
                                 id="companyIntroduceIngRecruitContainer"
                             >
-                                <h2 class="section-tit">
-                                    현재 우리회사가 채용 중인 공고
+                                <h2 class="section_tit">
+                                    현재 채용 중인 공고 놓치지 마세요
                                 </h2>
-                                <div class="section-content">
-                                    <ul class="list-curation-item">
+                                <div class="section_content">
+                                    <ul class="list_curation_item">
                                         <li>
                                             <a
                                                 href=""
-                                                onclick="try{s_trackApply(this, 'company-info-view', 'ing-intro')}catch(e){}"
-                                                class="newcomer-link-view"
+                                                onclick="try{s_trackApply(this, 'company_info_view', 'ing_intro')}catch(e){}"
+                                                class="newcomer_link_view"
                                                 target="_blank"
                                             >
                                                 <div
-                                                    class="list-curation-slide"
+                                                    class="list_curation_slide"
                                                 >
                                                     <span class="announcement">
                                                         [Coupang] Financial
@@ -933,7 +1636,7 @@
                                                             class="cover"
                                                         ></span>
                                                     </span>
-                                                    <div class="desc-bottom">
+                                                    <div class="desc_bottom">
                                                         <div class="info">
                                                             <span>
                                                                 경력5년↑
@@ -951,27 +1654,26 @@
                                                     >
                                                 </div>
                                             </a>
-                                            <div class="btn-immediately-wrap">
+                                            <div class="btn_immediately_wrap">
                                                 <a
-                                                    class="position-btn-sm"
+                                                    class="sri_btn_sm"
                                                     href=""
                                                     title="홈페이지 지원"
-                                                    onclick="try{s_trackApply(this, 'company-info-view', 'ing-intro');}catch(e){};"
+                                                    onclick="try{s_trackApply(this, 'company_info_view', 'ing_intro');}catch(e){};"
                                                 >
                                                     <span
-                                                        class="position-btn-homepage-apply"
+                                                        class="sri_btn_homepage_apply"
                                                         >홈페이지 지원</span
                                                     >
                                                 </a>
                                             </div>
-                                            <!-- onclick에 on붙음 -->
                                             <button
                                                 type="button"
                                                 onclick="Saramin.btnJob('scrap', this, '', 'list')"
                                                 scraped="n"
                                                 rec_idx="48798954"
                                                 imgtype="companyinfo"
-                                                class="newcomer-book-mark like-btn btn-scrap"
+                                                class="newcomer_book_mark like_btn btn_scrap scrap-48798954"
                                                 title="스크랩"
                                             >
                                                 <span class="blind"
@@ -982,12 +1684,12 @@
                                         <li>
                                             <a
                                                 href=""
-                                                onclick="try{s_trackApply(this, 'company-info-view', 'ing-intro')}catch(e){}"
-                                                class="newcomer-link-view"
+                                                onclick="try{s_trackApply(this, 'company_info_view', 'ing_intro')}catch(e){}"
+                                                class="newcomer_link_view"
                                                 target="_blank"
                                             >
                                                 <div
-                                                    class="list-curation-slide"
+                                                    class="list_curation_slide"
                                                 >
                                                     <span class="announcement">
                                                         [쿠팡] 셀러 데이터
@@ -996,7 +1698,7 @@
                                                             class="cover"
                                                         ></span>
                                                     </span>
-                                                    <div class="desc-bottom">
+                                                    <div class="desc_bottom">
                                                         <div class="info">
                                                             <span>
                                                                 경력무관
@@ -1014,15 +1716,15 @@
                                                     >
                                                 </div>
                                             </a>
-                                            <div class="btn-immediately-wrap">
+                                            <div class="btn_immediately_wrap">
                                                 <button
-                                                    class="position-btn-sm"
+                                                    class="sri_btn_sm"
                                                     title="클릭하면 입사지원할 수 있는 창이 뜹니다."
-                                                    onclick="try{quickApplyForm('48995399','','t-category=company-info-view&amp;t-content=ing-intro&amp;t-ref-content=ing-intro', ''); return false;} catch (e) {}; return false;"
-                                                    onmousedown="try{n_trackEvent('apply','list','quick-apply');}catch(e){}"
+                                                    onclick="try{quickApplyForm('48995399','','t_category=company_info_view&amp;t_content=ing_intro&amp;t_ref_content=ing_intro', ''); return false;} catch (e) {}; return false;"
+                                                    onmousedown="try{n_trackEvent('apply','list','quick_apply');}catch(e){}"
                                                 >
                                                     <span
-                                                        class="position-btn-immediately"
+                                                        class="sri_btn_immediately"
                                                         >입사지원</span
                                                     >
                                                 </button>
@@ -1033,7 +1735,7 @@
                                                 scraped="n"
                                                 rec_idx="48995399"
                                                 imgtype="companyinfo"
-                                                class="newcomer-book-mark like-btn btn-scrap"
+                                                class="newcomer_book_mark like_btn btn_scrap scrap-48995399"
                                                 title="스크랩"
                                             >
                                                 <span class="blind"
@@ -1044,12 +1746,12 @@
                                         <li>
                                             <a
                                                 href=""
-                                                onclick="try{s_trackApply(this, 'company-info-view', 'ing-intro')}catch(e){}"
-                                                class="newcomer-link-view"
+                                                onclick="try{s_trackApply(this, 'company_info_view', 'ing_intro')}catch(e){}"
+                                                class="newcomer_link_view"
                                                 target="_blank"
                                             >
                                                 <div
-                                                    class="list-curation-slide"
+                                                    class="list_curation_slide"
                                                 >
                                                     <span class="announcement">
                                                         [쿠팡] 사내 한중통번역사
@@ -1058,7 +1760,7 @@
                                                             class="cover"
                                                         ></span>
                                                     </span>
-                                                    <div class="desc-bottom">
+                                                    <div class="desc_bottom">
                                                         <div class="info">
                                                             <span>
                                                                 경력무관
@@ -1076,27 +1778,28 @@
                                                     >
                                                 </div>
                                             </a>
-                                            <div class="btn-immediately-wrap">
+                                            <div class="btn_immediately_wrap">
                                                 <a
-                                                    class="position-btn-sm"
+                                                    class="sri_btn_sm"
                                                     href=""
                                                     title="홈페이지 지원"
-                                                    onclick="try{s_trackApply(this, 'company-info-view', 'ing-intro');}catch(e){};"
+                                                    onclick="try{s_trackApply(this, 'company_info_view', 'ing_intro');}catch(e){};"
                                                 >
                                                     <span
-                                                        class="position-btn-homepage-apply"
+                                                        class="sri_btn_homepage_apply"
                                                     >
                                                         홈페이지 지원
                                                     </span>
                                                 </a>
                                             </div>
+                                            <!-- onclick에 on붙음 -->
                                             <button
                                                 type="button"
                                                 onclick="Saramin.btnJob('scrap', this, '', 'list')"
                                                 scraped="n"
                                                 rec_idx="48805491"
                                                 imgtype="companyinfo"
-                                                class="newcomer-book-mark like-btn btn-scrap"
+                                                class="newcomer_book_mark like_btn btn_scrap scrap-48805491"
                                                 title="스크랩"
                                             >
                                                 <span class="blind"
@@ -1108,27 +1811,411 @@
                                 </div>
                                 <a
                                     href=""
-                                    class="BtnType SizeS link-content-more ga-data-layer"
+                                    class="BtnType SizeS link_content_more ga_data_layer"
                                 >
                                     채용공고 더보기
                                 </a>
                             </section>
-                            <!-- 직무 리포트 배너 -->
-                            <div class="banner-area">
-                                <a href="" class="link-banner ga-data-layer">
-                                    <img
-                                        src="/static/images/corporation/body_banner.png"
-                                        alt="내 직무로 이 기업에 이직하고 싶다면?? 직무 리포트에서 확인하기"
-                                    />
-                                </a>
-                            </div>
+                            <!-- 계열사 목록 -->
+                            <section
+                                class="section"
+                                id="groupAffiliateContainer"
+                                data-nice_fl="y"
+                                data-group_cd="1D5"
+                                data-external_group_nm="쿠팡"
+                                data-group_logo_src="company/group_logo/2019/05/prujok_f4vo-2rxid0_logocoupangw350.png"
+                                data-credit_report="I95823"
+                            >
+                                <h2 class="section_tit">
+                                    우리 회사의 자랑, 계열사를 소개합니다
+                                </h2>
+                                <div class="section_content">
+                                    <div class="affiliate_counting">
+                                        <strong class="count_tit">쿠팡</strong>
+                                        <span class="count_num">14</span>
+                                    </div>
+                                    <div class="content_fold">
+                                        <ul class="list_affiliate">
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    쿠팡(주)
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    쿠팡로지스틱스서비스(유)
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    씨피엘비(주)
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    쿠팡페이(주)
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    쿠팡이츠서비스(유)
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    (주)떠나요
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    (주)보더리스필름
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    쿠팡풀필먼트서비스(유)
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    씨피엔터테인먼트(주)
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    이지스부동산일반사모투자회사제543호
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    지피아이에스(주)
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    쿠팡파이낸셜(주)
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    (주)엠티브이파트너스
+                                                </a>
+                                            </li>
+                                            <li class="affiliate_item">
+                                                <a
+                                                    href=""
+                                                    class="link_affiliate ga_data_layer"
+                                                    target="_blank"
+                                                >
+                                                    쿠팡대전풀필먼트제일차(주)
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="box_btn gradient">
+                                            <button
+                                                type="button"
+                                                class="BtnType BtnTypeRd SizeM BlueInvert btn_fold"
+                                            >
+                                                <span class="txt"
+                                                    >펼쳐보기</span
+                                                >
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <cite class="citation">
+                                    <a
+                                        href=""
+                                        target="_blank"
+                                        title="새 창 열림"
+                                        class="link ga_data_layer"
+                                    >
+                                        출처 : NICE평가정보
+                                    </a>
+                                </cite>
+                            </section>
+                            <!-- 복리후생 -->
+                            <section class="section">
+                                <div class="section_header">
+                                    <h2 class="section_tit">
+                                        우리는 직원의 복리후생도 중요해요
+                                    </h2>
+                                </div>
+
+                                <div class="section_content">
+                                    <div class="content_fold active">
+                                        <ul class="list_welfare">
+                                            <li class="welfare_item">
+                                                <h3 class="welfare_tit">
+                                                    <svg class="ico">
+                                                        <use
+                                                            xlink:href="#ico_benefit_papermoney"
+                                                        ></use>
+                                                    </svg>
+                                                    지원금/보험
+                                                </h3>
+                                                <ul class="list_welfare_cate">
+                                                    <li class="cate_item">
+                                                        건강검진
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        직원대출제도
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        각종 경조사 지원
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        단체 상해보험
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="welfare_item">
+                                                <h3 class="welfare_tit">
+                                                    <svg class="ico">
+                                                        <use
+                                                            xlink:href="#ico_benefit_pay"
+                                                        ></use>
+                                                    </svg>
+                                                    급여제도
+                                                </h3>
+                                                <ul class="list_welfare_cate">
+                                                    <li class="cate_item">
+                                                        퇴직금
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        4대 보험
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="welfare_item">
+                                                <h3 class="welfare_tit">
+                                                    <svg class="ico">
+                                                        <use
+                                                            xlink:href="#ico_benefit_book"
+                                                        ></use>
+                                                    </svg>
+                                                    교육/생활
+                                                </h3>
+                                                <ul class="list_welfare_cate">
+                                                    <li class="cate_item">
+                                                        구내식당(사원식당)
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        저녁식사 제공
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        사내동호회 운영
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        아침식사 제공
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        음료제공(차, 커피)
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="welfare_item">
+                                                <h3 class="welfare_tit">
+                                                    <svg class="ico">
+                                                        <use
+                                                            xlink:href="#ico_benefit_bag"
+                                                        ></use>
+                                                    </svg>
+                                                    근무 환경
+                                                </h3>
+                                                <ul class="list_welfare_cate">
+                                                    <li class="cate_item">
+                                                        회의실
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        공기청정기
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        카페테리아
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        비상경보장치
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        노트북
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        사원증
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        사무용품 지급
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        최고 성능 컴퓨터
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        스탠딩 책상
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="welfare_item">
+                                                <h3 class="welfare_tit">
+                                                    <svg class="ico">
+                                                        <use
+                                                            xlink:href="#ico_benefit_person"
+                                                        ></use>
+                                                    </svg>
+                                                    조직문화
+                                                </h3>
+                                                <ul class="list_welfare_cate">
+                                                    <li class="cate_item">
+                                                        수평적 조직문화
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        회식강요 안함
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        야근강요 안함
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        자유복장
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        님/닉네임 문화
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        문화 회식
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="welfare_item">
+                                                <h3 class="welfare_tit">
+                                                    <svg class="ico">
+                                                        <use
+                                                            xlink:href="#ico_benefit_car"
+                                                        ></use>
+                                                    </svg>
+                                                    출퇴근
+                                                </h3>
+                                                <ul class="list_welfare_cate">
+                                                    <li class="cate_item">
+                                                        야간교통비지급
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        주차장제공
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        회사차량 있음
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        탄력근무제
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        재택근무
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        주 52시간제 준수
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="welfare_item">
+                                                <h3 class="welfare_tit">
+                                                    <svg class="ico">
+                                                        <use
+                                                            xlink:href="#ico_benefit_refresh"
+                                                        ></use>
+                                                    </svg>
+                                                    리프레시
+                                                </h3>
+                                                <ul class="list_welfare_cate">
+                                                    <li class="cate_item">
+                                                        연차
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        경조휴가제
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        반차
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        근로자의 날 휴무
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        육아휴직
+                                                    </li>
+                                                    <li class="cate_item">
+                                                        휴양시설 제공
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="box_btn gradient">
+                                            <button
+                                                type="button"
+                                                class="BtnType BtnTypeRd SizeM BlueInvert btn_fold"
+                                            >
+                                                <span class="txt"
+                                                    >펼쳐보기</span
+                                                >
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
                             <!-- 사업부문 및 직원구성 -->
                             <section class="section">
-                                <h2 class="section-tit">
+                                <h2 class="section_tit">
                                     인원 규모를 파악해 보세요!
                                 </h2>
-                                <div class="section-content">
-                                    <div class="worker-info">
+                                <div class="section_content">
+                                    <div class="worker_info">
                                         <div class="col">
                                             <span class="tit">전체 사원수</span>
                                             <span class="value">
@@ -1147,18 +2234,18 @@
                                 class="section"
                                 id="companyReviewContainer"
                             >
-                                <h2 class="section-tit">
+                                <h2 class="section_tit">
                                     직접 다녀본 사람들이 전해주는 이 회사의
                                     매력!
                                 </h2>
-                                <div class="section-content">
-                                    <div class="box-company-review">
-                                        <ul class="list-company-review">
-                                            <li class="company-review-item">
-                                                <div class="box-gauge">
-                                                    <div class="gauge-bar">
+                                <div class="section_content">
+                                    <div class="box_company_review">
+                                        <ul class="list_company_review">
+                                            <li class="company_review_item">
+                                                <div class="box_gauge">
+                                                    <div class="gauge_bar">
                                                         <strong
-                                                            class="gauge-tit"
+                                                            class="gauge_tit"
                                                             >프리한 복장
                                                             가능</strong
                                                         >
@@ -1167,17 +2254,17 @@
                                                             style="width: 93%"
                                                         ></div>
                                                         <strong
-                                                            class="gauge-percent"
+                                                            class="gauge_percent"
                                                             >93%</strong
                                                         >
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="company-review-item">
-                                                <div class="box-gauge">
-                                                    <div class="gauge-bar">
+                                            <li class="company_review_item">
+                                                <div class="box_gauge">
+                                                    <div class="gauge_bar">
                                                         <strong
-                                                            class="gauge-tit"
+                                                            class="gauge_tit"
                                                             >자유로운
                                                             연차</strong
                                                         >
@@ -1186,17 +2273,17 @@
                                                             style="width: 76%"
                                                         ></div>
                                                         <strong
-                                                            class="gauge-percent"
+                                                            class="gauge_percent"
                                                             >76%</strong
                                                         >
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="company-review-item">
-                                                <div class="box-gauge">
-                                                    <div class="gauge-bar">
+                                            <li class="company_review_item">
+                                                <div class="box_gauge">
+                                                    <div class="gauge_bar">
                                                         <strong
-                                                            class="gauge-tit"
+                                                            class="gauge_tit"
                                                             >커리어 발전
                                                             기회</strong
                                                         >
@@ -1205,17 +2292,17 @@
                                                             style="width: 53%"
                                                         ></div>
                                                         <strong
-                                                            class="gauge-percent"
+                                                            class="gauge_percent"
                                                             >53%</strong
                                                         >
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="company-review-item">
-                                                <div class="box-gauge">
-                                                    <div class="gauge-bar">
+                                            <li class="company_review_item">
+                                                <div class="box_gauge">
+                                                    <div class="gauge_bar">
                                                         <strong
-                                                            class="gauge-tit"
+                                                            class="gauge_tit"
                                                             >야근없는
                                                             기업</strong
                                                         >
@@ -1224,7 +2311,7 @@
                                                             style="width: 46%"
                                                         ></div>
                                                         <strong
-                                                            class="gauge-percent"
+                                                            class="gauge_percent"
                                                             >46%</strong
                                                         >
                                                     </div>
@@ -1232,8 +2319,8 @@
                                             </li>
                                         </ul>
 
-                                        <div class="slide-company-review">
-                                            <div class="slider-controls">
+                                        <div class="slide_company_review">
+                                            <div class="slider_controls">
                                                 <button
                                                     type="button"
                                                     class="bx-next"
@@ -1267,7 +2354,7 @@
                                                 >
                                                     <ul
                                                         id="companyReviewSlider"
-                                                        class="review-card-list"
+                                                        class="review_card_list"
                                                         style="
                                                             width: 4215%;
                                                             position: relative;
@@ -1280,7 +2367,7 @@
                                                         "
                                                     >
                                                         <li
-                                                            class="review-item"
+                                                            class="review_item"
                                                             aria-hidden="true"
                                                             style="
                                                                 float: left;
@@ -1291,14 +2378,14 @@
                                                             "
                                                         >
                                                             <div
-                                                                class="review-card"
+                                                                class="review_card"
                                                             >
                                                                 <strong
-                                                                    class="review-worker retired"
+                                                                    class="review_worker retired"
                                                                     >전직원</strong
                                                                 >
                                                                 <p
-                                                                    class="review-txt"
+                                                                    class="review_txt"
                                                                 >
                                                                     자유롭게 일
                                                                     할 수 있는
@@ -1306,14 +2393,14 @@
                                                                     좋습니다
                                                                 </p>
                                                                 <span
-                                                                    class="review-date"
+                                                                    class="review_date"
                                                                     >2024.10.01
                                                                     작성</span
                                                                 >
                                                             </div>
                                                         </li>
                                                         <li
-                                                            class="review-item"
+                                                            class="review_item"
                                                             aria-hidden="false"
                                                             style="
                                                                 float: left;
@@ -1324,27 +2411,27 @@
                                                             "
                                                         >
                                                             <div
-                                                                class="review-card"
+                                                                class="review_card"
                                                             >
                                                                 <strong
-                                                                    class="review-worker retired"
+                                                                    class="review_worker retired"
                                                                     >전직원</strong
                                                                 >
                                                                 <p
-                                                                    class="review-txt"
+                                                                    class="review_txt"
                                                                 >
                                                                     성과제
                                                                     수평조직제
                                                                 </p>
                                                                 <span
-                                                                    class="review-date"
+                                                                    class="review_date"
                                                                     >2024.09.29
                                                                     작성</span
                                                                 >
                                                             </div>
                                                         </li>
                                                         <li
-                                                            class="review-item"
+                                                            class="review_item"
                                                             aria-hidden="false"
                                                             style="
                                                                 float: left;
@@ -1355,28 +2442,28 @@
                                                             "
                                                         >
                                                             <div
-                                                                class="review-card"
+                                                                class="review_card"
                                                             >
                                                                 <strong
-                                                                    class="review-worker retired"
+                                                                    class="review_worker retired"
                                                                     >전직원</strong
                                                                 >
                                                                 <p
-                                                                    class="review-txt"
+                                                                    class="review_txt"
                                                                 >
                                                                     연차
                                                                     자유롭게
                                                                     사용가능
                                                                 </p>
                                                                 <span
-                                                                    class="review-date"
+                                                                    class="review_date"
                                                                     >2024.08.21
                                                                     작성</span
                                                                 >
                                                             </div>
                                                         </li>
                                                         <li
-                                                            class="review-item"
+                                                            class="review_item"
                                                             aria-hidden="true"
                                                             style="
                                                                 float: left;
@@ -1387,24 +2474,25 @@
                                                             "
                                                         >
                                                             <div
-                                                                class="landing-review-card"
+                                                                class="landing_review_card"
                                                             >
                                                                 <a
-                                                                    href=""
-                                                                    class="link-box ga-data-layer"
+                                                                    href="/zf_user/jobs/theme/it-headhunting"
+                                                                    class="link_box ga_data_layer"
                                                                     target="_blank"
+                                                                    data-ga_data_layer="ga_lead|company_view|com_intro|road_map_btn"
                                                                 >
                                                                     <strong
-                                                                        class="review-tit"
+                                                                        class="review_tit"
                                                                         >취업하고,<br />축하금
                                                                         50만원까지<br />동시에
                                                                         받아가세요!</strong
                                                                     >
                                                                     <div
-                                                                        class="looks-button"
+                                                                        class="looks_button"
                                                                     >
                                                                         <span
-                                                                            class="looks-button-txt"
+                                                                            class="looks_button_txt"
                                                                             >취업축하금
                                                                             공고보기</span
                                                                         >
@@ -1421,7 +2509,7 @@
                                 </div>
                                 <a
                                     href=""
-                                    class="BtnType SizeS link-content-more ga-data-layer"
+                                    class="BtnType SizeS link_content_more ga_data_layer"
                                     target="_blank"
                                     title="새 창 열림"
                                 >
@@ -1429,61 +2517,62 @@
                                 </a>
                             </section>
                             <section
-                                class="section section-type2"
+                                class="section section_type2"
                                 id="interviewReviewContainer"
                             >
-                                <h2 class="section-tit">
+                                <h2 class="section_tit">
                                     면접 전 선배님들의 꿀팁 대방출!
                                 </h2>
-                                <div class="section-content">
-                                    <div class="interview-review">
-                                        <div class="interview-card">
+                                <div class="section_content">
+                                    <div class="interview_review">
+                                        <div class="interview_card">
                                             <a
-                                                href=""
+                                                href="/zf_user/interview-review/detail?idx=43645"
                                                 target="_blank"
-                                                class="link-interview-review ga-data-layer"
+                                                class="link_interview_review ga_data_layer"
+                                                data-ga_data_layer="ga_lead|company_view|com_intro|interview_view"
                                             >
-                                                <div class="interview-header">
-                                                    <div class="box-tit">
+                                                <div class="interview_header">
+                                                    <div class="box_tit">
                                                         <strong
                                                             >광고마케팅</strong
                                                         >
                                                         <span
-                                                            class="badge badge-pass"
+                                                            class="badge badge_pass"
                                                             >합격</span
                                                         >
                                                     </div>
-                                                    <div class="box-info">
-                                                        <span class="info-item"
+                                                    <div class="box_info">
+                                                        <span class="info_item"
                                                             >2024년 상반기</span
                                                         >
-                                                        <span class="info-item"
+                                                        <span class="info_item"
                                                             >신입</span
                                                         >
                                                     </div>
                                                 </div>
-                                                <div class="interview-cont">
-                                                    <div class="box-level">
-                                                        <span class="level-tit"
+                                                <div class="interview_cont">
+                                                    <div class="box_level">
+                                                        <span class="level_tit"
                                                             >면접 난이도</span
                                                         >
-                                                        <div class="level-bar">
+                                                        <div class="level_bar">
                                                             <div
-                                                                class="level-progress"
+                                                                class="level_progress"
                                                                 style="
                                                                     width: 66.6666%;
                                                                 "
                                                             ></div>
                                                         </div>
-                                                        <span class="level-txt"
+                                                        <span class="level_txt"
                                                             >보통</span
                                                         >
                                                     </div>
                                                     <div
-                                                        class="box-interview-reivew"
+                                                        class="box_interview_reivew"
                                                     >
                                                         <p
-                                                            class="interview-reivew-txt"
+                                                            class="interview_reivew_txt"
                                                         >
                                                             다대다였고 기본적인
                                                             나올 법한 자소서
@@ -1497,53 +2586,54 @@
                                                 </div>
                                             </a>
                                         </div>
-                                        <div class="interview-card">
+                                        <div class="interview_card">
                                             <a
-                                                href=""
+                                                href="/zf_user/interview-review/detail?idx=43292"
                                                 target="_blank"
-                                                class="link-interview-review ga-data-layer"
+                                                class="link_interview_review ga_data_layer"
+                                                data-ga_data_layer="ga_lead|company_view|com_intro|interview_view"
                                             >
-                                                <div class="interview-header">
-                                                    <div class="box-tit">
+                                                <div class="interview_header">
+                                                    <div class="box_tit">
                                                         <strong
                                                             >AE(광고기획자)</strong
                                                         >
                                                         <span
-                                                            class="badge badge-pass"
+                                                            class="badge badge_pass"
                                                             >합격</span
                                                         >
                                                     </div>
-                                                    <div class="box-info">
-                                                        <span class="info-item"
+                                                    <div class="box_info">
+                                                        <span class="info_item"
                                                             >2024년 하반기</span
                                                         >
-                                                        <span class="info-item"
+                                                        <span class="info_item"
                                                             >1-3년차</span
                                                         >
                                                     </div>
                                                 </div>
-                                                <div class="interview-cont">
-                                                    <div class="box-level">
-                                                        <span class="level-tit"
+                                                <div class="interview_cont">
+                                                    <div class="box_level">
+                                                        <span class="level_tit"
                                                             >면접 난이도</span
                                                         >
-                                                        <div class="level-bar">
+                                                        <div class="level_bar">
                                                             <div
-                                                                class="level-progress"
+                                                                class="level_progress"
                                                                 style="
                                                                     width: 66.6666%;
                                                                 "
                                                             ></div>
                                                         </div>
-                                                        <span class="level-txt"
+                                                        <span class="level_txt"
                                                             >보통</span
                                                         >
                                                     </div>
                                                     <div
-                                                        class="box-interview-reivew"
+                                                        class="box_interview_reivew"
                                                     >
                                                         <p
-                                                            class="interview-reivew-txt"
+                                                            class="interview_reivew_txt"
                                                         >
                                                             기존 경력에 성과를
                                                             토대로 숫자로
@@ -1562,15 +2652,16 @@
                                     </div>
                                 </div>
                                 <a
-                                    href=""
-                                    class="BtnType SizeS link-content-more ga-data-layer"
+                                    href="/zf_user/interview-review?csn=RzBaRnNqKzJuWVdVeHNDLzlFVjcrQT09"
+                                    class="BtnType SizeS link_content_more ga_data_layer"
+                                    data-ga_data_layer="ga_lead|company_view|com_intro|interview_more"
                                     target="_blank"
                                     title="새 창 열림"
                                     >면접후기 바로가기</a
                                 >
                             </section>
                             <!-- 알림 -->
-                            <div class="footer-company-info">
+                            <div class="footer_company_info">
                                 <p>
                                     본 기업정보는 다양한 정보제공자로부터 제공된
                                     자료를 기반으로 반영되며, 실시간 업데이트가
@@ -1582,15 +2673,14 @@
                                     수정시) <br />*기업정보는 사업자등록번호
                                     기준으로 동일하게 관리 됩니다.
                                 </p>
-                                <div class="box-edit">
-                                    <!-- 닫기 -->
-                                    <p class="edit-txt">
+                                <div class="box_edit">
+                                    <p class="edit_txt">
                                         <svg
                                             width="24"
                                             height="24"
                                             viewBox="0 0 24 24"
                                             fill="none"
-                                            class="icon-edit"
+                                            class="icon_edit"
                                         >
                                             <path
                                                 fill-rule="evenodd"
@@ -1635,7 +2725,8 @@
                                     </p>
                                     <button
                                         type="button"
-                                        class="BtnType SizeM GrayInvert btn-edit ga-data-layer"
+                                        class="BtnType SizeM GrayInvert btn_edit ga_data_layer"
+                                        data-ga_data_layer="ga_lead|company_view|com_intro|com_edit"
                                     >
                                         기업정보 수정이 필요해요
                                     </button>
@@ -1647,11 +2738,11 @@
             </div>
         </div>
         <!-- 닫기 -->
-        <!-- company-info-svg -->
-        <div class="company-info-svg" style="display: none">
+        <!-- company_info_svg -->
+        <div class="company_info_svg" style="display: none">
             <svg xmlns="http://www.w3.org/2000/svg">
                 <!-- 인재풀에서 공통 사용하는 SVG 아이콘으로 9월 오픈 예정으로 svg 경로 확정 시 변경 예정 -->
-                <symbol id="search-tag-svg-scale" viewBox="0 0 16 16">
+                <symbol id="search_tag_svg_scale" viewBox="0 0 16 16">
                     <g clip-path="url(#clip0_136_7455)">
                         <path
                             d="M15.1109 5.77778C15.1109 6.01353 15.0172 6.23962 14.8505 6.40632C14.6838 6.57302 14.4578 6.66667 14.222 6.66667H11.5553C11.3196 6.66667 11.0935 6.57302 10.9268 6.40632C10.7601 6.23962 10.6664 6.01353 10.6664 5.77778V4.88889C10.6664 4.65314 10.7601 4.42705 10.9268 4.26035C11.0935 4.09365 11.3196 4 11.5553 4H14.222C14.4578 4 14.6838 4.09365 14.8505 4.26035C15.0172 4.42705 15.1109 4.65314 15.1109 4.88889V5.77778ZM5.33312 5.77778C5.33312 6.01353 5.23947 6.23962 5.07277 6.40632C4.90607 6.57302 4.67998 6.66667 4.44423 6.66667H1.77756C1.54181 6.66667 1.31572 6.57302 1.14902 6.40632C0.982322 6.23962 0.888672 6.01353 0.888672 5.77778V4.88889C0.888672 4.65314 0.982322 4.42705 1.14902 4.26035C1.31572 4.09365 1.54181 4 1.77756 4H4.44423C4.67998 4 4.90607 4.09365 5.07277 4.26035C5.23947 4.42705 5.33312 4.65314 5.33312 4.88889V5.77778Z"
@@ -2582,20 +3673,6 @@
                     <path
                         d="M3.777 15.667h.778v1.166h-.778v-1.166Zm1.556 0h.778v1.166h-.778v-1.166Zm1.555 0h.778v1.166h-.778v-1.166Zm1.945 0h.778v1.166h-.778v-1.166Zm1.556 0h.777v1.166h-.777v-1.166Zm1.944 0h.778v1.166h-.778v-1.166Zm1.556 0h.777v1.166h-.777v-1.166Zm1.555 0h.778v1.166h-.778v-1.166Z"
                         fill="#66757F"
-                    ></path>
-                </symbol>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-                <symbol id="icon_login_naver" viewBox="0 0 20 20" fill="none">
-                    <path
-                        d="M13.5615 10.704L6.14588 0H0V20H6.43845V9.296L13.8541 20H20V0H13.5615V10.704Z"
-                        fill="white"
-                    ></path>
-                </symbol>
-                <symbol id="icon_login_kakao" viewBox="0 0 24 22" fill="none">
-                    <path
-                        d="M12 -0.00012207C5.37092 -0.00012207 0 4.23616 0 9.46609C0 12.868 2.27684 15.8528 5.69401 17.5215C5.44314 18.4545 4.78556 20.9082 4.65252 21.4316C4.48907 22.0839 4.89199 22.0725 5.15426 21.8981C5.35952 21.7616 8.44219 19.6681 9.77257 18.7654C10.4948 18.8716 11.2398 18.9285 12 18.9285C18.6291 18.9285 24 14.6922 24 9.4623C24 4.23237 18.6291 -0.00012207 12 -0.00012207Z"
-                        fill="#181600"
                     ></path>
                 </symbol>
             </svg>
