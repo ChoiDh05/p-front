@@ -1,8 +1,8 @@
-#sri_section.layout_full {
+#position-section.layout-full {
     margin: 0;
     width: 100%;
 }
-#sri_section {
+#position-section {
     display: table;
     overflow: hidden;
     position: relative;
@@ -11,12 +11,12 @@
     height: 100%;
     box-sizing: border-box;
 }
-#sri_wrap {
+#position-wrap {
     display: table-row;
     width: 100%;
     height: 100%;
 }
-#sri_section.layout_full #content {
+#position-section.layout-full #content {
     margin: 0;
     width: 100%;
     background: rgb(244, 246, 250);
@@ -34,17 +34,17 @@
     margin: 56px auto 80px auto;
     width: 960px;
 }
-.wrap_company_view {
+.wrap-company-view {
     margin: 0 auto;
     width: 1260px;
     box-sizing: border-box;
 }
-.wrap_company_view.fixed .sidebar {
+.wrap-company-view.fixed .sidebar {
     position: fixed;
     top: 72px;
     transition: top 0.2s;
 }
-.wrap_company_view .sidebar {
+.wrap-company-view .sidebar {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -55,14 +55,14 @@
     max-height: 864px;
     box-sizing: border-box;
 }
-.wrap_company_view .scroller {
+.wrap-company-view .scroller {
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
     height: 100%;
     scrollbar-width: none;
 }
-.sidebar .company_info .box_logo {
+.sidebar .company-info .box-logo {
     display: flex;
     margin-top: 48px;
     width: 210px;
@@ -74,17 +74,17 @@
     align-items: center;
     justify-content: center;
 }
-.sidebar .company_info .box_logo img,
-.sidebar .company_info .box_logo .icon_no_company_logo {
+.sidebar .company-info .box-logo img,
+.sidebar .company-info .box-logo .icon-no-company-logo {
     max-width: 143px;
     height: auto;
     max-height: 54px;
 }
-.sidebar .company_info .box_title {
+.sidebar .company-info .box-title {
     position: relative;
     margin-top: 18px;
 }
-.sidebar .company_info .box_title .tit_company {
+.sidebar .company-info .box-title .tit-company {
     display: -webkit-box;
     overflow: hidden;
     color: var(--gray120);
@@ -96,7 +96,7 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-.sidebar .company_info .box_title .txt_info {
+.sidebar .company-info .box-title .txt-info {
     position: relative;
     margin-left: 8px;
     padding-left: 9px;
@@ -105,7 +105,7 @@
     font-weight: normal;
     line-height: 22px;
 }
-.sidebar .company_info .box_title .txt_info:before {
+.sidebar .company-info .box-title .txt-info:before {
     display: block;
     position: absolute;
     top: 2px;
@@ -115,7 +115,7 @@
     background: var(--gray40);
     content: "";
 }
-.sidebar .company_info .box_title .txt_job {
+.sidebar .company-info .box-title .txt-job {
     overflow: hidden;
     margin-top: 8px;
     color: var(--gray100);
@@ -124,12 +124,12 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.sidebar .company_info .box_btns {
+.sidebar .company-info .box-btns {
     display: flex;
     position: relative;
     margin-top: 16px;
 }
-.sidebar .company_info .box_btns .interested_corp {
+.sidebar .company-info .box-btns .interested-corp {
     display: flex;
     margin-right: 8px;
     padding: 0 12px;
@@ -144,23 +144,23 @@
     justify-content: center;
     align-items: center;
 }
-.sidebar .company_info .box_btns .interested_corp .icon_interested {
+.sidebar .company-info .box-btns .interested-corp .icon-interested {
     margin-right: 4px;
 }
 /* 관심기업 하트 */
-button.interested_on {
+button.interested-on {
     background-position: -20px 1px;
 }
 .sidebar
-    .company_info
-    .box_btns
-    .interested_corp.interested_on
-    .icon_interested
+    .company-info
+    .box-btns
+    .interested-corp.interested-on
+    .icon-interested
     path {
     fill: #ff6f6c;
     stroke: #f75855;
 }
-button.interested_corp {
+button.interested-corp {
     display: block;
     width: 16px;
     height: 16px;
@@ -169,9 +169,9 @@ button.interested_corp {
     background: url(/static/images/corporation/sp_interested_corp.png) 0 1px
         no-repeat;
     cursor: pointer;
-    _overflow: hidden;
+    overflow: hidden;
 }
-.sidebar .company_info .box_btns .btn_share {
+.sidebar .company-info .box-btns .btn-share {
     display: flex;
     position: relative;
     width: 40px;
@@ -182,20 +182,18 @@ button.interested_corp {
     justify-content: center;
     align-items: center;
 }
-
-.sidebar .company_info .layer_share {
+.sidebar .company-info .layer-share {
     display: none;
     position: absolute;
     top: 48px;
     right: 0;
     z-index: 10;
 }
-/* 공유하기 누르면 show됨 */
-.sidebar .company_info .layer_share.show {
+.sidebar .company-info .layer-share.show {
     display: block;
 }
 
-.sidebar .company_info .layer_share .cont_share {
+.sidebar .company-info .layer-share .cont-share {
     position: relative;
     padding: 28px 24px 24px;
     width: 188px;
@@ -206,14 +204,14 @@ button.interested_corp {
     background: var(--white);
     box-shadow: 2px 6px 16px 0 rgba(0, 0, 0, 0.08);
 }
-.sidebar .company_info .layer_share .list_sns {
+.sidebar .company-info .layer-share .list-sns {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.sidebar .company_info .layer_share .list_sns .btn_facebook,
-.sidebar .company_info .layer_share .list_sns .btn_twitter,
-.sidebar .company_info .layer_share .list_sns .btn_url {
+.sidebar .company-info .layer-share .list-sns .btn-facebook,
+.sidebar .company-info .layer-share .list-sns .btn-twitter,
+.sidebar .company-info .layer-share .list-sns .btn-url {
     display: flex;
     width: 40px;
     height: 40px;
@@ -222,35 +220,111 @@ button.interested_corp {
     align-items: center;
     justify-content: center;
 }
-.sidebar .company_info .layer_share .btn_close {
+.sidebar .company-info .layer-share .btn-close {
     position: absolute;
     top: 12px;
     right: 12px;
 }
-.sidebar .company_navi {
+.sidebar .company-navi {
     margin-top: 28px;
 }
-.sidebar .company_navi .menu_list {
+.sidebar .company-navi .menu-list {
     display: flex;
     flex-direction: column;
     gap: 10px 0;
 }
-.sidebar .company_info .layer_share .btn_close:after {
+/* 썸네일 */
+.wrap-photo {
+    margin-top: 14px;
+    padding-bottom: 40px;
+}
+.wrap-photo .list-thumb {
+    display: flex;
+}
+.wrap-photo .list-thumb li:nth-child(1),
+.cont-introduce .wrap-photo .list-thumb li:nth-child(2),
+.cont-introduce .wrap-photo .list-thumb li:nth-child(3) {
     display: block;
-    width: 16px;
-    height: 16px;
-    background: url(/static/images/corporation/share-close-logo.svg) no-repeat;
-    content: "";
+}
+.wrap-photo .list-thumb li {
+    display: none;
+    position: relative;
+    width: 306px;
+    height: 220px;
+}
+.wrap-photo .list-thumb li .thumb-inner {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: #000;
+}
+.wrap-photo .list-thumb li .cover {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.56);
+    align-items: center;
+    justify-content: center;
+}
+.wrap-photo .list-thumb li .frame {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.cont-introduce .wrap-photo .list-thumb li .frame img.ready {
+    display: block;
+}
+.cont-introduce .wrap-photo .list-thumb li .frame img {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.cont-introduce .wrap-photo .list-thumb li .btn-open-company-photo {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+.cont-introduce .wrap-photo .list-thumb li + li {
+    margin-left: 20px;
+}
+.cont-introduce .wrap-photo .list-thumb li.indicator .cover {
+    display: flex;
+    font-size: 20px;
+    line-height: 28px;
 }
 /* li가 selected되면 */
-.sidebar .company_navi .menu_list .menu_item.selected .btn_menu {
+.sidebar .company-navi .menu-list .menu-item.selected .btn-menu {
     font-weight: bold;
     background: var(--gray30);
 }
-.sidebar .company_navi .menu_list .menu_item .btn_menu:hover {
+.sidebar .company-navi .menu-list .menu-item .btn-menu:hover {
     background: var(--gray30);
 }
-.sidebar .company_navi .menu_list .btn_menu {
+.sidebar .company-navi .menu-list .btn-menu {
     display: flex;
     position: relative;
     padding: 0 20px;
@@ -264,15 +338,15 @@ button.interested_corp {
     background: var(--gray20);
     align-items: center;
 }
-.sidebar .company_navi .menu_list .btn_menu .ico {
+.sidebar .company-navi .menu-list .btn-menu .ico {
     margin-right: 8px;
     width: 24px;
     height: 24px;
 }
-.sidebar .company_navi .menu_list .menu_item:last-of-type {
+.sidebar .company-navi .menu-list .menu-item:last-of-type {
     margin-bottom: 0;
 }
-.wrap_company_view .main_content {
+.wrap-company-view .main-content {
     position: relative;
     margin-left: 260px;
     padding: 48px 0 110px 40px;
@@ -281,19 +355,19 @@ button.interested_corp {
     box-sizing: border-box;
     background-color: var(--white);
 }
-.wrap_company_view .main_content .first_section {
+.wrap-company-view .main-content .first-section {
     padding-top: 0;
 }
-.wrap_company_view .main_content .section {
+.wrap-company-view .main-content .section {
     position: relative;
     box-sizing: border-box;
 }
-.cont_introduce .section {
+.cont-introduce .section {
     margin-bottom: 48px;
     padding-bottom: 48px;
     border-bottom: 1px solid var(--gray30);
 }
-.sidebar .company_navi .menu_list .btn_menu .badge {
+.sidebar .company-navi .menu-list .btn-menu .badge {
     display: inline-flex;
     margin-left: 8px;
     padding: 0 6px;
@@ -305,16 +379,19 @@ button.interested_corp {
     background: var(--blue90);
     align-items: center;
 }
-.sidebar .company_navi .menu_list .btn_menu .badge_new {
+.sidebar .company-navi .menu-list .btn-menu .badge-new {
     background: var(--green90);
 }
-.wrap_company_view .cont_introduce .first_section .section_content {
+.wrap-company-view .cont-introduce .first-section .section-content {
     margin-top: 0;
 }
-.wrap_company_view .main_content .section .section_content {
+.first-section .section-header {
+    margin: 44px 0 0;
+}
+.wrap-company-view .main-content .section .section-content {
     margin-top: 20px;
 }
-.cont_introduce .favor_company {
+.cont-introduce .favor-company {
     margin-bottom: 8px;
     padding: 24px;
     border: 1px solid var(--gray30);
@@ -322,30 +399,30 @@ button.interested_corp {
     box-sizing: border-box;
     background: var(--gray20);
 }
-.cont_introduce .favor_company .favor_company_header {
+.cont-introduce .favor-company .favor-company-header {
     display: flex;
     align-items: center;
 }
-.cont_introduce .favor_company .favor_company_header .title {
+.cont-introduce .favor-company .favor-company-header .title {
     color: var(--gray120);
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
 }
-.cont_introduce .favor_company .favor_company_header .tooltip_favor_company {
+.cont-introduce .favor-company .favor-company-header .tooltip-favor-company {
     margin-left: 4px;
 }
-.cont_introduce
-    .area_company_infos
-    .company_summary
-    .company_summary_item
+.cont-introduce
+    .area-company-infos
+    .company-summary
+    .company-summary-item
     .TipBox {
     z-index: 10;
 }
 .TipBox {
     position: relative;
 }
-.cont_introduce .section .citation .direct_cp_input button {
+.cont-introduce .section .citation .direct-cp-input button {
     display: flex;
     align-items: center;
     color: var(--gray80);
@@ -360,7 +437,7 @@ button.interested_corp {
     display: block;
     z-index: 1;
 }
-.TipCont.BottomRight .Tail:has(> svg.icon_tail) {
+.TipCont.BottomRight .Tail:has(> svg.icon-tail) {
     background: none;
     transform: rotate(180deg) scaleX(-1);
 }
@@ -380,59 +457,59 @@ button.interested_corp {
     background: url(/static/images/corporation/TipCont.TopRight_Tail.svg) 0 0
         no-repeat;
 }
-.cont_introduce
+.cont-introduce
     .section
     .citation
-    .direct_cp_input.TipBox
+    .direct-cp-input.TipBox
     .TipCont.BottomRight {
     right: 0;
 }
-.cont_introduce .section .citation .link {
+.cont-introduce .section .citation .link {
     color: var(--gray80);
 }
-.cont_introduce
-    .favor_company
-    .favor_company_header
-    .tooltip_favor_company
-    .btn_infomation {
+.cont-introduce
+    .favor-company
+    .favor-company-header
+    .tooltip-favor-company
+    .btn-infomation {
     display: flex;
     width: 16px;
     height: 16px;
     background-image: url(/static/images/corporation/btn_infomation.svg);
 }
-.cont_introduce
-    .favor_company
-    .favor_company_header
-    .tooltip_favor_company
+.cont-introduce
+    .favor-company
+    .favor-company-header
+    .tooltip-favor-company
     .TipTxt {
     color: var(--gray80);
 }
-.cont_introduce
-    .area_company_infos
-    .company_summary
-    .company_summary_item
-    .btn_open_tooltip {
+.cont-introduce
+    .area-company-infos
+    .company-summary
+    .company-summary-item
+    .btn-open-tooltip {
     display: inline-flex;
     align-items: baseline;
     gap: 0 4px;
 }
-.cont_introduce
-    .area_company_infos
-    .company_summary
-    .company_summary_item
-    .box_align {
+.cont-introduce
+    .area-company-infos
+    .company-summary
+    .company-summary-item
+    .box-align {
     display: flex;
     align-items: baseline;
     gap: 4px;
 }
-.cont_introduce
-    .favor_company
-    .favor_company_header
-    .tooltip_favor_company
+.cont-introduce
+    .favor-company
+    .favor-company-header
+    .tooltip-favor-company
     .TipTxt {
     color: var(--gray80);
 }
-.cont_introduce .section .citation .direct_cp_input button svg {
+.cont-introduce .section .citation .direct-cp-input button svg {
     margin-left: 4px;
 }
 .TipBox .TipCont.TopCenter {
@@ -456,7 +533,7 @@ button.interested_corp {
     background: var(--white);
     box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.08);
 }
-.TipCont.TopCenter .Tail:has(> svg.icon_tail) {
+.TipCont.TopCenter .Tail:has(> svg.icon-tail) {
     background: none;
 }
 .TipCont.TopCenter .Tail,
@@ -479,24 +556,24 @@ button.interested_corp {
     background: url("data:image/svg + xml,%0A%3Csvgwidth='32'height='32'viewBox='0 0 32 32'fill='none'xmlns='http://www.w3.org/2000/svg'%3E%3Cpathd='M8.5 19L16 9L23.5 19H8.5Z'fill='white'/%3E%3Cpathd='M16 8L23.5 18H32V19H23L16 9.66667L9 19H0V18H8.5L16 8Z'fill='%238491A7'/%3E%3C/svg%3E%0A")
         50% 0 no-repeat;
 }
-.TipCont.TopCenter .Tail:has(> svg.icon_tail) svg.icon_tail,
-.TipCont.RightCenter .Tail:has(> svg.icon_tail) svg.icon_tail,
-.TipCont.BottomCenter .Tail:has(> svg.icon_tail) svg.icon_tail,
-.TipCont.LeftCenter .Tail:has(> svg.icon_tail) svg.icon_tail {
+.TipCont.TopCenter .Tail:has(> svg.icon-tail) svg.icon-tail,
+.TipCont.RightCenter .Tail:has(> svg.icon-tail) svg.icon-tail,
+.TipCont.BottomCenter .Tail:has(> svg.icon-tail) svg.icon-tail,
+.TipCont.LeftCenter .Tail:has(> svg.icon-tail) svg.icon-tail {
     width: 32px;
     height: 32px;
 }
-.TipCont .Tail:has(> svg.icon_tail) svg.icon_tail {
+.TipCont .Tail:has(> svg.icon-tail) svg.icon-tail {
     color: var(--gray70);
     fill: var(--white);
     background: none;
     margin: 0;
     padding: 0;
 }
-.cont_introduce
-    .favor_company
-    .favor_company_header
-    .tooltip_favor_company
+.cont-introduce
+    .favor-company
+    .favor-company-header
+    .tooltip-favor-company
     .TipTxt {
     color: var(--gray80);
 }
@@ -506,44 +583,44 @@ button.interested_corp {
     line-height: 20px;
     white-space: nowrap;
 }
-.cont_introduce
-    .favor_company
-    .favor_company_header
-    .tooltip_favor_company
-    .txt_info {
+.cont-introduce
+    .favor-company
+    .favor-company-header
+    .tooltip-favor-company
+    .txt-info {
     margin-top: 8px;
 }
-.cont_introduce .favor_company .favor_company_infos {
+.cont-introduce .favor-company .favor-company-infos {
     display: flex;
     margin-top: 20px;
     align-items: center;
     justify-content: space-between;
 }
-.cont_introduce .favor_company .favor_company_infos .favor_company_item {
+.cont-introduce .favor-company .favor-company-infos .favor-company-item {
     display: flex;
     width: 100%;
     align-items: center;
 }
-.cont_introduce .favor_company .favor_company_infos .favor_company_item .tit {
+.cont-introduce .favor-company .favor-company-infos .favor-company-item .tit {
     width: 116px;
     color: var(--gray100);
     font-size: 12px;
     line-height: 20px;
     text-align: left;
 }
-.cont_introduce
-    .favor_company
-    .favor_company_infos
-    .favor_company_item
+.cont-introduce
+    .favor-company
+    .favor-company-infos
+    .favor-company-item
     .counting {
     display: flex;
     margin-left: auto;
     align-items: flex-end;
 }
-.cont_introduce
-    .favor_company
-    .favor_company_infos
-    .favor_company_item
+.cont-introduce
+    .favor-company
+    .favor-company-infos
+    .favor-company-item
     .counting
     .count {
     margin-left: 4px;
@@ -552,10 +629,10 @@ button.interested_corp {
     line-height: 20px;
 }
 
-.cont_introduce
-    .favor_company
-    .favor_company_infos
-    .favor_company_item
+.cont-introduce
+    .favor-company
+    .favor-company-infos
+    .favor-company-item
     .counting
     .num {
     margin-right: 2px;
@@ -563,16 +640,16 @@ button.interested_corp {
     font-size: 18px;
     line-height: 26px;
 }
-.cont_introduce .favor_company .favor_company_infos .favor_company_item {
+.cont-introduce .favor-company .favor-company-infos .favor-company-item {
     display: flex;
     width: 100%;
     align-items: center;
 }
-.cont_introduce
-    .favor_company
-    .favor_company_infos
-    .favor_company_item
-    + .favor_company_item:before {
+.cont-introduce
+    .favor-company
+    .favor-company-infos
+    .favor-company-item
+    + .favor-company-item:before {
     margin: 0 24px;
     width: 1px;
     height: 20px;
@@ -580,90 +657,47 @@ button.interested_corp {
     content: "";
 }
 
-.cont_introduce
-    .favor_company
-    .favor_company_infos
-    .favor_company_item
+.cont-introduce
+    .favor-company
+    .favor-company-infos
+    .favor-company-item
     .counting {
     display: flex;
     margin-left: auto;
     align-items: flex-end;
 }
-.cont_introduce .favor_company .favor_company_infos .favor_company_item {
+.cont-introduce .favor-company .favor-company-infos .favor-company-item {
     display: flex;
     width: 100%;
     align-items: center;
 }
-.cont_introduce
-    .favor_company
-    .favor_company_infos
-    .favor_company_item
-    + .favor_company_item:before {
+.cont-introduce
+    .favor-company
+    .favor-company-infos
+    .favor-company-item
+    + .favor-company-item:before {
     margin: 0 24px;
     width: 1px;
     height: 20px;
     background: var(--gray40);
     content: "";
 }
-.cont_introduce
-    .favor_company
-    .favor_company_infos
-    .favor_company_item
+.cont-introduce
+    .favor-company
+    .favor-company-infos
+    .favor-company-item
     .counting {
     display: flex;
     margin-left: auto;
     align-items: flex-end;
 }
-.cont_introduce .company_curation {
-    display: flex;
-    overflow: hidden;
-    margin-top: 24px;
-    max-height: 44px;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-.cont_introduce .company_curation .company_curation_item {
-    display: flex;
-    padding: 0 16px;
-    height: 44px;
-    border-radius: 8px;
-    background: var(--gray20);
-    align-items: center;
-    justify-content: center;
-}
-.cont_introduce .company_curation .company_curation_item .ico {
-    margin-right: 4px;
-    width: 20px;
-    height: 20px;
-}
-.cont_introduce .company_curation .company_curation_item .txt {
-    color: var(--gray100);
-    font-size: 14px;
-    line-height: 20px;
-}
-.wrap_company_view .main_content .section .section_content:after {
+.wrap-company-view .main-content .section .section-content:after {
     display: table;
     clear: both;
     content: "";
     table-layout: fixed;
 }
-.wrap_company_view .subway_line102 {
-    background-color: var(--subwayLine102);
-}
-.wrap_company_view .subway_line108 {
-    background-color: var(--subwayLine108);
-}
-.wrap_company_view .subway_line {
-    display: inline-block;
-    margin: 0 0 0 2px;
-    padding: 2px 5px 3px;
-    border-radius: 8px;
-    color: var(--white);
-    font-size: 10px;
-    line-height: 11px;
-    vertical-align: top;
-}
-.wrap_company_view .main_content .banner_area {
+.wrap-company-view .main-content .banner-area {
     display: flex;
     margin: 48px 0;
     width: 100%;
@@ -672,140 +706,34 @@ button.interested_corp {
     align-items: center;
     justify-content: center;
 }
-.wrap_company_view .main_content .banner_area .link_banner {
+.wrap-company-view .main-content .banner-area .link-banner {
     display: block;
 }
-.wrap_company_view .main_content .section {
+.wrap-company-view .main-content .section {
     position: relative;
     box-sizing: border-box;
 }
-.cont_introduce .section .section_header {
+.cont-introduce .section .section-header {
     display: flex;
     align-items: center;
 }
-.wrap_company_view .main_content .section .section_tit {
+.wrap-company-view .main-content .section .section-tit {
     display: flex;
     color: var(--gray120);
     font-size: 20px;
     font-weight: bold;
     line-height: 28px;
 }
-.cont_introduce .list_workplace {
+.cont-introduce .list-workplace {
     display: flex;
     margin-top: 14px;
     flex-wrap: wrap;
 }
-.cont_introduce .list_workplace > li {
+.cont-introduce .list-workplace > li {
     margin-right: 8px;
 }
-.cont_introduce .list_workplace .box_workplace {
-    display: flex;
-    padding: 0 12px;
-    height: 32px;
-    border-radius: 32px;
-    background: var(--gray20);
-    align-items: center;
-    justify-content: center;
-}
-.cont_introduce .list_workplace .box_workplace .txt {
-    display: flex;
-    color: var(--gray100);
-    font-size: 12px;
-    line-height: 20px;
-    align-items: center;
-    justify-content: center;
-}
-.cont_introduce .wrap_photo {
-    margin-top: 14px;
-    padding-bottom: 40px;
-}
-.cont_introduce .wrap_photo .list_thumb {
-    display: flex;
-}
-.cont_introduce .wrap_photo .list_thumb li:nth-child(1),
-.cont_introduce .wrap_photo .list_thumb li:nth-child(2),
-.cont_introduce .wrap_photo .list_thumb li:nth-child(3) {
-    display: block;
-}
-.cont_introduce .wrap_photo .list_thumb li {
-    display: none;
-    position: relative;
-    width: 306px;
-    height: 220px;
-}
-.cont_introduce .wrap_photo .list_thumb li .thumb_inner {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    background: #000;
-}
-.cont_introduce .wrap_photo .list_thumb li .cover {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.56);
-    align-items: center;
-    justify-content: center;
-}
-.cont_introduce .wrap_photo .list_thumb li .frame {
-    display: block;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-.cont_introduce .wrap_photo .list_thumb li .frame img.ready {
-    display: block;
-}
-.cont_introduce .wrap_photo .list_thumb li .frame img {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: auto;
-    height: 100%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-.cont_introduce .wrap_photo .list_thumb li .btn_open_company_photo {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-}
-.cont_introduce .wrap_photo .list_thumb li + li {
-    margin-left: 20px;
-}
-.cont_introduce .wrap_photo .list_thumb li:nth-child(1),
-.cont_introduce .wrap_photo .list_thumb li:nth-child(2),
-.cont_introduce .wrap_photo .list_thumb li:nth-child(3) {
-    display: block;
-}
-.cont_introduce .wrap_photo .list_thumb li + li {
-    margin-left: 20px;
-}
-.cont_introduce .wrap_photo .list_thumb li.indicator .cover {
-    display: flex;
-    font-size: 20px;
-    line-height: 28px;
-}
-.cont_introduce .area_company_infos .company_summary {
+
+.cont-introduce .area-company-infos .company-summary {
     display: flex;
     margin-bottom: 30px;
     padding: 24px 0;
@@ -814,17 +742,17 @@ button.interested_corp {
     align-items: center;
     justify-content: center;
 }
-.cont_introduce .area_company_infos .company_summary .company_summary_item {
+.cont-introduce .area-company-infos .company-summary .company-summary-item {
     display: flex;
     flex-direction: column;
     margin: 0 45px;
     align-items: center;
 }
-.cont_introduce
-    .area_company_infos
-    .company_summary
-    .company_summary_item
-    .company_summary_tit {
+.cont-introduce
+    .area-company-infos
+    .company-summary
+    .company-summary-item
+    .company-summary-tit {
     display: block;
     margin-top: 8px;
     color: var(--gray120);
@@ -832,23 +760,108 @@ button.interested_corp {
     font-weight: bold;
     line-height: 24px;
 }
-.cont_introduce
-    .area_company_infos
-    .company_summary
-    .company_summary_item
-    .company_summary_desc {
+.cont-introduce
+    .area-company-infos
+    .company-summary
+    .company-summary-item
+    .company-summary-desc {
     display: block;
     margin-top: 2px;
     color: var(--gray80);
     font-size: 12px;
     line-height: 20px;
 }
-.wrap_company_view .content_fold {
+/*  */
+.home-row {
+    margin: 20px 0 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+.recruit-action-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 594px;
+    height: 150px;
+}
+.home-board-box {
+    border: 1px solid var(--gray40);
+    border-radius: 16px;
+    background: var(--white);
+    box-sizing: border-box;
+}
+.recruit-action-wrap dl {
+    position: relative;
+    width: 33%;
+    text-align: center;
+}
+.recruit-action-wrap dt {
+    margin: 0 0 16px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--gray120);
+}
+.recruit-action-wrap dd {
+    min-height: 48px;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--gray50);
+}
+.recruit-action-wrap dl::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: var(--gray40);
+}
+.recruit-action-wrap dl:first-child::before {
+    display: none; /* 첫 번째 dl 요소의 before 제거 */
+}
+.my-benefit-wrap {
+    width: 334px;
+    height: 150px;
+}
+.home-board-box {
+    border: 1px solid var(--gray40);
+    border-radius: 16px;
+    background: var(--white);
+    box-sizing: border-box;
+}
+.my-benefit-wrap .none-member {
+    display: block;
+    padding: 32px 0 0 32px;
+    height: 100%;
+    background: url(//www.saraminimage.co.kr/sri/vix/main/my_benefit_default.png)
+        no-repeat 100% 100%;
+    box-sizing: border-box;
+}
+.my-benefit-wrap .none-member .title {
+    display: block;
+    margin: 0 0 12px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--gray120);
+}
+.my-benefit-wrap .none-member .desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray120);
+}
+/* .banner-wrap {
+    width: 336px;
+    height: 150px;
+} */
+
+.wrap-company-view .content-fold {
     overflow-y: hidden;
     position: relative;
     max-height: 270px;
 }
-.cont_introduce .area_company_infos .company_details {
+.cont-introduce .area-company-infos .company-details {
     display: flex;
     color: var(--gray120);
     font-size: 15px;
@@ -856,63 +869,32 @@ button.interested_corp {
     flex-wrap: wrap;
     gap: 0 40px;
 }
-.cont_introduce .area_company_infos .company_details .company_details_group {
+.cont-introduce .area-company-infos .company-details .company-details-group {
     margin-bottom: 20px;
     width: 460px;
 }
-.cont_introduce .area_company_infos .company_details .tit {
+.cont-introduce .area-company-infos .company-details .tit {
     float: left;
     clear: both;
     width: 68px;
     color: var(--gray100);
     font-size: 14px;
 }
-.cont_introduce .area_company_infos .company_details .tit,
-.cont_introduce .area_company_infos .company_details .desc {
+.cont-introduce .area-company-infos .company-details .tit,
+.cont-introduce .area-company-infos .company-details .desc {
     position: relative;
     min-height: 22px;
 }
-.cont_introduce .area_company_infos .company_details .desc {
+.cont-introduce .area-company-infos .company-details .desc {
     display: flex;
     position: relative;
     margin-left: 80px;
 }
-.cont_introduce .area_company_infos .company_introduce {
-    margin-top: 40px;
-}
-.cont_introduce .area_company_infos .company_introduce .tit {
-    color: var(--gray120);
-    font-size: 18px;
-    line-height: 26px;
-}
-.cont_introduce .area_company_infos .company_introduce .txt {
-    margin-top: 16px;
-    color: var(--gray100);
-    font-size: 15px;
-    line-height: 24px;
-}
-.cont_introduce .area_company_infos .company_introduce {
-    margin-top: 40px;
-}
-.cont_introduce .area_company_infos .company_introduce .tit {
-    color: var(--gray120);
-    font-size: 18px;
-    line-height: 26px;
-}
-.cont_introduce .area_company_infos .company_introduce .txt {
-    margin-top: 16px;
-    color: var(--gray100);
-    font-size: 15px;
-    line-height: 24px;
-}
-.wrap_company_view .content_fold.active .box_btn {
+.wrap-company-view .content-fold.active .box-btn {
     display: flex;
 }
-.wrap_company_view .content_fold.expand .box_btn {
-    position: static;
-}
-/* 그라디언트 */
-.wrap_company_view .content_fold .box_btn.gradient {
+/* 그라디언트
+.wrap-company-view .content-fold .box-btn.gradient {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -924,26 +906,18 @@ button.interested_corp {
         rgba(255, 255, 255, 1) 100%
     );
 }
-.wrap_company_view .content_fold .box_btn {
+.wrap-company-view .content-fold .box-btn {
     display: none;
     flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: end;
 }
-.wrap_company_view .content_fold .btn_fold {
+.wrap-company-view .content-fold .btn-fold {
     border: 1px solid var(--gray80);
     box-sizing: border-box;
     color: var(--gray100);
-}
-.wrap_company_view .content_fold {
-    overflow-y: hidden;
-    position: relative;
-    max-height: 270px;
-}
-.wrap_company_view .content_fold.expand .btn_fold .txt:after {
-    transform: rotate(-180deg);
-}
+} */
 [class*="BtnType"].BlueInvert {
     border-color: var(--blue90);
     color: var(--blue90);
@@ -980,7 +954,7 @@ button.interested_corp {
     justify-content: center;
     align-items: center;
 }
-.cont_introduce .area_company_infos .company_details .link_map {
+.cont-introduce .area-company-infos .company-details .link-map {
     margin-left: 8px;
     width: 55px;
     border-color: var(--gray40);
@@ -988,32 +962,32 @@ button.interested_corp {
     background-color: var(--white);
     flex-shrink: 0;
 }
-.wrap_company_view .content_fold .btn_fold .txt {
+.wrap-company-view .content-fold .btn-fold .txt {
     display: flex;
     padding: 0 13px;
     align-items: center;
     justify-content: center;
 }
-.wrap_company_view .content_fold .btn_fold .txt:after {
+.wrap-company-view .content-fold .btn-fold .txt:after {
     margin-left: 4px;
     width: 16px;
     height: 16px;
     background-image: url(/static/images/corporation/wrap_company_view_btn_fold.svg);
     content: "";
 }
-.cont_introduce .section .citation,
-.cont_introduce .section .citation2 {
+.cont-introduce .section .citation,
+.cont-introduce .section .citation2 {
     color: var(--gray80);
     font-size: 12px;
     line-height: 20px;
 }
-.cont_introduce .section .citation,
-.cont_introduce .section .link_content_more {
+.cont-introduce .section .citation,
+.cont-introduce .section .link-content-more {
     position: absolute;
     top: 0;
     right: 0;
 }
-.cont_introduce .section .citation .direct_cp_input {
+.cont-introduce .section .citation .direct-cp-input {
     display: inline-block;
     z-index: 10;
 }
@@ -1023,40 +997,8 @@ cite {
     margin: 0;
     padding: 0;
 }
-/* 연혁 */
-.cont_introduce .list_company_history .company_history_item:last-child {
-    padding-bottom: 0;
-}
-.cont_introduce .list_company_history .company_history_item {
-    position: relative;
-    padding: 0 0 24px 24px;
-}
-.cont_introduce .list_company_history .company_history_item:before {
-    left: 4px;
-    width: 1px;
-    background: var(--gray50);
-}
-.cont_introduce .company_history {
-    display: flex;
-    justify-content: flex-start;
-}
-.cont_introduce .company_history .history_year {
-    color: var(--gray120);
-    font-size: 16px;
-    line-height: 24px;
-    width: 42px;
-}
-.cont_introduce .company_history .list_company_history_cont {
-    margin-left: 28px;
-}
-.cont_introduce .company_history .list_company_history_cont .history_cont_item {
-    display: flex;
-    margin-bottom: 24px;
-    font-size: 14px;
-    line-height: 20px;
-    justify-content: flex-start;
-}
-.cont_introduce .list_company_history .company_history_item:after {
+
+.cont-introduce .list-company-history .company-history-item:after {
     left: 0;
     width: 10px;
     height: 10px;
@@ -1065,23 +1007,23 @@ cite {
     box-sizing: border-box;
     background: var(--white);
 }
-.cont_introduce .list_company_history .company_history_item:before,
-.cont_introduce .list_company_history .company_history_item:after {
+.cont-introduce .list-company-history .company-history-item:before,
+.cont-introduce .list-company-history .company-history-item:after {
     display: block;
     position: absolute;
     top: 8px;
     bottom: -8px;
     content: "";
 }
-.wrap_company_view .main_content .section {
+.wrap-company-view .main-content .section {
     position: relative;
     box-sizing: border-box;
 }
-.cont_introduce .list_curation_item {
+.cont-introduce .list-curation-item {
     display: flex;
     gap: 20px;
 }
-.cont_introduce .list_curation_item li {
+.cont-introduce .list-curation-item li {
     position: relative;
     padding: 0;
     width: 306px;
@@ -1090,25 +1032,25 @@ cite {
     box-sizing: border-box;
     background: #fff;
 }
-.cont_introduce .newcomer_link_view {
+.cont-introduce .newcomer-link-view {
     display: block;
     height: 176px;
 }
-.cont_introduce .list_curation_item .list_curation_slide {
+.cont-introduce .list-curation-item .list-curation-slide {
     position: relative;
     padding: 20px;
     height: 100%;
     box-sizing: border-box;
 }
-.wrap_company_view .main_content .section {
+.wrap-company-view .main-content .section {
     position: relative;
     box-sizing: border-box;
 }
-.cont_introduce .list_curation_item {
+.cont-introduce .list-curation-item {
     display: flex;
     gap: 20px;
 }
-.cont_introduce .list_curation_item li {
+.cont-introduce .list-curation-item li {
     position: relative;
     padding: 0;
     width: 306px;
@@ -1117,17 +1059,13 @@ cite {
     box-sizing: border-box;
     background: #fff;
 }
-.cont_introduce .newcomer_link_view {
-    display: block;
-    height: 176px;
-}
-.cont_introduce .list_curation_item .list_curation_slide {
+.cont-introduce .list-curation-item .list-curation-slide {
     position: relative;
     padding: 20px;
     height: 100%;
     box-sizing: border-box;
 }
-.cont_introduce .list_curation_item .announcement {
+.cont-introduce .list-curation-item .announcement {
     display: block;
     display: -webkit-box;
     overflow: hidden;
@@ -1141,7 +1079,7 @@ cite {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
-.cont_introduce .list_curation_item .cover {
+.cont-introduce .list-curation-item .cover {
     display: none;
     position: absolute;
     top: 0;
@@ -1151,13 +1089,13 @@ cite {
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(4px);
 }
-.cont_introduce .list_curation_item .desc_bottom {
+.cont-introduce .list-curation-item .desc-bottom {
     display: flex;
     overflow: hidden;
     margin-top: 8px;
     height: 20px;
 }
-.cont_introduce .list_curation_item .info {
+.cont-introduce .list-curation-item .info {
     display: inline-block;
     overflow: hidden;
     float: left;
@@ -1165,7 +1103,7 @@ cite {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.cont_introduce .list_curation_item .info span {
+.cont-introduce .list-curation-item .info span {
     position: relative;
     padding-right: 4px;
     box-sizing: border-box;
@@ -1174,7 +1112,7 @@ cite {
     line-height: 20px;
     vertical-align: top;
 }
-.cont_introduce .list_curation_item .info span + span:before {
+.cont-introduce .list-curation-item .info span + span:before {
     position: absolute;
     top: 7px;
     left: 0;
@@ -1184,7 +1122,7 @@ cite {
     background: #b4c0d3;
     content: "";
 }
-.cont_introduce .list_curation_item .day {
+.cont-introduce .list-curation-item .day {
     display: inline-block;
     position: absolute;
     bottom: 20px;
@@ -1193,13 +1131,13 @@ cite {
     font-size: 12px;
     line-height: 20px;
 }
-.cont_introduce .list_curation_item .btn_immediately_wrap {
+.cont-introduce .list-curation-item .btn-immediately-wrap {
     position: absolute;
     right: 20px;
     bottom: 22px;
     z-index: 10;
 }
-.sri_btn_sm {
+.position-btn-sm {
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -1215,7 +1153,7 @@ a {
     color: #444;
     text-decoration: none;
 }
-.sri_btn_sm span {
+.position-btn-sm span {
     display: inline-block;
     width: 86px;
     height: 22px;
@@ -1226,7 +1164,7 @@ a {
     line-height: 22px;
     background: var(--white);
 }
-.cont_introduce .list_curation_item li .newcomer_book_mark {
+.cont-introduce .list-curation-item li .newcomer-book-mark {
     display: inline-block;
     position: absolute;
     top: 20px;
@@ -1235,16 +1173,15 @@ a {
     height: 24px;
     background: url(/static/images/corporation/star_logo.svg) no-repeat 0 0;
 }
-
-.cont_introduce .list_curation_item li .newcomer_book_mark.on {
+.cont-introduce .list-curation-item li .newcomer-book-mark.on {
     background-image: url(/static/images/corporation/star-on_logo.svg);
 }
-.cont_introduce .section .link_content_more {
+.cont-introduce .section .link-content-more {
     border-color: var(--gray40);
     color: var(--gray100);
     background: var(--white);
 }
-.cont_introduce .section .link_content_more:after {
+.cont-introduce .section .link-content-more:after {
     margin-left: 2px;
     width: 16px;
     height: 16px;
@@ -1257,8 +1194,8 @@ a {
     font-size: 13px;
     line-height: 20px;
 }
-.sri_btn_sm span.sri_btn_immediately,
-.sri_btn_sm span.sri_btn_recruitin_apply {
+.position-btn-sm span.position-btn-immediately,
+.position-btn-sm span.position-btn-recruitin-apply {
     position: relative;
     border: 1px solid var(--coral110);
     color: var(--coral110);
@@ -1269,97 +1206,15 @@ cite {
     margin: 0;
     padding: 0;
 }
-.cont_introduce .affiliate_counting {
-    display: flex;
-    line-height: 24px;
-    align-items: center;
-    justify-content: flex-start;
-}
-.cont_introduce .affiliate_counting .count_tit {
-    color: var(--gray100);
-    font-size: 16px;
-}
-.cont_introduce .list_affiliate {
-    display: flex;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-.cont_introduce .list_affiliate .affiliate_item {
-    margin: 0 10px 10px 0;
-}
-.cont_introduce .list_affiliate .affiliate_item .link_affiliate {
-    display: flex;
-    padding: 0 12px;
-    height: 34px;
-    border-radius: 4px;
-    color: var(--gray100);
-    font-size: 14px;
-    background: var(--gray20);
-    align-items: center;
-    justify-content: center;
-}
-.cont_introduce .list_affiliate .affiliate_item .link_affiliate {
-    display: flex;
-    padding: 0 12px;
-    height: 34px;
-    border-radius: 4px;
-    color: var(--gray100);
-    font-size: 14px;
-    background: var(--gray20);
-    align-items: center;
-    justify-content: center;
-}
-.wrap_company_view .content_fold.expand {
+.wrap-company-view .content-fold.expand {
     max-height: none;
 }
-.cont_introduce .list_welfare {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(218px, 1fr));
-    grid-row-gap: 40px;
-    grid-column-gap: 28px;
-}
-.cont_introduce .list_welfare .welfare_tit {
-    display: flex;
-    color: var(--gray120);
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 22px;
-    align-items: center;
-}
-.cont_introduce .list_welfare .welfare_tit .ico {
-    margin-right: 8px;
-    width: 24px;
-    height: 24px;
-}
-.cont_introduce .list_welfare_cate {
-    display: flex;
-    flex-direction: column;
-    margin-top: 12px;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-.cont_introduce .list_welfare_cate .cate_item {
-    position: relative;
-    padding-left: 11px;
-    color: var(--gray100);
-    font-size: 15px;
-    line-height: 20px;
-}
-.cont_introduce .list_welfare_cate .cate_item:before {
-    display: block;
-    position: absolute;
-    top: 8px;
-    left: 0;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: var(--gray80);
-    content: "";
-}
-.wrap_company_view .content_fold.expand .box_btn {
+/* 여기서부터 */
+
+.wrap-company-view .content-fold.expand .box-btn {
     position: static;
 }
-.cont_introduce .worker_info {
+.cont-introduce .worker-info {
     display: flex;
     margin-bottom: 24px;
     padding: 0 24px;
@@ -1369,17 +1224,17 @@ cite {
     align-items: center;
     justify-content: center;
 }
-.cont_introduce .worker_info .col {
+.cont-introduce .worker-info .col {
     display: flex;
     height: 68px;
     align-items: center;
 }
-.cont_introduce .worker_info .tit {
+.cont-introduce .worker-info .tit {
     color: var(--gray100);
     font-size: 15px;
     line-height: 22px;
 }
-.cont_introduce .worker_info .value {
+.cont-introduce .worker-info .value {
     display: inline-flex;
     margin-left: 16px;
     color: var(--gray100);
@@ -1388,34 +1243,34 @@ cite {
     align-items: center;
     gap: 2px;
 }
-.cont_introduce .worker_info .value .num {
+.cont-introduce .worker-info .value .num {
     color: var(--gray120);
     font-size: 18px;
     line-height: 26px;
 }
-.wrap_company_view .main_content .section .section_content {
+.wrap-company-view .main-content .section .section-content {
     margin-top: 20px;
 }
-.cont_introduce .box_company_review {
+.cont-introduce .box-company-review {
     display: flex;
     justify-content: space-between;
 }
-.cont_introduce .box_company_review .list_company_review {
+.cont-introduce .box-company-review .list-company-review {
     width: 380px;
     flex-shrink: 0;
 }
-.cont_introduce .list_company_review .company_review_item {
+.cont-introduce .list-company-review .company-review-item {
     margin-bottom: 16px;
 }
 /* 마지막 카드 */
-.cont_introduce .review_card_list .review_item:last-of-type {
+.cont-introduce .review-card-list .review-item:last-of-type {
     margin-right: 0;
 }
-.cont_introduce .review_card_list .review_item {
+.cont-introduce .review-card-list .review-item {
     margin-right: 16px;
     flex-shrink: 0;
 }
-.cont_introduce .review_card_list .landing_review_card:before {
+.cont-introduce .review-card-list .landing-review-card:before {
     display: block;
     position: absolute;
     top: 0;
@@ -1426,7 +1281,7 @@ cite {
     background: url(//www.saraminimage.co.kr/sri/company/view/introduce/img_review_card.png);
     content: "";
 }
-.cont_introduce .review_card_list .landing_review_card .link_box {
+.cont-introduce .review-card-list .landing-review-card .link-box {
     display: block;
     color: var(--white);
     position: relative;
@@ -1438,7 +1293,7 @@ cite {
     box-sizing: border-box;
     background: var(--gray100);
 }
-.cont_introduce .review_card_list .review_card {
+.cont-introduce .review-card-list .review-card {
     position: relative;
     padding: 24px;
     width: 250px;
@@ -1448,12 +1303,12 @@ cite {
     box-sizing: border-box;
     background: var(--gray20);
 }
-.cont_introduce .review_card_list .landing_review_card .review_tit {
+.cont-introduce .review-card-list .landing-review-card .review-tit {
     display: block;
     font-size: 15px;
     line-height: 22px;
 }
-.cont_introduce .review_card_list .landing_review_card .looks_button {
+.cont-introduce .review-card-list .landing-review-card .looks-button {
     display: inline-flex;
     position: absolute;
     bottom: 40px;
@@ -1467,15 +1322,15 @@ cite {
     align-items: center;
     justify-content: center;
 }
-.cont_introduce
-    .review_card_list
-    .landing_review_card
-    .looks_button
-    .looks_button_txt {
+.cont-introduce
+    .review-card-list
+    .landing-review-card
+    .looks-button
+    .looks-button-txt {
     font-size: 14px;
     line-height: 20px;
 }
-.cont_introduce .review_card_list .landing_review_card .looks_button:after {
+.cont-introduce .review-card-list .landing-review-card .looks-button:after {
     margin-left: 2px;
     width: 16px;
     height: 16px;
@@ -1483,13 +1338,13 @@ cite {
     content: "";
 }
 /*  */
-.cont_introduce .box_gauge {
+.cont-introduce .box-gauge {
     position: relative;
     height: 48px;
     border-radius: 6px;
     background: var(--gray20);
 }
-.cont_introduce .box_gauge:before {
+.cont-introduce .box-gauge:before {
     position: absolute;
     top: 0;
     right: 0;
@@ -1500,11 +1355,11 @@ cite {
     border-radius: 6px;
     content: "";
 }
-.cont_introduce .box_gauge .gauge_bar {
+.cont-introduce .box-gauge .gauge-bar {
     position: relative;
     height: 48px;
 }
-.cont_introduce .box_gauge .gauge_tit {
+.cont-introduce .box-gauge .gauge-tit {
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -1512,8 +1367,8 @@ cite {
     padding-left: 24px;
     max-width: calc(272px - 24px);
 }
-.cont_introduce .box_gauge .gauge_tit,
-.cont_introduce .box_gauge .gauge_percent {
+.cont-introduce .box-gauge .gauge-tit,
+.cont-introduce .box-gauge .gauge-percent {
     display: flex;
     height: 100%;
     color: var(--gray120);
@@ -1523,87 +1378,87 @@ cite {
     align-items: center;
     justify-content: flex-start;
 }
-.cont_introduce .box_gauge .gauge_bar .gauge.type3 {
+.cont-introduce .box-gauge .gauge-bar .gauge.type3 {
     background: var(--blue50);
 }
-.cont_introduce .box_gauge .gauge_bar .gauge {
+.cont-introduce .box-gauge .gauge-bar .gauge {
     height: 48px;
     border-radius: 6px;
     background: var(--blue30);
 }
-.cont_introduce .box_gauge .gauge_percent {
+.cont-introduce .box-gauge .gauge-percent {
     position: absolute;
     top: 0;
     right: 0;
     padding-right: 24px;
 }
-.cont_introduce .box_company_review .slide_company_review {
+.cont-introduce .box-company-review .slide-company-review {
     position: relative;
     padding-right: 14px;
 }
-.cont_introduce .box_company_review .slider_controls .bx-next {
+.cont-introduce .box-company-review .slider-controls .bx-next {
     right: -8px;
 }
-.cont_introduce .box_company_review .slider_controls .bx-prev,
-.cont_introduce .box_company_review .slider_controls .bx-next {
+.cont-introduce .box-company-review .slider-controls .bx-prev,
+.cont-introduce .box-company-review .slider-controls .bx-next {
     position: absolute;
     top: 50%;
     z-index: 1;
     margin-top: -22px;
 }
-.wrap_company_view .slider_controls .bx-next {
+.wrap-company-view .slider-controls .bx-next {
     background-image: url(/static/images/corporation/slider_control_next.svg);
 }
-/* 뒤로가기, 앞으로 가기버튼 disabled */
-.wrap_company_view .slider_controls .bx-prev.disabled,
-.wrap_company_view .slider_controls .bx-next.disabled {
-    display: none;
-}
-.wrap_company_view .slider_controls .bx-prev,
-.wrap_company_view .slider_controls .bx-next {
+.wrap-company-view .slider-controls .bx-prev,
+.wrap-company-view .slider-controls .bx-next {
     width: 44px;
     height: 44px;
     background-size: contain;
 }
-.cont_introduce .box_company_review .slider_controls .bx-prev {
+.cont-introduce .box-company-review .slider-controls .bx-prev {
     left: -22px;
 }
-.wrap_company_view .slider_controls .bx-prev {
+.wrap-company-view .slider-controls .bx-prev {
     background-image: url(/static/images/corporation/slider_control_prev.svg);
 }
-.cont_introduce .review_card_list {
+/* 뒤로가기, 앞으로 가기버튼 disabled */
+.wrap-company-view .slider-controls .bx-prev.disabled,
+.wrap-company-view .slider-controls .bx-next.disabled {
+    display: none;
+}
+.cont-introduce .review-card-list {
     display: flex;
 }
-.cont_introduce .review_card_list .review_item {
+.cont-introduce .review-card-list .review-item {
     margin-right: 16px;
     flex-shrink: 0;
 }
-.cont_introduce .review_card_list .review_card .review_worker.retired {
+.cont-introduce .review-card-list .review-card .review-worker.retired {
     color: var(--gray100);
 }
-.cont_introduce .review_card_list .review_card .review_worker {
+.cont-introduce .review-card-list .review-card .review-worker {
     display: flex;
     color: var(--blue100);
     font-size: 15px;
     line-height: 22px;
 }
-.cont_introduce .review_card_list .review_card .review_worker:after {
+.cont-introduce .review-card-list .review-card .review-worker:after {
     margin-left: 4px;
     width: 24px;
     height: 24px;
     background-image: url(/static/images/corporation/reviw_card_list.svg);
     content: "";
 }
-.cont_introduce .review_card_list .review_card .review_worker.retired {
+.cont-introduce .review-card-list .review-card .review-worker.retired {
     color: var(--gray100);
 }
-.cont_introduce .review_card_list .review_card .review_worker {
+.cont-introduce .review-card-list .review-card .review-worker {
     display: flex;
     color: var(--blue100);
     font-size: 15px;
     line-height: 22px;
 }
-.cont_introduce .review_card_list .review_card .review_txt {
+.cont-introduce .review-card-list .review-card .review-txt {
     display: -webkit-box;
     overflow: hidden;
     margin-top: 16px;
@@ -1615,7 +1470,7 @@ cite {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
 }
-.cont_introduce .review_card_list .review_card .review_date {
+.cont-introduce .review-card-list .review-card .review-date {
     position: absolute;
     bottom: 24px;
     left: 24px;
@@ -1623,7 +1478,7 @@ cite {
     font-size: 12px;
     line-height: 20px;
 }
-.cont_introduce .affiliate_counting .count_num {
+.cont-introduce .affiliate-counting .count-num {
     display: flex;
     margin-left: 6px;
     padding: 0 6px;
@@ -1636,37 +1491,30 @@ cite {
     align-items: center;
     justify-content: center;
 }
-.cont_introduce .section.section_type2 {
+.cont-introduce .section.section-type2 {
     padding-bottom: 0;
     border-bottom: 0;
 }
-.wrap_company_view .main_content .section {
+.wrap-company-view .main-content .section {
     position: relative;
     box-sizing: border-box;
 }
-.cont_introduce .section {
+.cont-introduce .section {
     margin-bottom: 48px;
     padding-bottom: 48px;
     border-bottom: 1px solid var(--gray30);
 }
-.wrap_company_view .main_content .section .section_tit {
-    display: flex;
-    color: var(--gray120);
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 28px;
-}
-.wrap_company_view .main_content .section .section_content {
+.wrap-company-view .main-content .section .section-content {
     margin-top: 20px;
 }
-.cont_introduce .interview_review {
+.cont-introduce .interview-review {
     display: flex;
     gap: 20px;
 }
-.cont_introduce .interview_review .interview_card {
+.cont-introduce .interview-review .interview-card {
     flex-shrink: 0;
 }
-.cont_introduce .interview_review .interview_card .link_interview_review {
+.cont-introduce .interview-review .interview-card .link-interview-review {
     display: block;
     padding: 24px;
     width: 470px;
@@ -1676,35 +1524,35 @@ cite {
     box-sizing: border-box;
     background: var(--white);
 }
-.cont_introduce .interview_review .interview_card .interview_header {
+.cont-introduce .interview-review .interview-card .interview-header {
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
-.cont_introduce .interview_review .interview_card .interview_header .box_tit {
+.cont-introduce .interview-review .interview-card .interview-header .box-tit {
     display: flex;
     align-items: center;
     gap: 4px;
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_header
-    .box_tit
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-header
+    .box-tit
     > strong {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_header
-    .badge.badge_pass {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-header
+    .badge.badge-pass {
     color: var(--blue90);
     background: var(--blue20);
 }
-.cont_introduce .interview_review .interview_card .interview_header .badge {
+.cont-introduce .interview-review .interview-card .interview-header .badge {
     display: inline-flex;
     padding: 0 6px;
     height: 20px;
@@ -1714,67 +1562,67 @@ cite {
     align-items: center;
     justify-content: center;
 }
-.cont_introduce .interview_review .interview_card .interview_header .box_info {
+.cont-introduce .interview-review .interview-card .interview-header .box-info {
     display: flex;
     color: var(--gray100);
     font-size: 13px;
     line-height: 20px;
     align-items: center;
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_header
-    .box_info
-    .info_item {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-header
+    .box-info
+    .info-item {
     display: flex;
     align-items: center;
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_header
-    .box_info
-    .info_item:after {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-header
+    .box-info
+    .info-item:after {
     margin: 0 6px;
     width: 1px;
     height: 12px;
     background: var(--gray40);
     content: "";
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_header
-    .box_info
-    .info_item {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-header
+    .box-info
+    .info-item {
     display: flex;
     align-items: center;
 }
-.cont_introduce .interview_review .interview_card .interview_cont {
+.cont-introduce .interview-review .interview-card .interview-cont {
     margin-top: 16px;
 }
-.cont_introduce .interview_review .interview_card .interview_cont .box_level {
+.cont-introduce .interview-review .interview-card .interview-cont .box-level {
     display: flex;
     align-items: center;
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .box_level
-    .level_tit {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .box-level
+    .level-tit {
     margin-right: 16px;
     color: var(--gray80);
     font-size: 13px;
     line-height: 20px;
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .box_level
-    .level_bar {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .box-level
+    .level-bar {
     position: relative;
     margin-right: 4px;
     width: 112px;
@@ -1782,26 +1630,26 @@ cite {
     border-radius: 10px;
     background: var(--gray30);
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .box_level
-    .level_bar:before {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .box-level
+    .level-bar:before {
     left: 36px;
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .box_level
-    .level_bar:before,
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .box_level
-    .level_bar:after {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .box-level
+    .level-bar:before,
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .box-level
+    .level-bar:after {
     display: block;
     position: absolute;
     top: 0;
@@ -1811,12 +1659,12 @@ cite {
     background: var(--gray30);
     content: "";
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .box_level
-    .level_progress {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .box-level
+    .level-progress {
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -1824,12 +1672,12 @@ cite {
     width: 0;
     height: 10px;
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .box_level
-    .level_progress:before {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .box-level
+    .level-progress:before {
     display: block;
     position: absolute;
     top: 0;
@@ -1845,30 +1693,30 @@ cite {
     );
     content: "";
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .box_level
-    .level_bar:after {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .box-level
+    .level-bar:after {
     right: 36px;
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .box_level
-    .level_txt {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .box-level
+    .level-txt {
     color: var(--gray100);
     font-size: 12px;
     font-weight: bold;
     line-height: 20px;
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .box_interview_reivew {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .box-interview-reivew {
     margin-top: 16px;
     padding: 20px;
     height: 80px;
@@ -1876,11 +1724,11 @@ cite {
     box-sizing: border-box;
     background: var(--gray20);
 }
-.cont_introduce
-    .interview_review
-    .interview_card
-    .interview_cont
-    .interview_reivew_txt {
+.cont-introduce
+    .interview-review
+    .interview-card
+    .interview-cont
+    .interview-reivew-txt {
     display: -webkit-box;
     overflow: hidden;
     max-height: 40px;
@@ -1891,59 +1739,59 @@ cite {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
 }
-.cont_introduce .interview_review .interview_card .link_interview_review:hover {
+.cont-introduce .interview-review .interview-card .link-interview-review:hover {
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.08);
 }
-.cont_introduce .list_curation_item li:hover {
+.cont-introduce .list-curation-item li:hover {
     box-shadow: 0 10px 14px rgba(0, 0, 0, 0.08);
 }
-.footer_company_info {
+.footer-company-info {
     display: flex;
     position: relative;
     margin-top: 60px;
     justify-content: space-between;
 }
-.footer_company_info p {
+.footer-company-info p {
     color: var(--gray80);
     font-size: 12px;
     line-height: 20px;
 }
-.footer_company_info .box_edit {
+.footer-company-info .box-edit {
     text-align: right;
 }
-.footer_company_info .box_edit .edit_txt {
+.footer-company-info .box-edit .edit-txt {
     display: inline-flex;
     color: var(--gray120);
     align-items: center;
 }
-.footer_company_info p {
+.footer-company-info p {
     color: var(--gray80);
     font-size: 12px;
     line-height: 20px;
 }
-.footer_company_info .box_edit .icon_edit {
+.footer-company-info .box-edit .icon-edit {
     margin-right: 4px;
 }
-.footer_company_info .box_edit .modified {
+.footer-company-info .box-edit .modified {
     color: var(--gray100);
 }
-.footer_company_info p {
+.footer-company-info p {
     color: var(--gray80);
     font-size: 12px;
     line-height: 20px;
 }
-.footer_company_info .btn_edit {
+.footer-company-info .btn-edit {
     margin: 8px 0;
     border-color: var(--gray40);
 }
-.footer_company_info .btn_edit:after {
+.footer-company-info .btn-edit:after {
     margin-left: 2px;
     width: 16px;
     height: 16px;
     background-image: url(/static/images/corporation/footer_company_info_edit_after.svg);
     content: "";
 }
-.footer_company_info .btn_edit {
+.footer-company-info .btn-edit {
     margin: 8px 0;
     border-color: var(--gray40);
 }
@@ -1954,4 +1802,297 @@ cite {
 }
 [class*="BtnType"].GrayInvert:hover {
     background: var(--gray20);
+}
+/* 로그인 팝업 */
+.login-input-wrap,
+.pop-login-layer {
+    --common-a-hover-color: #3769ed;
+}
+.pop-login-layer .outer {
+    position: relative;
+    padding: 52px 44px;
+    width: 408px;
+    border: 1px solid #666;
+    border-radius: 16px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.pop-login-layer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    margin-left: -204px;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: left;
+}
+.pop-login-layer .pop-login-layer-close {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 43px;
+    height: 43px;
+    border: 0;
+    color: transparent;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -100%;
+    text-shadow: none;
+    white-space: nowrap;
+    background: url(//www.saraminimage.co.kr/ui/common/btn_login_close.png)
+        no-repeat 50% 50%;
+    cursor: pointer;
+}
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+}
+fieldset,
+img {
+    border: 0;
+}
+.pop-login-layer .title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+}
+.pop-login-layer .title .txt-point {
+    color: #2d65f2;
+}
+.pop-login-layer .login-form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.pop-login-layer .login-form .id-input-box {
+    margin-bottom: 8px;
+}
+.pop-login-layer .login-form input {
+    width: 100%;
+    border: 1px solid #8491a7;
+    background: #fff;
+    color: #373f57;
+    border-radius: 4px;
+    padding: 24px 12px 8px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.pop-login-layer .login-form label {
+    position: absolute;
+    left: 12px;
+    top: 18px;
+    font-size: 16px;
+    color: #5c667b;
+    transition: all 300ms ease;
+}
+.pop-login-layer .login-form .id-input-box,
+.pop-login-layer .login-form .pw-input-box {
+    position: relative;
+}
+.pop-login-layer .setting {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 12px 0 24px;
+    font-size: 14px;
+    line-height: 21px;
+}
+.InpBox {
+    display: inline-block;
+    vertical-align: top;
+}
+.InpBox .Chk {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.pop-login-layer .login-form input:focus,
+.pop-login-layer .login-form input:valid,
+.pop-login-layer .login-form input:-webkit-autofill {
+    padding: 24px 12px 9px 12px;
+}
+.pop-login-layer .login-form input {
+    width: 100%;
+    border: 1px solid #8491a7;
+    background: #fff;
+    color: #373f57;
+    border-radius: 4px;
+    padding: 24px 12px 8px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.InpBox .Chk input {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    outline: none;
+    opacity: 0;
+    pointer-events: none;
+}
+.pop-login-layer .login-form input:focus ~ label,
+.pop-login-layer .login-form input:valid ~ label,
+.pop-login-layer .login-form input:-webkit-autofill ~ label {
+    font-size: 12px;
+    top: 8px;
+    color: #373f57;
+}
+.pop-login-layer .login-form .setting label {
+    position: static;
+}
+.InpBox .Chk .Lbl {
+    display: block;
+    position: relative;
+    color: var(--gray100);
+    font-size: 14px;
+    line-height: 20px;
+}
+.InpBox .Chk .Lbl:before {
+    display: inline-block;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--gray70);
+    border-radius: 4px;
+    vertical-align: top;
+    background: #fff;
+    content: "";
+}
+.pop-login-layer .setting .InpBox + .InpBox {
+    margin-left: 12px;
+}
+.pop-login-layer .login-form .btn-login {
+    margin: 0 0 12px;
+}
+[class*="BtnType"] {
+    display: inline-flex;
+    position: relative;
+    border: 1px solid var(--blue90);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: var(--white);
+    text-align: center;
+    vertical-align: top;
+    background-color: var(--blue90);
+    justify-content: center;
+    align-items: center;
+}
+.pop-login-layer .signup-forgotten {
+    margin-bottom: 24px;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 100%;
+    font-size: 13px;
+    line-height: 24px;
+}
+.pop-login-layer .signup-forgotten .sign-up,
+.pop-login-layer .signup-forgotten .forgotten {
+    color: #373f57;
+}
+.pop-login-layer .signup-forgotten > a {
+    text-align: center;
+    position: relative;
+}
+.pop-login-layer .signup-forgotten > a + a {
+    margin-left: 12px;
+    padding-left: 12px;
+}
+.pop-login-layer .signup-forgotten > a + a:after {
+    position: absolute;
+    content: "";
+    background-color: var(--gray50);
+    width: 1px;
+    height: 14px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.pop-login-layer .social-login-tit .tit {
+    text-align: center;
+    font-size: 15px;
+    color: #5c667b;
+    line-height: 24px;
+}
+.pop-login-layer .social-login-tit .tit:before {
+    margin-right: 8px;
+}
+.pop-login-layer .social-login-tit .tit:before,
+.pop-login-layer .social-login-tit .tit:after {
+    width: 60px;
+    height: 1px;
+    background-color: #eaedf4;
+    display: inline-block;
+    vertical-align: super;
+    content: "";
+}
+.pop-login-layer .social-login {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    position: relative;
+    padding-top: 24px;
+}
+.pop-login-layer .social-login .login-naver,
+.pop-login-layer .social-login .login-kakao,
+.pop-login-layer .social-login .login-google,
+.pop-login-layer .social-login .login-facebook,
+.pop-login-layer .social-login .login-apple {
+    width: 63px;
+    font-size: 13px;
+    line-height: 18px;
+    position: relative;
+}
+.pop-login-layer .social-login .login-naver a,
+.pop-login-layer .social-login .login-kakao a,
+.pop-login-layer .social-login .login-google a,
+.pop-login-layer .social-login .login-facebook a,
+.pop-login-layer .social-login .login-apple a {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color: #5c667b;
+}
+.pop-login-layer .social-login .login-kakao .wrap-icon {
+    background-color: #fee500;
+    border-color: #fee500;
+}
+.pop-login-layer .social-login li .wrap-icon {
+    margin-bottom: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid;
+    justify-content: center;
+    align-content: center;
+}
+.pop-login-layer .social-login .login-kakao .icon {
+    width: 24px;
+    height: 22px;
+}
+[class*="BtnType"].SizeML {
+    padding: 13px 15px 15px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+}
+.nothing-tit {
+    margin: 0 400px;
+    align-content: center;
+    color: #5c667b;
 }
