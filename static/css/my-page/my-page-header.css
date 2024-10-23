@@ -1129,6 +1129,10 @@ body {
     height: 100%;
 }
 
+.img-ci {
+    background: url('/static/images/my-page/position-logo-small.svg') no-repeat;
+}
+
 #position-gnb-wrap .ci svg.img-ci-icon {
     display: none;
 }

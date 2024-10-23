@@ -86,12 +86,12 @@ select {
     padding: 0;
 }
 
-#interview-write-sri-section.interview-write-layout-full {
+#interview-write-position-section.interview-write-layout-full {
     margin: 0;
     width: 100%;
 }
 
-#interview-write-sri-section {
+#interview-write-position-section {
     display: table;
     overflow: hidden;
     position: relative;
@@ -100,14 +100,18 @@ select {
     box-sizing: border-box;
 }
 
-#interview-write-sri-wrap {
+#interview-write-position-wrap {
     display: table-row;
     width: 100%;
     height: 100%;
 }
 
+<<<<<<< HEAD:static/css/corporation/positioner-review-write.css
 #interview-write-sri-section.interview-write-layout-full
     #interview-write-content {
+=======
+#interview-write-position-section.interview-write-layout-full #interview-write-content {
+>>>>>>> 018ca68051467acb8b29f8215c2c400b6e4d1156:static/css/interview-review-2/interview-review-write.css
     margin: 0;
     width: 100%;
 }
@@ -117,8 +121,12 @@ select {
     z-index: 1;
 }
 
+<<<<<<< HEAD:static/css/corporation/positioner-review-write.css
 #interview-write-sri-section.interview-write-layout-full
     .interview-write-wrap-title-recruit {
+=======
+#interview-write-position-section.interview-write-layout-full .interview-write-wrap-title-recruit {
+>>>>>>> 018ca68051467acb8b29f8215c2c400b6e4d1156:static/css/interview-review-2/interview-review-write.css
     margin: 0 auto;
     padding: 50px 0 50px;
     width: 1260px;
@@ -1327,8 +1335,12 @@ li {
     display: block;
     box-sizing: border-box;
     color: #444;
+<<<<<<< HEAD:static/css/corporation/positioner-review-write.css
     background: url(/static/images/interview-review/sri_ico_checkbox03.png) 0
         2px no-repeat;
+=======
+    background: url(/static/images/interview-review/position_ico_checkbox03.png) 0 2px no-repeat;
+>>>>>>> 018ca68051467acb8b29f8215c2c400b6e4d1156:static/css/interview-review-2/interview-review-write.css
     user-select: none;
 }
 
@@ -1605,6 +1617,7 @@ li {
 .common_panel .option_content.job_category_section .details .box_detail_depth {
     width: calc(100% - 204px);
 }
+<<<<<<< HEAD:static/css/corporation/positioner-review-write.css
 .interview-write-Typo {
     padding: 0 11px 1px 11px;
     height: 32px;
@@ -1617,3 +1630,19 @@ li {
     background: #fff;
     border-color: #ffff;
 }
+=======
+
+table col:nth-child(1) {
+    width: 170px;
+}
+
+table col:nth-child(2) {
+    width: auto; /* 기본 너비로 설정, 따로 지정하지 않음 */
+}
+
+
+.interview-write-btn-basic-type02 .interview-write-btn-remove{
+    display: none;
+}
+
+>>>>>>> 018ca68051467acb8b29f8215c2c400b6e4d1156:static/css/interview-review-2/interview-review-write.css

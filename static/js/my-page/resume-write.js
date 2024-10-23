@@ -988,18 +988,18 @@ function createViewC() {
                         <select id="schoolGb">
                             <option value="">대학구분 *</option>
                             <option value="college">대학(2,3년)</option>
-                            <option value="university">대학교(4년)</option>
+                            <option value="university4">대학교(4년)</option>
                             <option value="master">대학원(석사)</option>
                             <option value="doctor">대학원(박사)</option>
                         </select>
                     </div>
 
                     <div class="TypoBox TypeBtn item-m">
-                        <label class="blind" for="schoolNm">학교명 *</label>
+                        <label class="blind" for="schoolMajor">전공 *</label>
                         <input 
                             type="text" 
-                            id="schoolNm" class="Typo SizeL check" 
-                            maxlength="100" placeholder="학교명 *" required="" 
+                            id="schoolMajor" class="Typo SizeL check" 
+                            maxlength="100" placeholder="전공 *" required="" 
                             
                         />
                     </div>
@@ -1018,11 +1018,11 @@ function createViewC() {
 
                 <div class="item-row">
                     <div class="TypoBox item-m LblTop">
-                        <label class="Lbl" for="schoolMajor">전공 *</label>
+                        <label class="Lbl" for="schoolNm">학교명 *</label>
                         <input 
                             type="text" 
-                            id="schoolMajor" class="Typo SizeL check" 
-                            maxlength="50" placeholder="전공 *" required="" 
+                            id="schoolNm" class="Typo SizeL check" 
+                            maxlength="50" placeholder="학교명 *" required="" 
                         />
                     </div>
 
@@ -1251,14 +1251,49 @@ function showView(viewName) {
         }
     }
 }
+function resetSchoolInfo() {
+    // 학교명 <h3> 내부의 <span> 초기화
+    document.querySelector("#school-name > span").textContent = "";
+    document.querySelector("#school-name .date").textContent = "";
+    // 학과 정보 <p> 초기화
+    document.querySelector(".desc").textContent = "";
+}
+
 // 학력을 입력한 데이터를 화면에 뿌려주는 함수
 function setupSchoolEventHandlers(container) {
     const selectSchoolType = container.querySelector("#schoolType");
     const selectGraduationStatus = container.querySelector(
         "#schoolGraduationGb"
     );
+    const schoolMajor = container.querySelector("#schoolMajor");
+    const spanElement = container.querySelector(".Chk.SizeL");
+    const labelText = spanElement.querySelector("label").textContent;
+
+    // 최종 날짜 문자열 생성 함수
+    function getDateString() {
+        const datePics = container.querySelectorAll(".DatePic");
+        let firstDate = datePics[0] ? datePics[0].value.trim() : ""; // 첫 번째 값
+        let secondDate = datePics[1] ? datePics[1].value.trim() : ""; // 두 번째 값
+        let thirdDate = datePics[2] ? datePics[2].value.trim() : ""; // 세 번째 값
+
+        let dateString = "";
+        if (secondDate && thirdDate) {
+            dateString = `${secondDate} ~ ${thirdDate}`;
+        } else if (firstDate) {
+            dateString = firstDate;
+        } else if (secondDate) {
+            dateString = secondDate;
+        } else if (thirdDate) {
+            dateString = thirdDate;
+        }
+
+        return dateString;
+    }
+
     const careerTxtSpan = document.querySelector(".career-txt span");
     const date = document.querySelector(".date");
+    const major = document.querySelector("#major");
+    const schoolNameSpan = document.querySelector("#school-name span"); // 학교 이름 span 선택
 
     // 저장 버튼 클릭 시 유효성 검사 및 학력 텍스트 업데이트
     const saveButton = container.querySelector(".evtLayerSave");
@@ -1266,7 +1301,9 @@ function setupSchoolEventHandlers(container) {
         console.log("Save button clicked");
         if (performValidation(container, careerTxtSpan)) {
             console.log("Validation passed");
-            // 유효성 검사를 통과한 경우에만 텍스트 업데이트
+            resetSchoolInfo();
+
+            // select 요소에서 텍스트 값 추출
             const schoolTypeText =
                 selectSchoolType.options[
                     selectSchoolType.selectedIndex
@@ -1278,15 +1315,38 @@ function setupSchoolEventHandlers(container) {
 
             // 학력과 졸업 여부 조합된 텍스트를 표시
             careerTxtSpan.textContent = `${schoolTypeText} (${graduationText})`;
-            date.textContent = `${graduationText}`;
+
+            // 날짜 문자열을 업데이트하여 사용
+            const dateString = getDateString();
+            date.textContent = `${dateString} ${graduationText}`;
+
+            // 첫 번째 input의 값으로 학교 이름 갱신
+            const inputElements = container.querySelectorAll(
+                "input.Typo.SizeL.check"
+            ); // 모든 input 요소 선택
+
+            if (inputElements[1] && inputElements[1].value.trim()) {
+                schoolNameSpan.textContent = inputElements[1].value.trim(); // 학교 이름 업데이트
+            }
+
+            // input#schoolMajor 값 -> <p id="major">에 반영
+            if (schoolMajor && major) {
+                const majorText = schoolMajor.value.trim(); // input 값 가져오기
+                major.textContent = majorText || "전공 정보 없음"; // <p>에 설정
+                console.log(`Updated major: ${majorText}`);
+            }
         } else {
             console.log("Validation failed");
+            resetSchoolInfo();
+            schoolNameSpan.textContent = labelText; // 초기값으로 되돌리기
+            const dateString = getDateString();
+            date.textContent = `${dateString} 합격`;
         }
     });
 
     // 이벤트 핸들러 해제 함수 반환 (View A로 전환 시 사용)
     return function removeHandlers() {
-        saveButton.removeEventListener("click", performValidation);
+        saveButton.removeEventListener("click", performValidation); // performValidation을 직접 참조
     };
 }
 
@@ -1299,12 +1359,13 @@ function performValidation(container, careerTxtSpan) {
 
     // item-career 클래스를 가진 요소 찾기
     const careerItem = document.querySelector(".item-career");
+    const schoolMajor = document.getElementById("schoolMajor");
 
     // item-close 클래스가 careerItem에 포함되어 있는지 확인
     if (careerItem && careerItem.classList.contains("item-close")) {
         // item-close가 있을 경우 두 번째 input 검사
         if (typoInputs.length > 1) {
-            const input2 = typoInputs[0]; // 두 번째 input
+            const input2 = typoInputs[0]; // 첫 번째 input
             console.log(`Checking input2: ${input2.value}`); // 현재 input 값 로그
             const isValid2 = input2.value.trim(); // 입력값 검사
             input2.classList.toggle("Invalid", !isValid2); // Invalid 클래스 추가 또는 제거
@@ -1327,10 +1388,14 @@ function performValidation(container, careerTxtSpan) {
     } else {
         // item-close가 없을 경우 첫 번째 input 검사
         if (typoInputs.length > 0) {
-            const input1 = typoInputs[1]; // 첫 번째 input
+            const input1 = typoInputs[1]; // 두 번째 input
             console.log(`Checking input1: ${input1.value}`); // 현재 input 값 로그
             const isValid1 = input1.value.trim(); // 입력값 검사
             input1.classList.toggle("Invalid", !isValid1); // Invalid 클래스 추가 또는 제거
+            if (schoolMajor) {
+                schoolMajor.classList.toggle("Invalid", !isValid1);
+            }
+
             valid = valid && isValid1; // 전체 유효성 검사 결과 업데이트
         }
     }

@@ -1,4 +1,4 @@
-#sri_section {
+#sri-section {
     display: grid;
     grid-template-areas:
         "gnb main"
@@ -10,7 +10,7 @@
     min-height: 100%;
     box-sizing: border-box;
 }
-#sri_wrap {
+#sri-wrap {
     grid-area: main;
     display: table-row;
     width: 100%;
@@ -21,18 +21,18 @@
     margin: 88px auto 136px;
     width: 1248px;
 }
-.support_announce {
+.support-announce {
     margin: 0 auto;
     width: 1248px;
 }
-.wrap_title {
+.wrap-title {
     color: #373f57;
     font-size: 36px;
     font-weight: bold;
     line-height: 56px;
 }
 
-.support_announce .TabBox {
+.support-announce .TabBox {
     padding: 50px 0 20px;
 }
 .TabBox {
@@ -101,18 +101,18 @@
     border-radius: 4px;
     content: "";
 }
-.support_announce .top_btns {
+.support-announce .top-btns {
     display: flex;
     justify-content: space-between;
     padding-bottom: 12px;
     border-bottom: 1px solid #d7dce5;
 }
-.support_announce .top_btns .align {
+.support-announce .top-btns .align {
     display: flex;
     align-items: center;
 }
-.top_btns .align .InpBox,
-.top_btns .align .BtnType {
+.top-btns .align .InpBox,
+.top-btns .align .BtnType {
     margin-right: 8px;
 }
 .InpBox {
@@ -257,10 +257,10 @@ option {
     width: 1px;
     height: 1px;
 }
-.activity_list ul {
+.activity-list ul {
     display: block;
 }
-.activity_list .row {
+.activity-list .row {
     display: inline-block;
     position: relative;
     padding: 32px 0 32px 12px;
@@ -269,7 +269,7 @@ option {
     box-sizing: border-box;
     color: #383e4f;
 }
-.activity_list .row .scrap_check {
+.activity-list .row .scrap-check {
     position: absolute;
     top: 42px;
     left: 4px;
@@ -279,10 +279,10 @@ option {
     overflow: visible;
     font-size: 0;
 }
-.activity_list .row .col_corp.type02 {
+.activity-list .row .col-corp.type02 {
     margin-left: 32px;
 }
-.activity_list .row .col_corp {
+.activity-list .row .col-corp {
     display: inline-block;
     overflow: hidden;
     float: left;
@@ -294,7 +294,7 @@ option {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.activity_list .row .col_corp a {
+.activity-list .row .col-corp a {
     display: inline-block;
     overflow: hidden;
     width: 100%;
@@ -303,13 +303,13 @@ option {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.activity_list .row .col_informs {
+.activity-list .row .col-informs {
     display: inline-block;
     position: relative;
     max-width: 545px;
     font-size: 0;
 }
-.activity_list .row .col_informs .tit {
+.activity-list .row .col-informs .tit {
     display: inline-block;
     overflow: hidden;
     position: relative;
@@ -324,7 +324,7 @@ option {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.activity_list .row .col_informs .tit a {
+.activity-list .row .col-informs .tit a {
     display: inline-block;
     overflow: hidden;
     position: relative;
@@ -333,29 +333,29 @@ option {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.activity_list .row .like_btn {
+.activity-list .row .like-btn {
     position: absolute;
     top: 8px;
     right: -30px;
     z-index: 3;
     width: 24px;
     height: 24px;
-    background: url(//www.saraminimage.co.kr/sri/person/spr/spr_stars.png)
+    background: url(//www.saraminimage.co.kr/sri/person/spr/spr-stars.png)
         no-repeat -5px -5px;
 }
 
-.activity_list .row .col_informs .inform {
+.activity-list .row .col-informs .inform {
     display: block;
     font-size: 0;
 }
-.activity_list .row .col_informs .inform li {
+.activity-list .row .col-informs .inform li {
     display: inline-block;
     margin-right: 12px;
     color: var(--gray100);
     font-size: 14px;
     line-height: 24px;
 }
-.activity_list .row .col_relation {
+.activity-list .row .col-relation {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -367,20 +367,20 @@ option {
     line-height: 24px;
     text-align: center;
 }
-.activity_list .row .col_relation .reason,
-.activity_list .row .col_relation .data {
+.activity-list .row .col-relation .reason,
+.activity-list .row .col-relation .data {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.activity_list .row .col_btns {
+.activity-list .row .col-btns {
     position: absolute;
     top: 32px;
     right: 40px;
     width: 120px;
     text-align: center;
 }
-.sri_btn_ml {
+.sri-btn-ml {
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -392,13 +392,13 @@ option {
     vertical-align: top;
     cursor: pointer;
 }
-.sri_btn_ml span.sri_btn_immediately,
-.sri_btn_ml span.sri_btn_recruitin_apply {
+.sri-btn-ml span.sri-btn-immediately,
+.sri-btn-ml span.sri-btn-recruitin-apply {
     position: relative;
     border: 1px solid var(--coral110);
     color: var(--coral110);
 }
-.sri_btn_ml span {
+.sri-btn-ml span {
     display: inline-block;
     width: 118px;
     height: 38px;
@@ -409,7 +409,7 @@ option {
     line-height: 36px;
     background: var(--white);
 }
-.activity_list .row .col_btns .date {
+.activity-list .row .col-btns .date {
     display: block;
     margin-top: 4px;
     width: 100%;
@@ -417,16 +417,16 @@ option {
     font-size: 13px;
     line-height: 24px;
 }
-.img_svg_layout,
-.img_svg_common,
-.img_svg_hidden {
+.img-svg-layout,
+.img-svg-common,
+.img-svg-hidden {
     visibility: hidden;
     overflow: hidden;
     position: absolute;
     width: 0;
     height: 0;
 }
-.activity_list .row .col_relation .data {
+.activity-list .row .col-relation .data {
     display: inline-block;
     padding: 0 8px;
     max-width: 100%;
@@ -515,27 +515,27 @@ option {
 .TabBox li + li {
     margin-left: 32px;
 }
-.wrap_list .no_row {
+.wrap-list .no-row {
     padding: 72px 0 79px;
     border-bottom: 1px solid #eaedf4;
     text-align: center;
 }
-.wrap_list .no_row .txt {
+.wrap-list .no-row .txt {
     padding: 163px 0 14px;
     color: var(--gray100);
     font-size: 14px;
     line-height: 24px;
-    background: url(//www.saraminimage.co.kr/sri/person/resume/img_empty_announce.png)
+    background: url(//www.saraminimage.co.kr/sri/person/resume/img-empty-announce.png)
         50% 0 no-repeat;
 }
-.wrap_list .no_row .txt b {
+.wrap-list .no-row .txt b {
     display: block;
     padding-bottom: 4px;
     color: var(--gray90);
     font-size: 18px;
     line-height: 32px;
 }
-.wrap_list .no_row .link_go {
+.wrap-list .no-row .link-go {
     display: inline-block;
     position: relative;
     padding: 10px 14px 10px 0;
@@ -543,7 +543,7 @@ option {
     font-size: 14px;
     vertical-align: top;
 }
-.wrap_list .no_row .link_go:after {
+.wrap-list .no-row .link-go:after {
     position: absolute;
     top: 50%;
     right: 0;

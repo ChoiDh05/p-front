@@ -1,4 +1,4 @@
-.integrated_header {
+.integrated-header {
     display: flex;
     height: 64px;
     border-bottom: 1px solid #eaedf4;
@@ -6,11 +6,11 @@
     justify-content: space-between;
 }
 
-.integrated_header .area_logo {
+.integrated-header .area-logo {
     margin-left: 64px;
 }
 
-.integrated_header .area_logo .link_saramin_logo {
+.integrated-header .area-logo .link-position-logo {
     margin-right: 6px;
 }
 
@@ -19,21 +19,21 @@ a {
     text-decoration: none;
 }
 
-.integrated_header .area_util {
+.integrated-header .area-util {
     margin-right: 64px;
 }
 
-.integrated_header .area_util .util {
+.integrated-header .area-util .util {
     display: flex;
     height: 64px;
 }
 
-.integrated_header .area_util .util_item {
+.integrated-header .area-util .util-item {
     display: flex;
     align-items: center;
 }
 
-.integrated_header .area_util .util_menu {
+.integrated-header .area-util .util-menu {
     display: flex;
     color: var(--gray110);
     font-size: 13px;
@@ -41,18 +41,18 @@ a {
     align-items: center;
 }
 
-.integrated_header .area_util .menu_saramin:before{
-    background-image: url(/static/images/login/saramin-home.svg)
+.integrated-header .area-util .menu-position:before {
+    background-image: url(/static/images/login/saramin-home.svg);
 }
 
-.integrated_header .area_util .util_menu:before {
+.integrated-header .area-util .util-menu:before {
     margin-right: 5px;
     width: 18px;
     height: 18px;
     content: "";
 }
 
-.integrated_header .area_util .util_item+.util_item:before {
+.integrated-header .area-util .util-item + .util-item:before {
     margin: 0 16px;
     width: 1px;
     height: 12px;
@@ -60,11 +60,11 @@ a {
     content: "";
 }
 
-.integrated_header .area_util .menu_must:before{
+.integrated-header .area-util .menu-must:before {
     background-image: url(/static/images/login/saramin-must.svg);
 }
 
-#sri_section {
+#position-section {
     display: table;
     overflow: hidden;
     position: relative;
@@ -74,7 +74,7 @@ a {
     box-sizing: border-box;
 }
 
-#sri_wrap {
+#position-wrap {
     display: table-row;
     width: 100%;
     height: 100%;
@@ -87,12 +87,11 @@ a {
     width: 960px;
 }
 
-
-#sri_section.layout_wide #content {
+#position-section.layout-wide #content {
     width: 1260px;
 }
 
-.wrap_intergranted_login_page {
+.wrap-integrated-login-page {
     display: flex;
     flex-direction: column;
     width: 1084px;
@@ -104,42 +103,31 @@ a {
     border-radius: 16px;
 }
 
-.wrap_intergranted_login_page .box_logo {
+.wrap-integrated-login-page .box-logo {
     margin-bottom: 50px;
     display: flex;
     align-items: center;
 }
 
-.wrap_intergranted_login_page .box_logo {
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.wrap_intergranted_login_page .box_logo .item_logo {
+.wrap-integrated-login-page .box-logo .item-logo {
     position: relative;
 }
 
-.wrap_intergranted_login_page .box_intergrated_login {
+.wrap-integrated-login-page .box-integrated-login {
     display: flex;
     height: 100%;
 }
 
-.wrap_intergranted_login_page .box_intergrated_login>div {
+.wrap-integrated-login-page .box-integrated-login > div {
     flex: 0 0 50%;
 }
 
-.wrap_intergranted_login_page .box_intergrated_login {
-    display: flex;
-    height: 100%;
-}
-
-.area_intergranted_login {
+.area-integrated-login {
     width: 310px;
     margin: 0 auto;
 }
 
-.area_intergranted_login .tit {
+.area-integrated-login .tit {
     font-size: 28px;
     font-weight: normal;
     line-height: 38px;
@@ -147,32 +135,26 @@ a {
     margin: 26px 0 45px;
 }
 
-address, caption, cite, code, dfn, em, strong, th, var {
-    font-weight: normal;
-    font-style: normal;
-}
-
-.area_intergranted_login.person .tit:after {
+.area-integrated-login.person .tit:after {
     display: block;
     margin: 48px auto 100px;
     width: 254px;
     height: 150px;
     background-image: url(https://www.saraminimage.co.kr/sri/login/ico_login_model1.png);
     background-size: cover;
-    content: '';
+    content: "";
 }
 
-.area_intergranted_login .area_btn {
+.area-integrated-login .area-btn {
     position: relative;
 }
 
-.area_intergranted_login .area_btn>a {
+.area-integrated-login .area-btn > a {
     width: 100%;
     position: relative;
 }
 
-
-[class*="BtnType"] {
+[class*="btn-type"] {
     display: inline-flex;
     position: relative;
     border: 1px solid var(--blue90);
@@ -186,68 +168,58 @@ address, caption, cite, code, dfn, em, strong, th, var {
     align-items: center;
 }
 
-
-[class*="BtnType"].BlueInvert {
+[class*="btn-type"].blue-invert {
     border-color: var(--blue90);
     color: var(--blue90);
     background: var(--white);
 }
 
-[class*="BtnType"].SizeL {
+[class*="btn-type"].size-l {
     padding: 10px 15px 12px;
     height: 48px;
     font-size: 16px;
     line-height: 24px;
 }
 
-.area_intergranted_login .area_btn>a {
-    width: 100%;
-    position: relative;
-}
-
-.area_intergranted_login .area_btn {
-    position: relative;
-}
-
-[class*="BtnType"].BlueInvert:hover {
+[class*="btn-type"].blue-invert:hover {
     background: var(--blue20);
 }
 
-.area_intergranted_login.company .tit:after {
+.area-integrated-login.company .tit:after {
     display: block;
     margin: 48px auto 100px;
     width: 191px;
     height: 150px;
     background-image: url(https://www.saraminimage.co.kr/sri/login/ico_login_model2.png);
     background-size: cover;
-    content: '';
+    content: "";
 }
 
-.wrap_intergranted_login_page .box_intergrated_login .box_right {
+.wrap-integrated-login-page .box-integrated-login .box-right {
     position: relative;
 }
 
-.wrap_intergranted_login_page .box_intergrated_login .box_right:before {
+.wrap-integrated-login-page .box-integrated-login .box-right:before {
     width: 1px;
     height: 100%;
     background-color: var(--gray40);
     position: absolute;
     left: 0;
-    content: '';
+    content: "";
 }
 
-.login_page_wrap {
+.login-page-wrap {
     width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
 
-.wrap_intergranted_login_page .box_intergrated_login .box_right .login_frm {
+.wrap-integrated-login-page .box-integrated-login .box-right .login-frm {
     margin-top: 0;
 }
 
-.login_frm {
+.login-frm {
     width: 320px;
     margin: 40px 0 24px;
     display: flex;
@@ -255,15 +227,11 @@ address, caption, cite, code, dfn, em, strong, th, var {
     justify-content: center;
 }
 
-.login_page_wrap .login_input_wrap {
+.login-page-wrap .login-input-wrap {
     width: 320px;
 }
 
-.login_input_wrap, .pop_login_layer {
-    --common_a_hover_color: #3769ed;
-}
-
-.login_input_wrap .tab_member_type {
+.login-input-wrap .tab-member-type {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -271,7 +239,7 @@ address, caption, cite, code, dfn, em, strong, th, var {
     margin-bottom: 16px;
 }
 
-.login_input_wrap .tab_member_type li .btn_tab {
+.login-input-wrap .tab-member-type li .btn-tab {
     position: relative;
     color: #8491a7;
     font-size: 24px;
@@ -279,52 +247,26 @@ address, caption, cite, code, dfn, em, strong, th, var {
     width: 100%;
 }
 
-.login_input_wrap .tab_member_type li .btn_tab.active {
+.login-input-wrap .tab-member-type li .btn-tab.active {
     font-weight: 700;
     color: #373f73;
 }
 
-button, label {
-    cursor: pointer;
-}
-
-.login_input_wrap .tab_member_type li {
+.login-input-wrap .tab-member-type li {
     flex: 1 1 50%;
     text-align: center;
 }
 
-input, button, textarea, select, optgroup, option {
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    font-style: inherit;
-}
-
-.login_input_wrap .tab_member_type li .btn_tab {
-    position: relative;
-    color: #8491a7;
-    font-size: 24px;
-    line-height: 34px;
-    width: 100%;
-}
-
-.login_input_wrap .tab_member_type li .btn_tab.active {
-    font-weight: 700;
-    color: #373f73;
-}
-
 button, label {
     cursor: pointer;
 }
 
-
 button {
     border: 0;
     background: transparent;
-    cursor: pointer;
 }
 
-.login_input_wrap .tab_member_type li .btn_tab.active:before {
+.login-input-wrap .tab-member-type li .btn-tab.active:before {
     position: absolute;
     left: 50%;
     bottom: -4px;
@@ -335,26 +277,20 @@ button {
     background-color: #4876ef;
 }
 
-button {
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-}
-
-.login_input_wrap .login-form {
+.login-input-wrap .login-form {
     display: flex;
     flex-flow: column nowrap;
 }
 
-.login_input_wrap .login-form .id-input-box {
+.login-input-wrap .login-form .id-input-box {
     margin-bottom: 8px;
 }
 
-.login_input_wrap .login-form .id-input-box, .login_input_wrap .login-form .pw-input-box {
+.login-input-wrap .login-form .id-input-box, .login-input-wrap .login-form .pw-input-box {
     position: relative;
 }
 
-.login_input_wrap .login-form input {
+.login-input-wrap .login-form input {
     width: 100%;
     border: 1px solid #8491a7;
     background: #fff;
@@ -366,7 +302,7 @@ button {
     box-sizing: border-box;
 }
 
-.login_input_wrap .login-form label {
+.login-input-wrap .login-form label {
     position: absolute;
     left: 12px;
     top: 18px;
@@ -375,7 +311,13 @@ button {
     transition: all 300ms ease;
 }
 
-.login_input_wrap .setting {
+.login-input-wrap .login-form input:focus ~ label, .login-input-wrap .login-form input:valid ~ label, .login-input-wrap .login-form input:-webkit-autofill ~ label {
+    font-size: 12px;
+    top: 8px;
+    color: #373f57;
+}
+
+.login-input-wrap .setting {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -385,27 +327,22 @@ button {
     margin-top: 12px;
 }
 
-.InpBox {
+.inp-box {
     display: inline-block;
     vertical-align: top;
 }
 
-
-.login_input_wrap .setting .InpBox:first-child {
+.login-input-wrap .setting .inp-box:first-child {
     margin-right: 12px;
 }
 
-.InpBox .Chk {
+.inp-box .chk {
     display: inline-block;
     position: relative;
     vertical-align: top;
 }
 
-.login_input_wrap .login-form input:focus, .login_input_wrap .login-form input:valid, .login_input_wrap .login-form input:-webkit-autofill {
-    padding: 24px 12px 9px 12px;
-}
-
-.InpBox .Chk input {
+.inp-box .chk input {
     position: absolute;
     top: 0;
     width: 1px;
@@ -415,7 +352,7 @@ button {
     pointer-events: none;
 }
 
-.InpBox .Chk .Lbl {
+.inp-box .chk .lbl {
     display: block;
     position: relative;
     color: var(--gray100);
@@ -423,17 +360,7 @@ button {
     line-height: 20px;
 }
 
-.login_input_wrap .login-form input:focus ~ label, .login_input_wrap .login-form input:valid ~ label, .login_input_wrap .login-form input:-webkit-autofill ~ label {
-    font-size: 12px;
-    top: 8px;
-    color: #373f57;
-}
-
-.login_input_wrap .login-form .setting label {
-    position: static;
-}
-
-.InpBox .Chk .Lbl:before {
+.inp-box .chk .lbl:before {
     display: inline-block;
     margin-right: 8px;
     width: 18px;
@@ -442,10 +369,10 @@ button {
     border-radius: 4px;
     vertical-align: top;
     background: #fff;
-    content: '';
+    content: "";
 }
 
-.InpBox .Chk .Lbl:after {
+.inp-box .chk .lbl:after {
     display: none;
     position: absolute;
     top: 5px;
@@ -456,15 +383,15 @@ button {
     border-left: 2px solid var(--white);
     border-radius: 1px;
     transform: rotate(-45deg);
-    content: '';
+    content: "";
 }
 
-.InpBox .Chk input:checked~.Lbl:after {
+.inp-box .chk input:checked ~ .lbl:after {
     display: inline-block;
     border-color: var(--white);
 }
 
-.InpBox .Chk input:checked~.Lbl:before {
+.inp-box .chk input:checked ~ .lbl:before {
     border-color: var(--blue90);
     background: var(--blue90);
 }
@@ -475,34 +402,21 @@ button {
     border-radius: 4px;
 }
 
-.InpBox .Chk input:focus~.Lbl:before {
+.inp-box .chk input:focus ~ .lbl:before {
     border-radius: 4px;
     outline: 2px solid var(--blue100);
     outline-offset: 2px;
 }
 
-[class*="BtnType"].SizeML {
+[class*="btn-type"].size-ml {
     padding: 13px 15px 15px;
     height: 56px;
     font-size: 18px;
     font-weight: bold;
     line-height: 26px;
 }
-[class*="BtnType"] {
-    display: inline-flex;
-    position: relative;
-    border: 1px solid var(--blue90);
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: var(--white);
-    text-align: center;
-    vertical-align: top;
-    background-color: var(--blue90);
-    justify-content: center;
-    align-items: center;
-}
 
-.login_input_wrap .login-form .btn_login {
+.login-input-wrap .login-form .btn-login {
     margin-bottom: 12px;
     width: 100%;
     color: #fff;
@@ -512,7 +426,7 @@ button {
     border-radius: 4px;
 }
 
-.login_input_wrap .signup-forgotten {
+.login-input-wrap .signup-forgotten {
     margin-bottom: 24px;
     display: flex;
     position: relative;
@@ -521,26 +435,21 @@ button {
     line-height: 24px;
 }
 
-.login_input_wrap .signup-forgotten .sign_up, .login_input_wrap .signup-forgotten .forgotten, .login_input_wrap .signup-forgotten .link_rater {
+.login-input-wrap .signup-forgotten .sign-up, .login-input-wrap .signup-forgotten .forgotten, .login-input-wrap .signup-forgotten .link-rater {
     color: #373f57;
 }
 
-.login_input_wrap .signup-forgotten>a {
+.login-input-wrap .signup-forgotten > a {
     text-align: center;
     position: relative;
 }
 
-.login_input_wrap .signup-forgotten>a +a {
+.login-input-wrap .signup-forgotten > a + a {
     padding-left: 12px;
     margin-left: 12px;
 }
 
-.login_input_wrap .signup-forgotten>a {
-    text-align: center;
-    position: relative;
-}
-
-.login_input_wrap .signup-forgotten .sign_up + .forgotten:after {
+.login-input-wrap .signup-forgotten .sign-up + .forgotten:after {
     position: absolute;
     content: "";
     background-color: var(--gray50);
@@ -551,44 +460,27 @@ button {
     transform: translateY(-50%);
 }
 
-.login_input_wrap .signup-forgotten .forgotten:hover, .login_input_wrap .signup-forgotten .link_rater:hover {
-    color: var(--common_a_hover_color);
+.login-input-wrap .signup-forgotten .forgotten:hover, .login-input-wrap .signup-forgotten .link-rater:hover {
+    color: var(--common-a-hover-color);
 }
 
-.login_input_wrap .social_login_tit .tit {
+.login-input-wrap .social-login-tit .tit {
     text-align: center;
     font-size: 15px;
     color: #5c667b;
     line-height: 24px;
 }
 
-.login_input_wrap .social_login_tit .tit:before {
-    margin-right: 8px;
-}
-
-.login_input_wrap .social_login_tit .tit:before, .login_input_wrap .social_login_tit .tit:after {
+.login-input-wrap .social-login-tit .tit:before, .login-input-wrap .social-login-tit .tit:after {
     width: 60px;
     height: 1px;
     background-color: #eaedf4;
     display: inline-block;
     vertical-align: super;
-    content: '';
+    content: "";
 }
 
-.login_input_wrap .social_login_tit .tit:after {
-    margin-left: 8px;
-}
-
-.login_input_wrap .social_login_tit .tit:before, .login_input_wrap .social_login_tit .tit:after {
-    width: 60px;
-    height: 1px;
-    background-color: #eaedf4;
-    display: inline-block;
-    vertical-align: super;
-    content: '';
-}
-
-.login_input_wrap .social_login {
+.login-input-wrap .social-login {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -596,18 +488,39 @@ button {
     padding-top: 24px;
 }
 
-.icon_kakao{
-    background: url(/static/images/login/kakao_login_medium_wide.png);
+.icon-kakao {
+    background: url(/static/images/login/kakao-login-medium-wide.png);
     background-repeat: no-repeat;
     margin-left: 10px;
     height: 45px;
 }
 
-.social_login{
+.social-login {
     height: 70px;
 }
 
-.login_input_wrap .signup-forgotten .link_rater {
+.login-input-wrap .signup-forgotten .link-rater {
     text-decoration: unset;
     margin-left: auto;
 }
+
+#mask0-2800-18175 {
+    mask-type: luminance;
+}
+
+.link-rater {
+    display: none;
+}
+
+.setting > .inp-box {
+    display: block;
+}
+
+.area-integrated-login .company .company-logo {
+    display: none;
+}
+
+.area-integrated-login .person .person-logo {
+    display: block;
+}
+

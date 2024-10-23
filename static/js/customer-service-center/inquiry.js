@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // 체크박스 누를시 이미지 왔다갔다하는 이벤트
 document.addEventListener("click", () => {
     const checkboxes = document.querySelectorAll(
-        '.sri-input3 > input[type="checkbox"]'
+        '.position-input3 > input[type="checkbox"]'
     );
 
     checkboxes.forEach((checkbox) => {

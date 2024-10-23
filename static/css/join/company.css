@@ -31,7 +31,6 @@ ol, ul, li {
     list-style-type: none;
 }
 
-
 .join-header .area-util .util-item {
     display: flex;
     align-items: center;
@@ -56,7 +55,7 @@ ol, ul, li {
     content: "";
 }
 
-.join-header .area-util .util-item+.util-item:before {
+.join-header .area-util .util-item + .util-item:before {
     margin: 0 16px;
     width: 1px;
     height: 12px;
@@ -109,11 +108,11 @@ button, label {
     font-size: 16px;
 }
 
-.write-base .item .TypoBox {
+.write-base .item .typo-box {
     width: 100%;
 }
 
-.TypoBox {
+.typo-box {
     display: inline-block;
     position: relative;
     border: 1px solid var(--gray70);
@@ -121,7 +120,8 @@ button, label {
     box-sizing: border-box;
     background-color: var(--white);
 }
-.TypoBox .Typo {
+
+.typo-box .typo {
     padding: 8px 12px;
     width: 100%;
     height: 38px;
@@ -134,7 +134,7 @@ button, label {
     background: none;
 }
 
-.TypoBox .Typo.SizeL {
+.typo-box .typo.size-l {
     padding: 12px;
     height: 46px;
     font-size: 16px;
@@ -149,18 +149,13 @@ button, label {
     color: #2d65f2;
 }
 
-
-.write-base .item .msgInvalid {
+.write-base .item .msg-invalid {
     display: block;
     clear: both;
     margin-top: 8px;
     color: #d64141;
     font-size: 13px;
     line-height: 20px;
-}
-
-.write-base .item .alert-column.good-txt {
-    color: #2d65f2;
 }
 
 .write-base .item .alert-column {
@@ -220,6 +215,7 @@ button, label {
     border-radius: 5px;
     background-color: var(--white);
 }
+
 .area-corp-certification .corp-certification-exam .exam-certification {
     background: var(--white) url(//www.saraminimage.co.kr/sri/join/img_exam_certification.png) 50% 18px no-repeat;
 }
@@ -248,16 +244,6 @@ button, label {
     background: var(--white) url(//www.saraminimage.co.kr/sri/join/img_exam_certification2.png) 50% 22px no-repeat;
 }
 
-.area-corp-certification .corp-certification-exam .box-exam {
-    position: relative;
-    margin: 0 6px;
-    width: 108px;
-    height: 140px;
-    border: 1px solid #e5e5e5;
-    border-radius: 5px;
-    background-color: var(--white);
-}
-
 .area-corp-certification .corp-certification-exam .exam-license:after {
     top: 56px;
     width: 40px;
@@ -272,22 +258,6 @@ button, label {
     left: 0;
     margin: 0 auto;
     content: "";
-}
-
-.area-corp-certification .corp-certification-exam .box-exam:after {
-    display: block;
-    position: absolute;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    content: "";
-}
-
-.area-corp-certification .corp-certification-tit {
-    padding-bottom: 8px;
-    color: var(--gray100);
-    font-size: 15px;
-    line-height: 22px;
 }
 
 .area-corp-certification .box-file-upload {
@@ -307,15 +277,6 @@ button, label {
 
 .area-corp-certification .box-file-upload .file-label {
     z-index: 5;
-}
-
-.area-corp-certification .box-file-upload .file-input, .area-corp-certification .box-file-upload .file-label {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .area-corp-certification .box-file-upload .file-view {
@@ -360,11 +321,11 @@ button, label {
     margin: 12px 0;
 }
 
-[class*="BtnType"].BtnTypeRd {
+[class*="btn-type"].btn-type-rd {
     border-radius: 35px;
 }
 
-[class*="BtnType"].SizeM {
+[class*="btn-type"].size-m {
     padding: 6px 11px;
     height: 40px;
     font-size: 14px;
@@ -375,7 +336,7 @@ button, label {
     width: 230px;
 }
 
-[class*="BtnType"] {
+[class*="btn-type"] {
     display: inline-flex;
     position: relative;
     border: 1px solid var(--blue90);
@@ -388,12 +349,12 @@ button, label {
     align-items: center;
 }
 
-[class*="BtnType"]:hover {
+[class*="btn-type"]:hover {
     border-color: var(--blue100);
     background-color: var(--blue100);
 }
 
-.InpBox .Chk .Lbl {
+.inp-box .chk .lbl {
     display: block;
     position: relative;
     color: var(--gray100);
@@ -401,7 +362,7 @@ button, label {
     line-height: 20px;
 }
 
-.InpBox .Chk .Lbl:before {
+.inp-box .chk .lbl:before {
     display: inline-block;
     margin-right: 8px;
     width: 18px;
@@ -413,24 +374,12 @@ button, label {
     content: '';
 }
 
-.InpBox .Chk input:checked~.Lbl:before {
+.inp-box .chk input:checked ~ .lbl:before {
     border-color: var(--blue90);
     background: var(--blue90);
 }
 
-.InpBox .Chk .Lbl:before {
-    display: inline-block;
-    margin-right: 8px;
-    width: 18px;
-    height: 18px;
-    border: 1px solid var(--gray70);
-    border-radius: 4px;
-    vertical-align: top;
-    background: #fff;
-    content: '';
-}
-
-.InpBox .Chk .Lbl:after {
+.inp-box .chk .lbl:after {
     display: none;
     position: absolute;
     top: 5px;
@@ -444,12 +393,12 @@ button, label {
     content: '';
 }
 
-.InpBox .Chk input:checked~.Lbl:after {
+.inp-box .chk input:checked ~ .lbl:after {
     display: inline-block;
     border-color: var(--white);
 }
 
-.InpBox .Chk input:focus~.Lbl:before {
+.inp-box .chk input:focus ~ .lbl:before {
     border-radius: 4px;
     outline: 2px solid var(--blue100);
     outline-offset: 2px;
@@ -471,7 +420,6 @@ button, label {
     width: 360px;
     box-sizing: border-box;
 }
-
 
 .fluid-tip {
     overflow-y: auto;
@@ -506,29 +454,14 @@ button, label {
     margin-right: 4px;
 }
 
-.fluid-tip .tip-tit .svg {
-    margin-right: 4px;
-}
-
 .fluid-tip .tip-cont {
     margin-top: 14px;
-}
-
-ol, ul, li {
-    list-style-type: none;
 }
 
 .fluid-tip .tip-question {
     color: var(--gray100);
     font-size: 15px;
     line-height: 22px;
-}
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, b, strong, input, textarea, button, select {
-    margin: 0;
-    padding: 0;
-    font-family: "Pretendard", "Malgun Gothic", dotum, gulim, sans-serif;
-    font-size: 100%;
 }
 
 .fluid-tip .tip-answer {
@@ -548,7 +481,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 14px;
 }
 
-[class*="BtnType"] {
+[class*="btn-type"] {
     display: inline-flex;
     position: relative;
     border: 1px solid var(--blue90);
@@ -562,18 +495,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     align-items: center;
 }
 
-.fluid-tip .BtnType.bg-white {
+.fluid-tip .btn-type.bg-white {
     margin-top: 12px;
     width: 100%;
 }
 
-.BtnType.bg-white {
+.btn-type.bg-white {
     display: block;
     color: var(--blue90);
     background-color: var(--white);
 }
 
-.fluid-tip .list-tip .tip-item+.tip-item {
+.fluid-tip .list-tip .tip-item + .tip-item {
     margin-top: 12px;
 }
 
@@ -601,17 +534,16 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     line-height: 20px;
 }
 
-.fluid-tip .tip-answer+.tip-answer {
+.fluid-tip .tip-answer + .tip-answer {
     margin-top: 8px;
 }
 
-h4{
+h4 {
     font-weight: bold;
 }
 
-
 ::placeholder {
-    color: #8491A7;
+    color: #8491a7;
 }
 
 .write-base .item {
@@ -620,7 +552,7 @@ h4{
     padding-top: 24px;
 }
 
-.BtnType.bg-white:hover {
+.btn-type.bg-white:hover {
     border-color: var(--blue90);
     background-color: var(--blue20);
 }
@@ -629,29 +561,27 @@ h4{
     margin-top: 8px;
 }
 
-.TypoBox .Typo.SizeL {
+.typo-box .typo.size-l {
     padding: 12px;
     height: 46px;
     font-size: 16px;
     line-height: 24px;
 }
 
-
-
-.cont-division .sri-radio-wrap .InpBox {
+.cont-division .position-radio-wrap .inp-box {
     margin: 16px 20px 16px 0;
 }
 
-.InpBox {
+.inp-box {
     display: inline-block;
     vertical-align: top;
 }
 
-.InpBox .Rdo {
+.inp-box .rdo {
     position: relative;
 }
 
-.InpBox .Rdo input {
+.inp-box .rdo input {
     position: absolute;
     top: 0;
     width: 1px;
@@ -661,19 +591,19 @@ h4{
     pointer-events: none;
 }
 
-.InpBox .Rdo .Lbl {
+.inp-box .rdo .lbl {
     display: block;
     color: var(--gray100);
     font-size: 14px;
     line-height: 20px;
 }
 
-.InpBox .Rdo input:checked~.Lbl:before {
+.inp-box .rdo input:checked ~ .lbl:before {
     border-color: var(--blue90);
     background: var(--blue90);
 }
 
-.InpBox .Rdo .Lbl:before {
+.inp-box .rdo .lbl:before {
     display: inline-block;
     margin-right: 8px;
     width: 18px;
@@ -685,11 +615,11 @@ h4{
     content: '';
 }
 
-.InpBox .Rdo input:checked~.Lbl:after {
+.inp-box .rdo input:checked ~ .lbl:after {
     background: var(--white);
 }
 
-.InpBox .Rdo .Lbl:after {
+.inp-box .rdo .lbl:after {
     position: absolute;
     top: 5px;
     left: 5px;
@@ -699,20 +629,20 @@ h4{
     content: '';
 }
 
-.InpBox .Rdo input:focus~.Lbl:before {
+.inp-box .rdo input:focus ~ .lbl:before {
     border-radius: 50px;
     outline: 2px solid var(--blue100);
     outline-offset: 2px;
 }
 
-[class*="BtnType"].SizeL {
+[class*="btn-type"].size-l {
     padding: 10px 15px 12px;
     height: 48px;
     font-size: 16px;
     line-height: 24px;
 }
 
-.cont-division .msgInvalid {
+.cont-division .msg-invalid {
     display: block;
     clear: both;
     margin-top: 8px;
@@ -737,18 +667,13 @@ h4{
     color: #5c667b;
 }
 
-.InpBox {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.InpBox .Chk {
+.inp-box .chk {
     display: inline-block;
     position: relative;
     vertical-align: top;
 }
 
-.InpBox .Chk input {
+.inp-box .chk input {
     position: absolute;
     top: 0;
     width: 1px;
@@ -774,18 +699,12 @@ h4{
     border: none;
 }
 
-.cont-division .agree-box .agree-article {
-    padding-bottom: 16px;
-    border-bottom: 1px solid #d7dce5;
-    color: #5c667b;
-}
-
 .cont-division .agree-box .agree-article.depth2 li {
     position: relative;
     margin: 16px 0;
 }
 
-.InpBox .Chk .Lbl {
+.inp-box .chk .lbl {
     display: block;
     position: relative;
     color: var(--gray100);
@@ -816,7 +735,7 @@ h4{
     padding-bottom: 100px;
 }
 
-[class*="BtnType"].SizeL {
+[class*="btn-type"].size-l {
     padding: 10px 15px 12px;
     height: 48px;
     font-size: 16px;
@@ -836,7 +755,7 @@ h4{
     background-color: #eff5ff;
 }
 
-.write-base .item .TypoBox.invalid {
+.write-base .item .typo-box.invalid {
     border-color: #dc3434;
 }
 
@@ -848,7 +767,7 @@ h4{
     display: flex;
 }
 
-.flexbox .BtnType {
+.flexbox .btn-type {
     margin-left: 8px;
     white-space: nowrap;
 }
@@ -864,15 +783,6 @@ h4{
 
 .flexbox .form-typobox {
     width: 100%;
-}
-
-.area-job-category {
-    position: relative;
-    padding: 2px 12px 12px;
-    min-height: 48px;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .form-placeholder {
@@ -943,12 +853,12 @@ h4{
     font-weight: bold;
 }
 
-.layer-hope .area-search-job .sri-input {
+.layer-hope .area-search-job .position-input {
     width: 428px;
     box-sizing: border-box;
 }
 
-.sri-input[type="text"] {
+.position-input[type="text"] {
     margin-right: 6px;
     padding: 0 11px 1px 11px;
     height: 32px;
@@ -1011,11 +921,11 @@ h4{
     vertical-align: top;
 }
 
-.sri-check.small {
+.position-check.small {
     height: 15px;
 }
 
-.sri-check {
+.position-check {
     display: inline-block;
     position: relative;
     height: 18px;
@@ -1023,7 +933,7 @@ h4{
     cursor: pointer;
 }
 
-.sri-check .inp-check {
+.position-check .inp-check {
     position: absolute;
     top: 0;
     left: 0;
@@ -1033,7 +943,8 @@ h4{
     opacity: 0.01;
     filter: alpha(opacity = 0.1);
 }
-.sri-check.small .inp-check {
+
+.position-check.small .inp-check {
     top: 1px;
     width: 13px;
     height: 13px;
@@ -1047,11 +958,11 @@ input[type="checkbox"], input[type="radio"] {
     vertical-align: -1px;
 }
 
-.sri-radio.small .txt-check {
+.position-radio.small .txt-check {
     background-position: 0 -299px;
 }
 
-.sri-check.small .txt-check {
+.position-check.small .txt-check {
     padding: 0 7px 0 20px;
     height: 15px;
     font-size: 12px;
@@ -1059,7 +970,7 @@ input[type="checkbox"], input[type="radio"] {
     background-position: 0 -99px;
 }
 
-.sri-check .txt-check {
+.position-check .txt-check {
     display: block;
     padding: 0 7px 0 29px;
     height: 18px;
@@ -1106,23 +1017,15 @@ body, input, button, textarea, select, table {
     line-height: 1.0;
 }
 
-.sri-check.sri-radio.small.check-on .txt-check {
+.position-check.position-radio.small.check-on .txt-check {
     background-position: 0 -349px;
 }
-
 
 .sub-depth3 {
     position: relative;
     margin: 13px 0 14px;
     border: 1px solid #bdc5f3;
     background-color: #f8f9ff;
-}
-
-.sub-depth3 .title-sub-depth3 {
-    display: inline-block;
-    padding: 18px 0 0 20px;
-    color: #566feb;
-    font-size: 13px;
 }
 
 .sub-depth3 .title-sub-depth3 {
@@ -1141,28 +1044,6 @@ body, input, button, textarea, select, table {
     margin-top: 6px;
     width: 145px;
     vertical-align: top;
-}
-
-.sri-check.small {
-    height: 15px;
-}
-
-.sub-depth3 .list-depth3 {
-    padding: 0 0 20px 20px;
-}
-
-.sub-depth3 .list-depth3:after {
-    display: table;
-    clear: both;
-    content: "";
-    table-layout: fixed;
-}
-
-.list-depth2:after {
-    display: table;
-    clear: both;
-    content: "";
-    table-layout: fixed;
 }
 
 .sub-depth3:after {
@@ -1189,10 +1070,6 @@ body, input, button, textarea, select, table {
     vertical-align: middle;
     background-color: #f7f7f7;
 }
-
-/* .sri-check.small.check-on .txt-check {
-    background-position: 0 -149px;
-} */
 
 .write-base .item .pass-box .field-eye.on:before {
     background: url(/static/images/join/oneye.svg) no-repeat;
@@ -1223,222 +1100,43 @@ button {
     color: #5c667b;
 }
 
-.sri-check .txt-check {
-    display: block;
-    padding: 0 7px 0 29px;
-    height: 18px;
-    color: #444;
-    font-size: 13px;
-    line-height: 15px;
-    background: url(//www.saraminimage.co.kr/ui/form/ico_checkbox.png) 0 0 no-repeat;
+.write-base .item .pass-box .field-eye {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    height: 50px;
+    line-height: 54px;
 }
 
-.sri-radio.small .txt-check {
-    background-position: 0 -299px;
+.write-base .item .alert-column.focus-txt {
+    color: #5c667b;
 }
 
-.sri-check.sri-radio.small.check-on .txt-check {
+.position-check.position-radio.small.check-on .txt-check {
     background-position: 0 -349px;
 }
 
-
-/* .sri-check.small.check-on .txt-check {
-    background-position: 0 -149px;
-} */
-
-.list-job-check {
-    padding: 14px 30px;
-    min-height: 78px;
-    border: 1px solid #666;
-    box-sizing: border-box;
-    font-size: 13px;
-}
-
-.list-job-check .item-check {
-    line-height: 24px;
-}
-
-.list-job-check .item-check .btn-delete {
-    width: 13px;
-    height: 13px;
-    border: 0;
-    box-sizing: border-box;
-    vertical-align: middle;
-    background: url(//www.saraminimage.co.kr/sri/person/btn/btn_close.png) 0 0 no-repeat;
-}
-
-.layer-pop-manage .bottom-btn-wrap {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.layer-pop-manage .bottom-btn-wrap button:first-child, .layer-pop-manage .bottom-btn-wrap a:first-child {
-    margin-left: 0;
-}
-
-.btn-basic-type05 {
-    display: inline-block;
-    padding: 5px 13px 9px;
-    height: 32px;
-    border: 1px solid #5f75eb;
-    box-sizing: border-box;
-    color: #fff;
-    font-size: 13px;
-    vertical-align: top;
-    background-color: #6b80f1;
-}
-
-.btn-basic-type01 {
-    display: inline-block;
-    padding: 5px 13px 9px;
-    height: 32px;
-    border: 1px solid #ababab;
-    box-sizing: border-box;
-    color: #444;
-    font-size: 13px;
-    vertical-align: top;
-    background-color: #fff;
-}
-
-.btn-basic-type03 {
-    display: inline-block;
-    padding: 5px 13px 9px;
-    height: 32px;
-    border: 1px solid #e4e4e4;
-    box-sizing: border-box;
-    color: #444;
-    font-size: 13px;
-    line-height: normal;
-    vertical-align: top;
-    background-color: #f8f8f8;
-}
-
-.layer-pop-manage .btn-layer-close span {
-    overflow: hidden;
-    font-size: 0;
-    line-height: 0;
-    text-indent: -100%;
-    white-space: nowrap;
-}
-
-.layer-pop-manage .btn-layer-close {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    width: 17px;
-    height: 17px;
-    border: 0 none;
-    background: url(//www.saraminimage.co.kr/ui/layout/person_mypage_2017/btn_layer_close.png) no-repeat 50% 50%;
-}
-
-.area-search-job .charge-job-select {
-    overflow: hidden;
-    position: absolute;
-    left: 178px;
-    z-index: 1;
-    margin-top: -1px;
-    width: 428px;
-    border: 1px solid #686868;
-    box-sizing: border-box;
-    background-color: #fff;
-}
-
-.area-search-job .list-job-charge {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    padding: 8px 0;
-    min-height: 163px;
-}
-
-.area-search-job .list-job-charge li.no-list {
-    color: #666;
+.position-check.small .txt-check {
+    padding: 0 7px 0 20px;
+    height: 15px;
     font-size: 12px;
+    line-height: 12px;
+    background-position: 0 -99px;
 }
 
-.area-search-job .list-job-charge li {
-    padding: 4px 15px;
-    text-align: left;
+.btn-identify-phone {
+    width: 100%;
 }
 
-
-.charge-job-select .btn-select {
-    padding: 7px 0;
-    border-top: 1px solid #e4e4e4;
-    background-color: #fbfbfb;
+.btn-identify-phone {
+    width: 100%;
 }
 
-.charge-job-select .btn-select .btn-basic-type01, .charge-job-select .btn-select .btn-basic-type05 {
-    padding: 1px 9px 5px;
-    height: 23px;
-    font-size: 12px;
-}
-
-.charge-job-select .btn-select {
-    padding: 7px 0;
-    border-top: 1px solid #e4e4e4;
-    background-color: #fbfbfb;
-}
-
-.sri-check.small.check-on .txt-check {
-    background-position: 0 -149px;
-}
-
-.layer-pop-manage label.check-on {
-    background: none;
-}
-
-.list-job-check .item-check .btn-delete {
-    width: 13px;
-    height: 13px;
-    border: 0;
-    box-sizing: border-box;
-    vertical-align: middle;
-    background: url(//www.saraminimage.co.kr/sri/person/btn/btn_close.png) 0 0 no-repeat;
-}
-
-.area-job-category .code-text {
-    font-size: 16px;
-}
-
-.area-job-category .code-text, .area-job-category .keyword {
-    color: var(--gray120);
-    line-height: 24px;
-}
-
-.area-job-category .keyword {
+.cont-division .msg-invalid {
     display: block;
+    clear: both;
     margin-top: 8px;
-    padding-right: 32px;
+    color: #d64141;
     font-size: 13px;
-}
-
-.area-job-category .code-text, .area-job_category .keyword {
-    color: var(--gray120);
-    line-height: 24px;
-}
-
-.area-job-category .cate-txt-delete {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    right: 12px;
-    margin-top: -16px;
-    margin-left: auto;
-    width: 32px;
-    height: 32px;
-    flex: none;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.area-job-category .cate-txt-delete:after {
-    width: 13px;
-    height: 14px;
-    background: url(/static/images/join/delete.svg) 50% no-repeat;
-    content: "";
-}
-
-.form-typobox:hover {
-    background: var(--gray20);
+    line-height: 20px;
 }
