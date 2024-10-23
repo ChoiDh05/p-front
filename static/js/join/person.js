@@ -1,14 +1,14 @@
-const modalCloseBtn = document.querySelector(".close_btn");
-const modalWindow = document.querySelector("#p_member_nudge");
-const ageBasisContent = document.querySelector(".collectionBasisContents");
-const basisClose = document.querySelector(".btn_close_birth_date_msg");
-const basisOpen = document.querySelector(".btn_birth_date_msg");
+const modalCloseBtn = document.querySelector(".btn-close");
+const modalWindow = document.querySelector("#p-member-nudge");
+const ageBasisContent = document.querySelector(".collection-basis-contents");
+const basisClose = document.querySelector(".btn-close-birth-date-msg");
+const basisOpen = document.querySelector(".btn-birth-date-msg");
 const idInput = document.querySelector("#id");
-const idMessage = document.querySelector("#idFocusMsg"); // 아이디 입력창 클릭 시 나오는 검은 글씨
-const idMessageWarn = document.querySelector("#idCheckMsg1"); // 유효성 검사 빨간 글씨
-const idMessageRep = document.querySelector("#idCheckMsg2"); // 아이디 중복 빨간 글씨
-const idMessageSafe = document.querySelector("#idCheckMsg3"); // 사용 가능 아이디 문구
-const idInputBox = document.querySelector(".TypoBox"); // TypoBox 선택
+const idMessage = document.querySelector("#id-focus-msg"); // 아이디 입력창 클릭 시 나오는 검은 글씨
+const idMessageWarn = document.querySelector("#id-check-msg1"); // 유효성 검사 빨간 글씨
+const idMessageRep = document.querySelector("#id-check-msg2"); // 아이디 중복 빨간 글씨
+const idMessageSafe = document.querySelector("#id-check-msg3"); // 사용 가능 아이디 문구
+const idInputBox = document.querySelector(".typo-box"); // typo-box 선택
 
 // 아이디 중복 모달창 닫기
 modalCloseBtn.addEventListener("click", () => {
@@ -36,7 +36,7 @@ idInput.addEventListener("input", () => validateUserId());
 
 // 아이디 유효성 검사 함수
 const validateUserId = () => {
-    const idPattern = /^[a-zA-Z0-9_]{4,20}$/; // 4~20자 영문, 숫자, 밑줄 허용
+    const idPattern = /^[a-zA-Z0-9-]{4,20}$/; // 4~20자 영문, 숫자, 밑줄 허용
     let isValid = idPattern.test(idInput.value); // 유효성 검사 결과
 
     if (isValid) {
@@ -48,7 +48,7 @@ const validateUserId = () => {
         hideIdValidationMessages(); // 다른 메시지 숨기기
         idMessage.style.display = "none";
         idMessageWarn.style.display = "block"; // 경고 메시지 표시
-        idInputBox.classList.add("invalid"); // TypoBox에 invalid 추가
+        idInputBox.classList.add("invalid"); // typo-box에 invalid 추가
     }
 
     return isValid; // 유효성 검사 결과 반환
@@ -68,12 +68,12 @@ const hideIdValidationMessages = () => {
 // ===========================================================================
 
 const passwordInput = document.querySelector("#password1");
-const passwordWarn = document.querySelector("#password1_warning_txt"); // 일반 경고
-const passwordRepWarn = document.querySelector("#password1_warning_txt_rep"); // 반복 문자 경고
-const passwordSafe = document.querySelector("#password1_good_txt"); // 유효한 메시지
-const passwordEye = document.querySelector("#masking_password"); // 눈알 버튼
-const passwordFocus = document.querySelectorAll(".focus_txt"); // 안내 문구
-const passwordInputBox = document.querySelector(".pass_box"); // 부모 요소
+const passwordWarn = document.querySelector("#password1-warning-txt"); // 일반 경고
+const passwordRepWarn = document.querySelector("#password1-warning-txt-rep"); // 반복 문자 경고
+const passwordSafe = document.querySelector("#password1-good-txt"); // 유효한 메시지
+const passwordEye = document.querySelector("#masking-password"); // 눈알 버튼
+const passwordFocus = document.querySelectorAll(".focus-txt"); // 안내 문구
+const passwordInputBox = document.querySelector(".pass-box"); // 부모 요소
 
 // 비밀번호 입력 시 안내 메시지와 눈알 처리
 passwordInput.addEventListener("focus", (e) => {
@@ -166,12 +166,12 @@ const togglePasswordMessages = (show) => {
 
 // =========================================================================================
 // 요소 선택
-const descBtn = document.querySelector("#sms_sent_code"); // 인증 요청 버튼
+const descBtn = document.querySelector("#sms-sent-code"); // 인증 요청 버튼
 const phoneComplete = document.querySelector("#name"); // 이름 섹션
 const birthComplete = document.querySelector("#birth"); // 생년월일 섹션
-const phoneArea = document.querySelector("#sms_cellnum_area"); // 휴대폰 번호 영역
-const phoneInput = document.querySelector("#sms_cellnum"); // 휴대폰 번호 입력 필드
-const completeMessage = document.querySelector("#sms_cellnum_desc"); // 인증 완료 메시지
+const phoneArea = document.querySelector("#sms-cellnum-area"); // 휴대폰 번호 영역
+const phoneInput = document.querySelector("#sms-cellnum"); // 휴대폰 번호 입력 필드
+const completeMessage = document.querySelector("#sms-cellnum-desc"); // 인증 완료 메시지
 
 // 테스트용 가짜 인증 데이터
 const mockUserData = {
@@ -199,10 +199,10 @@ const completeAuthentication = (data) => {
     phoneInput.value = data.phone; // 휴대폰 번호 입력
     phoneArea.style.display = "block"; // 휴대폰 번호 영역 표시
 
-    document.querySelector("#name .TypoBox input").value = data.name; // 이름 표시
+    document.querySelector("#name .typo-box input").value = data.name; // 이름 표시
     phoneComplete.style.display = "block"; // 이름 영역 표시
 
-    document.querySelector("#birth .TypoBox input").value = data.birth; // 생년월일 표시
+    document.querySelector("#birth .typo-box input").value = data.birth; // 생년월일 표시
     birthComplete.style.display = "block"; // 생년월일 영역 표시
 
     completeMessage.style.display = "block"; // 인증 완료 메시지 표시
@@ -214,18 +214,18 @@ const completeAuthentication = (data) => {
 };
 
 //  =============================================================================================
-const emailInput = document.querySelector("#sms_email_id");
-const wrongEmail = document.querySelector("#sms_msg_email1");
-const btnLink = document.querySelector("#email_msg");
-const emailAutoList = document.querySelector(".email_list");
-const submitBtn = document.querySelector("#btn_submit");
-const emailDomains = document.querySelectorAll(".email_domain");
-const txtInputs = document.querySelectorAll(".txt_input"); // strong 태그 안의 텍스트들
+const emailInput = document.querySelector("#sms-email-id");
+const wrongEmail = document.querySelector("#sms-msg-email1");
+const btnLink = document.querySelector("#email-msg");
+const emailAutoList = document.querySelector(".email-list");
+const submitBtn = document.querySelector("#btn-submit");
+const emailDomains = document.querySelectorAll(".email-domain");
+const txtInputs = document.querySelectorAll(".txt-input"); // strong 태그 안의 텍스트들
 
 // 이메일 유효성 검사 정규표현식
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// 이메일 입력 시 btn_link에 'on' 클래스 추가
+// 이메일 입력 시 btn-link에 'on' 클래스 추가
 emailInput.addEventListener("focus", () => {
     btnLink.classList.add("on");
 });
@@ -276,14 +276,14 @@ emailInput.addEventListener("input", () => {
 });
 
 // ==================================체크박스===================================
-const agreeAllCheckbox = document.querySelector("#agreeAllPersonal");
+const agreeAllCheckbox = document.querySelector("#agree-all-personal");
 const mandatoryCheckboxes = document.querySelectorAll(
-    ".agree_article.depth2 input[type='checkbox'][id^='agree_']"
+    ".agree-article.depth2 input[type='checkbox'][id^='agree-']"
 ); // 필수 항목
 const optionalCheckboxes = document.querySelectorAll(
-    ".agree_article.depth2 input[type='checkbox']:not([id^='agree_'])"
+    ".agree-article.depth2 input[type='checkbox']:not([id^='agree-'])"
 ); // 선택 항목
-const submitBtn2 = document.querySelector(".btn_input_complete"); // 회원가입 버튼
+const submitBtn2 = document.querySelector(".btn-input-complete"); // 회원가입 버튼
 
 // 전체 동의 클릭 시 모든 항목 체크
 agreeAllCheckbox.addEventListener("change", (e) => {
@@ -372,9 +372,9 @@ const requestAuthentication = () => {
 const processAuthenticationCompletion = (data) => {
     phoneInput.value = data.phone;
     phoneArea.style.display = "block";
-    document.querySelector("#name .TypoBox input").value = data.name;
+    document.querySelector("#name .typo-box input").value = data.name;
     phoneComplete.style.display = "block";
-    document.querySelector("#birth .TypoBox input").value = data.birth;
+    document.querySelector("#birth .typo-box input").value = data.birth;
     birthComplete.style.display = "block";
     completeMessage.style.display = "block";
     descBtn.style.display = "none";
@@ -444,7 +444,7 @@ mandatoryCheckboxes.forEach(
 );
 // =====================회원 정보 중복 모달=====================
 
-const alreadyIdSpan = document.querySelector("#p_already_id");
+const alreadyIdSpan = document.querySelector("#p-already-id");
 
 // 중복 확인 테스트용 모의 데이터
 const mockServerResponse = {
@@ -475,3 +475,60 @@ const showDuplicateModal = (duplicateId) => {
     alreadyIdSpan.textContent = duplicateId; // 중복된 아이디 표시
     modalWindow.style.display = "block"; // 모달 열기
 };
+
+// 인증번호 입력 필드와 메시지 관련 요소 가져오기
+const smsCodeInput = document.getElementById("sms-code");
+const smsCodeFocusMsg = document.getElementById("sms-code-focus-msg");
+const smsCodeWarningTxt = document.getElementById("sms-code-warning-txt");
+const smsCodeGoodTxt = document.getElementById("sms-code-good-txt");
+const resendSmsButton = document.getElementById("resend-sms-code");
+
+// 페이지 로드 시 기본적으로 메시지 숨김 처리
+window.onload = function () {
+    smsCodeFocusMsg.style.display = "none";
+    smsCodeWarningTxt.style.display = "none";
+    smsCodeGoodTxt.style.display = "none";
+};
+
+// 인증번호 유효성 검사를 위한 변수
+const validCode = "123456"; // 실제 서비스에서는 서버로부터 받아온 값으로 대체해야 함
+
+// 인증번호 입력 시 동작
+smsCodeInput.addEventListener("input", function () {
+    const enteredCode = smsCodeInput.value;
+
+    // 입력 중에는 안내 문구 보여줌
+    smsCodeFocusMsg.style.display = "block";
+    smsCodeWarningTxt.style.display = "none";
+    smsCodeGoodTxt.style.display = "none";
+
+    // 인증번호가 6자리가 되면 확인
+    if (enteredCode.length === 6) {
+        // 유효한 인증번호인지 확인
+        if (enteredCode === validCode) {
+            smsCodeFocusMsg.style.display = "none";
+            smsCodeWarningTxt.style.display = "none";
+            smsCodeGoodTxt.style.display = "block"; // 성공 메시지 표시
+        } else {
+            smsCodeFocusMsg.style.display = "none";
+            smsCodeGoodTxt.style.display = "none";
+            smsCodeWarningTxt.style.display = "block"; // 경고 메시지 표시
+        }
+    } else {
+        // 입력 중간에 6자리가 아닌 경우는 안내 메시지 유지
+        smsCodeFocusMsg.style.display = "block";
+        smsCodeWarningTxt.style.display = "none";
+        smsCodeGoodTxt.style.display = "none";
+    }
+});
+
+// 재발송 버튼 클릭 시 동작 (기능 추가 가능)
+resendSmsButton.addEventListener("click", function () {
+    // 여기서 인증번호 재발송 기능 구현 (서버와 통신하여 재발송 요청)
+    alert("인증번호가 재발송되었습니다.");
+    // 인증번호 재발송 후 초기화 처리
+    smsCodeInput.value = "";
+    smsCodeFocusMsg.style.display = "block";
+    smsCodeWarningTxt.style.display = "none";
+    smsCodeGoodTxt.style.display = "none";
+});

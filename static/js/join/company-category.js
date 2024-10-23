@@ -48,7 +48,7 @@ const createHTMLStructure = () => {
                 // 중분류 생성 (화면에 표시)
                 mainCategoryHTML += `
     <li class="item-depth2">
-        <label class="sri-check small sri-radio" for="bcode_${subIndex}">
+        <label class="position-check small position-radio" for="bcode_${subIndex}">
             <input type="radio" id="bcode_${subIndex}" name="bcode" class="inp-check" value="${subCategory}" data-mcode="${index}" data-bcode="${subIndex}" data-maincategory="${mainCategory}">
             <span class="txt-check txt-point">${subCategory}</span>
         </label>
@@ -70,9 +70,9 @@ const createHTMLStructure = () => {
             });
             resetKeywords(); // 기존 키워드 초기화
 
-            const label = e.target.closest(".sri-check");
+            const label = e.target.closest(".position-check");
             document
-                .querySelectorAll(".sri-check.small.sri-radio")
+                .querySelectorAll(".position-check.small.position-radio")
                 .forEach((el) => {
                     el.classList.remove("check-on");
                 });
@@ -97,7 +97,7 @@ const createHTMLStructure = () => {
                     (item) => {
                         subCategoryHTML += `
             <li class="item-depth3">
-                <label class="sri-check small" for="code_${item.code}">
+                <label class="position-check small" for="code_${item.code}">
                     <input type="checkbox" id="code_${item.code}" name="code" class="inp-check" value="${item.name}" data-bcode="${item.code}">
                     <span class="txt-check txt-point">${item.name}</span>
                 </label>
@@ -114,7 +114,8 @@ const createHTMLStructure = () => {
                     .querySelectorAll('input[name="code"]')
                     .forEach((subCheckbox) => {
                         subCheckbox.addEventListener("change", (e) => {
-                            const subLabel = e.target.closest(".sri-check");
+                            const subLabel =
+                                e.target.closest(".position-check");
                             const keyword = e.target.value;
                             const categoryLabel = `${mainCategory} > ${selectedSubCategory}`;
 
@@ -220,7 +221,9 @@ const createHTMLStructure = () => {
         // 소분류 체크박스 해제 및 관련 클래스 제거
         if (inputElement) {
             inputElement.checked = false;
-            inputElement.closest(".sri-check").classList.remove("check-on");
+            inputElement
+                .closest(".position-check")
+                .classList.remove("check-on");
         }
     };
 
@@ -255,7 +258,7 @@ document.querySelector(".btn-reset").addEventListener("click", () => {
         .querySelectorAll('input[name="bcode"], input[name="code"]')
         .forEach((input) => {
             input.checked = false;
-            input.closest(".sri-check").classList.remove("check-on");
+            input.closest(".position-check").classList.remove("check-on");
             document.querySelector(".sub-depth3").style.display = "none";
         });
 });

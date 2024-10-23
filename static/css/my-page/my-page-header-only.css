@@ -45,6 +45,7 @@ body {
 #position-header .ci svg {
     width: 100%;
     height: 100%;
+    background: url('/static/images/my-page/position-logo-small.svg') no-repeat;
 }
 
 

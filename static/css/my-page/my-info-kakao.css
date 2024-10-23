@@ -46,10 +46,14 @@ body {
     padding-top: 4px;
 }
 
-#position-header.integrated-header .area-logo .link-saramin-logo {
+#position-header.integrated-header .area-logo .link-position-logo {
     margin-right: 6px;
 }
-
+.area-logo .link-position-logo svg{
+    width:82px;
+    height:21px;
+    background: url('/static/images/my-page/position-logo-small.svg') no-repeat;
+}
 #position-section {
     display: grid;
     grid-template-areas:

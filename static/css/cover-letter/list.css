@@ -369,3 +369,7 @@ ul {
     font-size: 13px;
     line-height: 20px;
 }
+
+.button-button--color-blueInvert--Oy7S4:hover {
+    background: var(--blue20);
+}

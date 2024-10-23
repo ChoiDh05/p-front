@@ -1,4 +1,4 @@
-.join_header {
+.join-header {
     display: flex;
     height: 64px;
     border-bottom: 1px solid #eaedf4;
@@ -6,11 +6,11 @@
     justify-content: space-between;
 }
 
-.join_header .area_logo {
+.join-header .area-logo {
     margin-left: 64px;
 }
 
-.join_header .area_logo .link_saramin_logo {
+.join-header .area-logo .link-saramin-logo {
     margin-right: 6px;
 }
 
@@ -18,11 +18,11 @@ a:link, a:visited, a:active, a:hover {
     text-decoration: none;
 }
 
-.join_header .area_util {
+.join-header .area-util {
     margin-right: 64px;
 }
 
-.join_header .area_util .util {
+.join-header .area-util .util {
     display: flex;
     height: 64px;
 }
@@ -32,12 +32,12 @@ ol, ul, li {
 }
 
 
-.join_header .area_util .util_item {
+.join-header .area-util .util-item {
     display: flex;
     align-items: center;
 }
 
-.join_header .area_util .util_menu {
+.join-header .area-util .util-menu {
     display: flex;
     color: var(--gray110);
     font-size: 13px;
@@ -45,39 +45,39 @@ ol, ul, li {
     align-items: center;
 }
 
-.join_header .area_util .menu_saramin:before {
+.join-header .area-util .menu-saramin:before {
     background-image: url(/static/images/login/saramin-home.svg);
 }
 
-.join_header .area_util .util_menu:before {
+.join-header .area-util .util-menu:before {
     margin-right: 5px;
     width: 18px;
     height: 18px;
     content: "";
 }
 
-.join_page_wrap {
+.join-page-wrap {
     overflow: hidden;
 }
 
-.join_page_wrap .join_content {
+.join-page-wrap .join-content {
     float: center;
     width: 50%;
 }
 
 
-.join_page_wrap .join_content .join_box {
+.join-page-wrap .join-content .join-box {
     float: right;
     margin-bottom: 150px;
     padding-right: 104px;
     width: 320px;
 }
 
-.login_input_wrap, .pop_login_layer {
-    --common_a_hover_color: #3769ed;
+.login-input-wrap, .pop-login-layer {
+    --common-a-hover-color: #3769ed;
 }
 
-.login_input_wrap .tab_member_type {
+.login-input-wrap .tab-member-type {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -85,12 +85,12 @@ ol, ul, li {
     margin-bottom: 16px;
 }
 
-.login_input_wrap .tab_member_type li {
+.login-input-wrap .tab-member-type li {
     flex: 1 1 50%;
     text-align: center;
 }
 
-.login_input_wrap .tab_member_type li .btn_tab {
+.login-input-wrap .tab-member-type li .btn-tab {
     position: relative;
     color: #8491a7;
     font-size: 24px;
@@ -98,7 +98,7 @@ ol, ul, li {
     width: 100%;
 }
 
-.login_input_wrap .tab_member_type li .btn_tab.active {
+.login-input-wrap .tab-member-type li .btn-tab.active {
     font-weight: 700;
     color: #373f73;
 }
@@ -112,7 +112,7 @@ button, label {
     cursor: pointer;
 }
 
-.login_input_wrap .tab_member_type li .btn_tab.active:before {
+.login-input-wrap .tab-member-type li .btn-tab.active:before {
     position: absolute;
     left: 50%;
     bottom: -4px;
@@ -123,7 +123,7 @@ button, label {
     background-color: #4876ef;
 }
 
-.login_input_wrap .tab_member_type li .btn_tab {
+.login-input-wrap .tab-member-type li .btn-tab {
     position: relative;
     color: #8491a7;
     font-size: 24px;
@@ -132,18 +132,18 @@ button, label {
 }
 
 
-.login_input_wrap .social_login_tit .tit {
+.login-input-wrap .social-login-tit .tit {
     text-align: center;
     font-size: 15px;
     color: #5c667b;
     line-height: 24px;
 }
 
-.login_input_wrap .social_login_tit .tit:before {
+.login-input-wrap .social-login-tit .tit:before {
     margin-right: 8px;
 }
 
-.login_input_wrap .social_login_tit .tit:before, .login_input_wrap .social_login_tit .tit:after {
+.login-input-wrap .social-login-tit .tit:before, .login-input-wrap .social-login-tit .tit:after {
     width: 60px;
     height: 1px;
     background-color: #eaedf4;
@@ -152,11 +152,11 @@ button, label {
     content: '';
 }
 
-.login_input_wrap .social_login_tit .tit:after {
+.login-input-wrap .social-login-tit .tit:after {
     margin-left: 8px;
 }
 
-.login_input_wrap .social_login_tit .tit:before, .login_input_wrap .social_login_tit .tit:after {
+.login-input-wrap .social-login-tit .tit:before, .login-input-wrap .social-login-tit .tit:after {
     width: 60px;
     height: 1px;
     background-color: #eaedf4;
@@ -165,7 +165,7 @@ button, label {
     content: '';
 }
 
-.login_input_wrap .social_login {
+.login-input-wrap .social-login {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -173,31 +173,31 @@ button, label {
     padding-top: 24px;
 }
 
-.icon_kakao{
-    background: url(/static/images/login/kakao_login_medium_wide.png);
+.icon-kakao{
+    background: url(/static/images/login/kakao-login-medium-wide.png);
     background-repeat: no-repeat;
     margin-left: 10px;
     height: 45px;
 }
 
-/* .social_login{
+/* .social-login{
     height: 70px;
 } */
 
-.login_input_wrap .signup-forgotten .link_rater {
+.login-input-wrap .signup-forgotten .link-rater {
     text-decoration: unset;
     margin-left: auto;
 }
 
-.join_page_wrap .join_content .join_box .social_login_box .social_login_tit {
+.join-page-wrap .join-content .join-box .social-login-box .social-login-tit {
     padding-top: 20px;
 }
 
-.join_page_wrap .join_content .join_box .join_form {
+.join-page-wrap .join-content .join-box .join-form {
     margin: 40px 0;
 }
 
-[class*="BtnType"] {
+[class*="btn-type"] {
     display: inline-flex;
     position: relative;
     border: 1px solid var(--blue90);
@@ -211,55 +211,55 @@ button, label {
     align-items: center;
 }
 
-.join_page_wrap .join_content .join_box .join_form .login_btn {
+.join-page-wrap .join-content .join-box .join-form .login-btn {
     width: 100%;
     border-color: var(--blue90);
     color: var(--blue90);
     background: var(--white);
 }
 
-[class*="BtnType"].SizeL {
+[class*="btn-type"].size-l {
     padding: 10px 15px 12px;
     height: 48px;
     font-size: 16px;
     line-height: 24px;
 }
 
-.join_page_wrap .join_content .join_box .login_bottom p {
+.join-page-wrap .join-content .join-box .login-bottom p {
     color: #5c667b;
     font-size: 14px;
 }
 
-.join_page_wrap .join_content .join_box .login_bottom {
+.join-page-wrap .join-content .join-box .login-bottom {
     margin-top: 40px;
     text-align: center;
 }
 
-.join_page_wrap .join_content .join_box .login_bottom p a {
+.join-page-wrap .join-content .join-box .login-bottom p a {
     display: inline-block;
     margin-left: 4px;
     color: #373f57;
     text-decoration: underline;
 }
 
-.join_page_wrap .join_banner_wrap {
+.join-page-wrap .join-banner-wrap {
     overflow: hidden;
     position: relative;
     background-color: #deebff;
 }
 
-.join_page_wrap .join_content {
+.join-page-wrap .join-content {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-.join_page_wrap{
+.join-page-wrap{
     display: flex;
     align-items: center;
 
 }
-.join_page_wrap .join_banner_wrap {
+.join-page-wrap .join-banner-wrap {
     overflow: hidden;
     position: relative;
     background-color: #deebff;
@@ -267,19 +267,19 @@ button, label {
 
 
 
-.join_page_wrap .join_banner_wrap .intro {
+.join-page-wrap .join-banner-wrap .intro {
     height: calc(100vh - 66px);
 }
-.join_page_wrap .join_banner_wrap .intro .section {
+.join-page-wrap .join-banner-wrap .intro .section {
     height: 900px;
     background-size: 100%;
 }
-.join_page_wrap .join_banner_wrap .intro .section.info04 {
+.join-page-wrap .join-banner-wrap .intro .section.info04 {
     background: url(https://www.saraminimage.co.kr/login/onboarding/info4.png) no-repeat;
     background-position: right center;
 }
 
-#sri_wrap {
+#sri-wrap {
     display: flex;
     justify-content: center; /* 수평 가운데 정렬 */
     align-items: center;     /* 수직 가운데 정렬 */

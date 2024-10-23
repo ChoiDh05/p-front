@@ -128,7 +128,7 @@ header, footer, section, nav, article {
     overflow: hidden;
     width: 134px;
     height: 34px;
-    background-image: url('/static/images/main/saramin.png');
+    background: url('/static/images/my-page/position-logo-small.svg') no-repeat;
 }
 #header.fixed .bi .frame, #header.simple.bubble .bi .frame {
     width: 36px;
@@ -142,6 +142,7 @@ header, footer, section, nav, article {
     position: relative;
     z-index: 2;
     width: 100%;
+    margin-left: -130px;
     grid-template-rows: 64px;
     gap: 15px;
     align-items: center;
@@ -247,7 +248,7 @@ header, footer, section, nav, article {
     left: 50%; /* 왼쪽 기준으로 화면 중앙으로 위치 */
     transform: translateX(-50%); /* 50%만큼 왼쪽으로 이동하여 정확히 중앙 정렬 */
     padding-left: 0px;
-    width: 860px;
+    width: 400px;
     height: 58px;
     border-bottom: 1px solid #eaedf4;
     gap: 4px;
@@ -481,13 +482,17 @@ svg:not(:root) {
     width: 1001px;
     background: #fff;
     gap: 36px 0;
+    
+    /* 4개의 major와 나머지 배치 */
     grid-template-areas:
-        "major major major major major major major"
-        "minor personalize personalize blank extra1 extra2 extra3";
-    grid-template-rows: auto auto;
-    grid-template-columns: 143px 143px 143px 143px 143px 143px 143px;
+        "major major major major"
+        "minor personalize blank extra1";
+    
+    grid-template-rows: auto auto; /* 두 개의 행 */
+    grid-template-columns: repeat(4, 1fr); /* 4개의 열 */
     align-items: end;
 }
+
 
 #index .panel_menu {
     position: relative;
