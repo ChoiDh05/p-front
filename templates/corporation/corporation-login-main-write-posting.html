@@ -39,7 +39,7 @@
                             <fieldset>
                                 <div class="interview-write-review-write">
                                     <h2 class="interview-write-tit-step">
-                                        기본 정보 입력
+                                        기본 공고 정보 입력
                                     </h2>
                                     <p class="interview-write-txt-point">
                                         <span
@@ -110,23 +110,66 @@
                                                                 data-value
                                                                 autocomplete="off"
                                                             />
-                                                            <ul
-                                                                class="interview-write-list-auto-search"
-                                                            ></ul>
-                                                            <div
-                                                                class="interview-write-list-auto-search interview-write-no-search"
+                                                        </div>
+                                                        <em
+                                                            class="interview-write-msgInvalid interview-write-msgCompanynm interview-write-hide"
+                                                            >필수
+                                                            항목입니다.</em
+                                                        >
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <label
+                                                            for="companyName"
+                                                            class="interview-write-tit-item"
+                                                        >
+                                                            공고명
+                                                            <span
+                                                                class="interview-write-spr-review interview-write-point"
                                                             >
-                                                                일치하는
-                                                                회사명이
-                                                                없습니다.
-                                                            </div>
-                                                            <button
-                                                                type="button"
-                                                                class="interview-write-btn-company-search"
-                                                            >
-                                                                입사지원 기업
-                                                                검색
-                                                            </button>
+                                                                <span
+                                                                    class="interview-write-blind"
+                                                                    >필수</span
+                                                                >
+                                                            </span>
+                                                        </label>
+                                                    </th>
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <div
+                                                            class="interview-write-auto-search"
+                                                        >
+                                                            <input
+                                                                type="hidden"
+                                                                name="csn1"
+                                                                value
+                                                            />
+                                                            <input
+                                                                type="hidden"
+                                                                name="csn2"
+                                                                value
+                                                            />
+                                                            <input
+                                                                type="hidden"
+                                                                name="csn3"
+                                                                value
+                                                            />
+                                                            <input
+                                                                type="text"
+                                                                name="company-nm"
+                                                                id="companyName"
+                                                                class="interview-write-inpTypo"
+                                                                title="공고명 입력"
+                                                                placeholder="공고명 입력"
+                                                                data-id="company-nm"
+                                                                data-value
+                                                                autocomplete="off"
+                                                            />
                                                         </div>
                                                         <em
                                                             class="interview-write-msgInvalid interview-write-msgCompanynm interview-write-hide"
@@ -1748,7 +1791,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div
+                                                                            <!-- <div
                                                                                 class="interview-write-box-detail-depth"
                                                                             ></div>
                                                                             <div
@@ -1807,7 +1850,7 @@
                                                                             ></div>
                                                                             <div
                                                                                 class="interview-write-box-detail-depth"
-                                                                            ></div>
+                                                                            ></div> -->
                                                                         </div>
                                                                     </div>
                                                                     <div
@@ -1885,10 +1928,10 @@
                                                         <p
                                                             class="interview-write-txt-option"
                                                         >
-                                                            2021년 11월 진행
-                                                            포지셔너까지만 등록
-                                                            가능합니다 (최근
-                                                            3년)
+                                                            해당일자에 포지션
+                                                            참여가 가능한
+                                                            참가자들을
+                                                            모집합니다.
                                                         </p>
                                                         <div
                                                             class="interview-write-range-option"
@@ -2016,7 +2059,7 @@
                                 </div>
                                 <div class="interview-write-review-write">
                                     <h2 class="interview-write-tit-step">
-                                        포지셔너 정보 입력
+                                        공고 상세 정보 입력
                                     </h2>
                                     <p class="interview-write-txt-point">
                                         <span
@@ -2043,7 +2086,7 @@
                                                         <strong
                                                             class="interview-write-tit-item"
                                                         >
-                                                            전반적 평가
+                                                            경력
                                                             <span
                                                                 class="interview-write-spr-review interview-write-point"
                                                             >
@@ -2054,7 +2097,7 @@
                                                             </span>
                                                         </strong>
                                                     </th>
-                                                    <td
+                                                    <!-- <td
                                                         class="interview-write-txtLeft"
                                                     >
                                                         <span
@@ -2112,7 +2155,48 @@
                                                             항목입니다.</em
                                                         >
                                                     </td>
+                                                </tr> -->
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <p
+                                                            class="interview-write-txt-option"
+                                                        >
+                                                            ＊ 포지션은 경력
+                                                            무관을 원칙으로
+                                                            합니다.
+                                                        </p>
+                                                        <div
+                                                            class="interview-write-range-option"
+                                                        >
+                                                            <span
+                                                                class="interview-write-inpSel"
+                                                            >
+                                                                <select
+                                                                    name="interview-date-year"
+                                                                    id="interviewDateYear"
+                                                                    title="연도 선택"
+                                                                >
+                                                                    <option
+                                                                        value=""
+                                                                    >
+                                                                        경력
+                                                                        선택
+                                                                    </option>
+                                                                    <option
+                                                                        value="2021"
+                                                                    >
+                                                                        무관
+                                                                    </option>
+                                                                </select>
+                                                            </span>
+                                                        </div>
+                                                        <em
+                                                            class="interview-write-msgInvalid interview-write-msgInterviewDate interview-write-hide"
+                                                        ></em>
+                                                    </td>
                                                 </tr>
+
                                                 <tr>
                                                     <th
                                                         scope="row"
@@ -2135,55 +2219,60 @@
                                                     <td
                                                         class="interview-write-txtLeft"
                                                     >
-                                                        <span
-                                                            class="interview-write-inpRdoSw interview-write-colorWhite"
+                                                        <p
+                                                            class="interview-write-txt-option"
+                                                        >
+                                                            ＊ 많은 포지셔너의
+                                                            경험을 위해 학력
+                                                            무관을 권장드립니다.
+                                                        </p>
+                                                        <div
+                                                            class="interview-write-range-option"
                                                         >
                                                             <span
-                                                                class="interview-write-inOption"
+                                                                class="interview-write-inpSel"
                                                             >
-                                                                <input
-                                                                    type="radio"
-                                                                    name="difficult"
-                                                                    id="difficult1"
-                                                                    value="1"
-                                                                />
-                                                                <label
-                                                                    for="difficult1"
-                                                                    class="interview-write-lbl"
-                                                                    >쉬움</label
+                                                                <select
+                                                                    name="interview-date-year"
+                                                                    id="interviewDateYear"
+                                                                    title="연도 선택"
                                                                 >
+                                                                    <option
+                                                                        value=""
+                                                                    >
+                                                                        학력
+                                                                        선택
+                                                                    </option>
+                                                                    <option
+                                                                        value="education"
+                                                                    >
+                                                                        학력
+                                                                        선택
+                                                                    </option>
+                                                                    <option
+                                                                        value="education"
+                                                                    >
+                                                                        학력
+                                                                        선택
+                                                                    </option>
+                                                                    <option
+                                                                        value="education"
+                                                                    >
+                                                                        학력
+                                                                        선택
+                                                                    </option>
+                                                                    <option
+                                                                        value="education"
+                                                                    >
+                                                                        학력
+                                                                        선택
+                                                                    </option>
+                                                                </select>
                                                             </span>
-                                                            <span
-                                                                class="interview-write-inOption"
-                                                            >
-                                                                <input
-                                                                    type="radio"
-                                                                    name="difficult"
-                                                                    id="difficult2"
-                                                                    value="2"
-                                                                />
-                                                                <label
-                                                                    for="difficult2"
-                                                                    class="interview-write-lbl"
-                                                                    >보통</label
-                                                                >
-                                                            </span>
-                                                            <span
-                                                                class="interview-write-inOption"
-                                                            >
-                                                                <input
-                                                                    type="radio"
-                                                                    name="difficult"
-                                                                    id="difficult3"
-                                                                    value="3"
-                                                                />
-                                                                <label
-                                                                    for="difficult3"
-                                                                    class="interview-write-lbl"
-                                                                    >어려움</label
-                                                                >
-                                                            </span>
-                                                        </span>
+                                                        </div>
+                                                        <em
+                                                            class="interview-write-msgInvalid interview-write-msgInterviewDate interview-write-hide"
+                                                        ></em>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -2195,9 +2284,59 @@
                                                             for="interviewDetails"
                                                             class="interview-write-tit-item"
                                                         >
-                                                            전형 및 포지셔너
-                                                            <br />
-                                                            진행 방식
+                                                            근무 일시
+                                                            <span
+                                                                class="interview-write-spr-review interview-write-point"
+                                                            >
+                                                                <span
+                                                                    class="interview-write-blind"
+                                                                    >필수</span
+                                                                >
+                                                            </span>
+                                                        </label>
+                                                    </th>
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <p
+                                                            class="interview-write-txt-option"
+                                                        >
+                                                            ＊ 포지셔너가
+                                                            근무하게 될 일자와
+                                                            시간을 작성해주세요.
+                                                        </p>
+                                                        <div
+                                                            class="interview-write-range-option"
+                                                        >
+                                                            <input
+                                                                type="text"
+                                                                name="company-nm"
+                                                                id="companyName"
+                                                                class="interview-write-inpTypo"
+                                                                title="근무 일자, 시간 입력"
+                                                                placeholder="근무 일자, 시간 입력"
+                                                                data-id="company-nm"
+                                                                data-value
+                                                                autocomplete="off"
+                                                            />
+                                                        </div>
+                                                        <em
+                                                            class="interview-write-msgInvalid interview-write-msgCompanynm interview-write-hide"
+                                                            >필수
+                                                            항목입니다.</em
+                                                        >
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <label
+                                                            for="interviewDetails"
+                                                            class="interview-write-tit-item"
+                                                        >
+                                                            공고 마감 날짜
                                                             <span
                                                                 class="interview-write-spr-review interview-write-point"
                                                             >
@@ -2212,29 +2351,27 @@
                                                         class="interview-write-txtLeft"
                                                     >
                                                         <div
-                                                            class="interview-write-textarea"
+                                                            class="interview-write-auto-search"
                                                         >
-                                                            <textarea
-                                                                name="contents"
-                                                                id="interviewDetails"
-                                                                class="interview-write-tf-input"
-                                                                title="전형 및 포지셔너 진행방식"
-                                                                cols="25"
-                                                                rows="5"
-                                                                placeholder="서류 합격 후 어떤 전형과 포지셔너을 경험하셨나요? 
-(사실이 아닌 비방이나 개인적인 의견은 등록이 거절될 수 있습니다.)"
-                                                            ></textarea>
-                                                            <span
-                                                                class="interview-write-txt-byte"
-                                                            >
-                                                                최소 50자
-                                                            </span>
-                                                            <em
-                                                                class="interview-write-msgInvalid interview-write-msgContents interview-write-hide"
-                                                                >필수
-                                                                항목입니다.</em
-                                                            >
+                                                            <input
+                                                                name="company-nm"
+                                                                id="dueDate"
+                                                                class="interview-write-inpTypo"
+                                                                title="근무 일자, 시간 입력"
+                                                                placeholder="근무 일자, 시간 입력"
+                                                                data-id="company-nm"
+                                                                data-value=""
+                                                                autocomplete="off"
+                                                                type="datetime-local"
+                                                                max="2077-06-20T21:00"
+                                                                value=""
+                                                            />
                                                         </div>
+                                                        <em
+                                                            class="interview-write-msgInvalid interview-write-msgCompanynm interview-write-hide"
+                                                            >필수
+                                                            항목입니다.</em
+                                                        >
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -2243,7 +2380,7 @@
                                 </div>
                                 <div class="interview-write-review-write">
                                     <h2 class="interview-write-tit-step">
-                                        합격 정보 입력
+                                        상세 공고 정보 추가
                                     </h2>
                                     <p class="interview-write-txt-point">
                                         <span
@@ -2262,306 +2399,8 @@
                                                 <col />
                                             </colgroup>
                                             <tbody>
-                                                <tr>
-                                                    <th
-                                                        scope="row"
-                                                        class="interview-write-txtLeft"
-                                                    >
-                                                        <label
-                                                            for="interviewQ"
-                                                            class="interview-write-tit-item"
-                                                        >
-                                                            포지셔너 질문
-                                                            <span
-                                                                class="interview-write-spr-review interview-write-point"
-                                                            >
-                                                                <span
-                                                                    class="interview-write-blind"
-                                                                    >필수</span
-                                                                >
-                                                            </span>
-                                                        </label>
-                                                        <span
-                                                            class="interview-write-txt-sub"
-                                                            >(최소 3개)</span
-                                                        >
-                                                    </th>
-                                                    <td
-                                                        class="interview-write-txtLeft"
-                                                    >
-                                                        <ul
-                                                            class="interview-write-list-question"
-                                                        >
-                                                            <li>
-                                                                <select
-                                                                    name=""
-                                                                    class="interview-write-inpTypo"
-                                                                >
-                                                                    <option
-                                                                        value
-                                                                    >
-                                                                        ex)
-                                                                        질문1
-                                                                    </option>
-                                                                    <option
-                                                                        value="1"
-                                                                    >
-                                                                        1
-                                                                    </option>
-                                                                    <option
-                                                                        value="2"
-                                                                    >
-                                                                        2
-                                                                    </option>
-                                                                </select>
-                                                            </li>
-                                                            <li>
-                                                                <select
-                                                                    name=""
-                                                                    class="interview-write-inpTypo"
-                                                                >
-                                                                    <option
-                                                                        value
-                                                                    >
-                                                                        ex)
-                                                                        질문2
-                                                                    </option>
-                                                                    <option
-                                                                        value="1"
-                                                                    >
-                                                                        1
-                                                                    </option>
-                                                                    <option
-                                                                        value="2"
-                                                                    >
-                                                                        2
-                                                                    </option>
-                                                                </select>
-                                                            </li>
-                                                            <li>
-                                                                <select
-                                                                    name=""
-                                                                    class="interview-write-inpTypo"
-                                                                >
-                                                                    <option
-                                                                        value
-                                                                    >
-                                                                        ex)
-                                                                        질문3
-                                                                    </option>
-                                                                    <option
-                                                                        value="1"
-                                                                    >
-                                                                        1
-                                                                    </option>
-                                                                    <option
-                                                                        value="2"
-                                                                    >
-                                                                        2
-                                                                    </option>
-                                                                </select>
-                                                            </li>
-                                                            <li>
-                                                                <select
-                                                                    name=""
-                                                                    class="interview-write-inpTypo"
-                                                                >
-                                                                    <option
-                                                                        value
-                                                                    >
-                                                                        ex)
-                                                                        질문4
-                                                                    </option>
-                                                                    <option
-                                                                        value="1"
-                                                                    >
-                                                                        1
-                                                                    </option>
-                                                                    <option
-                                                                        value="2"
-                                                                    >
-                                                                        2
-                                                                    </option>
-                                                                </select>
-                                                            </li>
-                                                            <li>
-                                                                <select
-                                                                    name=""
-                                                                    class="interview-write-inpTypo"
-                                                                >
-                                                                    <option
-                                                                        value
-                                                                    >
-                                                                        ex)
-                                                                        질문5
-                                                                    </option>
-                                                                    <option
-                                                                        value="1"
-                                                                    >
-                                                                        1
-                                                                    </option>
-                                                                    <option
-                                                                        value="2"
-                                                                    >
-                                                                        2
-                                                                    </option>
-                                                                </select>
-                                                            </li>
-                                                            <li>
-                                                                <select
-                                                                    name=""
-                                                                    class="interview-write-inpTypo"
-                                                                >
-                                                                    <option
-                                                                        value
-                                                                    >
-                                                                        ex)
-                                                                        질문6
-                                                                    </option>
-                                                                    <option
-                                                                        value="1"
-                                                                    >
-                                                                        1
-                                                                    </option>
-                                                                    <option
-                                                                        value="2"
-                                                                    >
-                                                                        2
-                                                                    </option>
-                                                                </select>
-                                                            </li>
-                                                            <li>
-                                                                <select
-                                                                    name=""
-                                                                    class="interview-write-inpTypo"
-                                                                >
-                                                                    <option
-                                                                        value
-                                                                    >
-                                                                        ex)
-                                                                        질문7
-                                                                    </option>
-                                                                    <option
-                                                                        value="1"
-                                                                    >
-                                                                        1
-                                                                    </option>
-                                                                    <option
-                                                                        value="2"
-                                                                    >
-                                                                        2
-                                                                    </option>
-                                                                </select>
-                                                            </li>
-                                                            <li>
-                                                                <select
-                                                                    name=""
-                                                                    class="interview-write-inpTypo"
-                                                                >
-                                                                    <option
-                                                                        value
-                                                                    >
-                                                                        ex)
-                                                                        질문8
-                                                                    </option>
-                                                                    <option
-                                                                        value="1"
-                                                                    >
-                                                                        1
-                                                                    </option>
-                                                                    <option
-                                                                        value="2"
-                                                                    >
-                                                                        2
-                                                                    </option>
-                                                                </select>
-                                                            </li>
-                                                            <li>
-                                                                <select
-                                                                    name=""
-                                                                    class="interview-write-inpTypo"
-                                                                >
-                                                                    <option
-                                                                        value
-                                                                    >
-                                                                        ex)
-                                                                        질문9
-                                                                    </option>
-                                                                    <option
-                                                                        value="1"
-                                                                    >
-                                                                        1
-                                                                    </option>
-                                                                    <option
-                                                                        value="2"
-                                                                    >
-                                                                        2
-                                                                    </option>
-                                                                </select>
-                                                            </li>
-                                                            <li>
-                                                                <select
-                                                                    name=""
-                                                                    class="interview-write-inpTypo"
-                                                                >
-                                                                    <option
-                                                                        value
-                                                                    >
-                                                                        ex)
-                                                                        질문10
-                                                                    </option>
-                                                                    <option
-                                                                        value="1"
-                                                                    >
-                                                                        1
-                                                                    </option>
-                                                                    <option
-                                                                        value="2"
-                                                                    >
-                                                                        2
-                                                                    </option>
-                                                                </select>
-                                                            </li>
-                                                        </ul>
-                                                        <em
-                                                            class="interview-write-msgInvalid interview-write-msgQuestion interview-write-hide"
-                                                            >최소 3개 이상
-                                                            작성해주세요.</em
-                                                        >
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <th
-                                                        scope="row"
-                                                        class="interview-write-txtLeft"
-                                                    >
-                                                        <label
-                                                            for="interviewTip"
-                                                            class="interview-write-tit-item"
-                                                        >
-                                                            포지셔너 TOP 및
-                                                            <br />
-                                                            특이 사항
-                                                        </label>
-                                                    </th>
-                                                    <td
-                                                        class="interview-write-txtLeft"
-                                                    >
-                                                        <div
-                                                            class="interview-write-textarea"
-                                                        >
-                                                            <textarea
-                                                                name="tip"
-                                                                id="interviewTip"
-                                                                class="interview-write-tf-input"
-                                                                title="포지셔너 TIP 및 특이사항"
-                                                                cols="25"
-                                                                rows="5"
-                                                                placeholder="분위기, 준비 tip을 공유해주세요."
-                                                            ></textarea>
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                                <tr></tr>
+
                                                 <tr>
                                                     <th
                                                         scope="row"
@@ -2584,55 +2423,31 @@
                                                     <td
                                                         class="interview-write-txtLeft"
                                                     >
-                                                        <span
-                                                            class="interview-write-inpRdoSw interview-write-colorWhite"
+                                                        <!-- <div
+                                                            class="interview-write-auto-search"
                                                         >
-                                                            <span
-                                                                class="interview-write-inOption"
+                                                            <input
+                                                                name="company-nm"
+                                                                id="uploadFile"
+                                                                class="interview-write-inpTypo"
+                                                                placeholder="근무 일자, 시간 입력"
+                                                                type="file"
+                                                            />
+                                                        </div> -->
+                                                        <div class="filebox">
+                                                            <input
+                                                                class="upload-name"
+                                                                value="첨부파일"
+                                                                placeholder="첨부파일"
+                                                            />
+                                                            <label for="file"
+                                                                >파일찾기</label
                                                             >
-                                                                <input
-                                                                    type="radio"
-                                                                    name="result"
-                                                                    id="result1"
-                                                                    value="1"
-                                                                />
-                                                                <label
-                                                                    for="result1"
-                                                                    class="interview-write-lbl"
-                                                                    >합격</label
-                                                                >
-                                                            </span>
-                                                            <span
-                                                                class="interview-write-inOption"
-                                                            >
-                                                                <input
-                                                                    type="radio"
-                                                                    name="result"
-                                                                    id="result2"
-                                                                    value="2"
-                                                                />
-                                                                <label
-                                                                    for="result2"
-                                                                    class="interview-write-lbl"
-                                                                    >대기중</label
-                                                                >
-                                                            </span>
-                                                            <span
-                                                                class="interview-write-inOption"
-                                                            >
-                                                                <input
-                                                                    type="radio"
-                                                                    name="result"
-                                                                    id="result3"
-                                                                    value="3"
-                                                                />
-                                                                <label
-                                                                    for="result3"
-                                                                    class="interview-write-lbl"
-                                                                    >불합격</label
-                                                                >
-                                                            </span>
-                                                        </span>
+                                                            <input
+                                                                type="file"
+                                                                id="file"
+                                                            />
+                                                        </div>
                                                         <em
                                                             class="interview-write-msgInvalid interview-write-msgResult interview-write-hide"
                                                             >필수

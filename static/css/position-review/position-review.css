@@ -1,0 +1,556 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 700;
+    font-display: swap;
+    src: local("Pretendard Bold"),
+        url(https://www.saraminimage.co.kr/sri/font/Pretendard-Bold.subset.woff2)
+            format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-display: swap;
+    src: local("Pretendard SemiBold"),
+        url(https://www.saraminimage.co.kr/sri/font/Pretendard-SemiBold.subset.woff2)
+            format("woff");
+}
+
+@font-face {
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-display: swap;
+    src: local("Pretendard Regular"),
+        url(https://www.saraminimage.co.kr/sri/font/Pretendard-Regular.subset.woff2)
+            format("woff");
+}
+#sri-section.layout-full {
+    margin: 0;
+    width: 100%;
+}
+#sri-section {
+    display: table;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+#sri-wrap {
+    display: table-row;
+    width: 100%;
+    height: 100%;
+}
+#content {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    width: 100%;
+}
+.header-interview-review {
+    width: 100%;
+    height: 372px;
+    background: var(--blue20)
+        url(/static/images/interview-review/bg_review_interview_220322.png) 50% 0 no-repeat;
+}
+.inner {
+    position: relative;
+    margin: 0 auto;
+    padding: 185px 0 0 0;
+    width: 960px;
+}
+.txt-noti {
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #494949;
+    font-size: 14px;
+    line-height: 23px;
+}
+.btn-review-write {
+    display: block;
+    position: absolute;
+    top: 276px;
+    left: 10px;
+    width: 246px;
+    height: 44px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+    background-color: var(--blue80);
+}
+.wrap-interview-review {
+    position: relative;
+    margin: 0 auto 80px auto;
+    padding-bottom: 69px;
+    width: 1260px;
+    background: var(--white);
+}
+.review-cont {
+    position: relative;
+    padding-bottom: 40px;
+}
+.title-area {
+    padding-top: 40px;
+    height: 55px;
+}
+.tit-review {
+    display: inline-block;
+    color: #222;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+    vertical-align: top;
+}
+.search-area {
+    position: relative;
+    padding-bottom: 10px;
+}
+.inpSel {
+    display: inline-block;
+    height: 32px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    vertical-align: middle;
+    background: #fff;
+}
+.inpSel select {
+    padding: 0 29px 1px 11px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+    background: url(/static/images/interview-review/ico_select_arr.png) no-repeat 100% 0;
+    -webkit-appearance: none;
+}
+.inpSel select option {
+    height: 32px;
+    font-size: 13px;
+    color: #444;
+    line-height: 16px;
+}
+.search-right {
+    float: right;
+}
+.search-typoBox {
+    display: inline-block;
+    height: 32px;
+    vertical-align: top;
+    background: var(--white);
+    width: auto;
+    font-size: 0;
+}
+.search-typoBox .inp-typo {
+    display: inline-block;
+    padding-left: 10px;
+    width: 187px;
+    border: 1px solid #ddd;
+    border-right: 0 none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #888;
+}
+.inp-typo {
+    padding: 0 11px 1px 11px;
+    width: 100%;
+    height: 32px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 13px;
+    line-height: 28px;
+    vertical-align: middle;
+    background: #fff;
+}
+.btn-typo-search {
+    width: 52px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #6d82f3;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    vertical-align: top;
+    padding-bottom: 4px;
+    height: 32px;
+    border: 0;
+    cursor: pointer;
+}
+.search-typoBox .btn-typo-reset {
+    margin-left: 5px;
+    width: 32px;
+    font-size: 0;
+    vertical-align: middle;
+    background: url(/static/images/interview-review/ico_search_btn_reset.png) no-repeat -2px -2px;
+}
+.btn-typo-reset {
+    padding-bottom: 4px;
+    height: 32px;
+    border: 0;
+    cursor: pointer;
+}
+.num-count {
+    position: absolute;
+    top: -42px;
+    right: 0;
+    font-size: 15px;
+    line-height: 18px;
+}
+.num-count b {
+    color: var(--blue80);
+}
+.list-review {
+    position: relative;
+    border-top: 1px solid #444;
+}
+.list-review .box-review:first-of-type {
+    margin-top: 0;
+    border-top: 0;
+}
+.box-review {
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    padding: 0 38px;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+}
+.view-title {
+    padding: 30px 73px 30px 0;
+    height: 120px;
+    box-sizing: border-box;
+}
+.txt-company {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 80%;
+    color: #222;
+    font-size: 19px;
+    vertical-align: top;
+}
+.pass {
+    color: var(--blue80);
+}
+.list-review .view-title .txt-company .result {
+    display: inline-block;
+    margin: 4px 0 0 2px;
+    padding: 0 8px;
+    height: 20px;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 16px;
+    vertical-align: top;
+    background: var(--white);
+}
+.txt-date {
+    display: block;
+    margin: -4px 0 -3px;
+    color: #929292;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: right;
+}
+.info-interview {
+    overflow: hidden;
+    height: 17px;
+}
+.info-interview li {
+    float: left;
+    padding-right: 9px;
+    color: #444;
+    font-size: 13px;
+    line-height: 17px;
+}
+.info-interview li:before {
+    display: inline-block;
+    margin: 2px 9px 0 0;
+    width: 1px;
+    height: 14px;
+    vertical-align: top;
+    background: #d8d8d8;
+    content: "";
+}
+.info-interview li:first-child:before {
+    content: none;
+}
+.info-interview li {
+    color: #444;
+    font-size: 13px;
+    line-height: 17px;
+}
+.btn-view {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 38px 4px 0;
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    background: url(/static/images/interview-review/bg_transparent.png) repeat;
+}
+.blind {
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+}
+.list-review .view-title .btn-view:after {
+    float: right;
+    width: 33px;
+    height: 33px;
+    background-position: -40px 0;
+    content: "";
+}
+
+.list-review .view-title .btn-view.open:after {
+    background-position: -80px 0; /* 버튼이 열렸을 때의 이미지 */
+}
+
+.spr-review:after {
+    display: inline-block;
+    vertical-align: top;
+    background: url(/static/images/interview-review/spr_review_190220.png) no-repeat;
+}
+/* 아래화살표 누르면 나와야할 div 초기엔 none 버튼 누르면 block으로 바꿔야함 */
+.view-cont {
+    display: none;
+}
+.list-review .view-cont {
+    padding-bottom: 30px;
+}
+.list-review .info-emoticon {
+    overflow: hidden;
+    margin-bottom: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.list-review .info-emoticon .review {
+    float: left;
+    position: relative;
+    padding: 4px 0 0 47px;
+    width: 140px;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 14px;
+    line-height: 17px;
+}
+.list-review .info-emoticon .review dd {
+    padding-top: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+}
+.list-review .info-emoticon .review .smile:before {
+    background-position: 0 -40px;
+}
+.list-review .info-emoticon .review dd:before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 33px;
+    height: 33px;
+    content: "";
+}
+.spr-review:before {
+    display: inline-block;
+    vertical-align: top;
+    background: url(/static/images/interview-review/spr_review_190220.png);
+}
+.review.difficulty {
+    padding-left: 52px;
+}
+.review dd {
+    padding-top: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+}
+.list-review .review.difficulty dd:before {
+    width: 38px;
+    height: 35px;
+    background-position: 0 -80px;
+}
+.list_review .info_emoticon .review dd:before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    content: "";
+}
+.review dd {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 21px;
+}
+.list-review .info-emoticon .review.result {
+    padding-left: 43px;
+}
+.list-review .info-emoticon .review.result .smile {
+    color: var(--blue80);
+}
+.list-review .info-emoticon .review.result dd:before {
+    top: 1px;
+    width: 30px;
+    height: 44px;
+    background-position: -40px -80px;
+}
+.list-review .info-emoticon .review dd:before {
+    position: absolute;
+    left: 0;
+    content: "";
+}
+.list-review .info-view {
+    padding: 9px 0;
+    font-size: 15px;
+    line-height: 25px;
+}
+.list-review .info-view .tit-view {
+    float: left;
+    padding: 6px 0;
+    width: 180px;
+    color: #222;
+}
+.list-review .info-view .list-item {
+    overflow: hidden;
+    padding-bottom: 5px;
+    color: #444;
+}
+.list-review .info-view .list-item li {
+    float: left;
+    margin: 0 12px 7px 0;
+    padding: 6px 18px 7px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 25px;
+    vertical-align: top;
+    background: #f8f8f8;
+}
+.list-review .info-view .txt-desc {
+    overflow: hidden;
+    padding: 6px 0;
+    color: #666;
+}
+.list-review .info-view .list-question {
+    overflow: hidden;
+    padding: 6px 0 4px;
+    color: #666;
+}
+.list-review .info-view .list-question li {
+    position: relative;
+    margin-bottom: 2px;
+    padding-left: 20px;
+}
+.list-review .info-view .list-question li:before {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    color: var(--blue80);
+    font-weight: bold;
+    content: "Q";
+}
+.info-view .list-item-1 li {
+    position: absolute;
+}
+.list-item-1 li {
+    transform: translateX(180px);
+    float: left;
+    margin: 0px;
+    padding: 6px 18px 7px;
+    border-radius: 20px;
+    font-size: 14px;
+    line-height: 25px;
+    vertical-align: top;
+    background: #f8f8f8;
+}
+.pagination {
+    margin-top: 30px;
+    font-size: 0;
+    text-align: center;
+}
+.pagination span.page {
+    border: 1px solid #444;
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pagination span.page {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0 2px;
+    min-width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: middle;
+    background: #fff;
+}
+.pagination a.page {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 0 2px;
+    min-width: 32px;
+    height: 32px;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+    color: #444;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: middle;
+    background: #fff;
+}
+.pagination .btnNext {
+    margin-left: 14px;
+    padding-right: 10px;
+    background: url(/static/images/interview-review/bul_page_next.png) 100% 50% no-repeat;
+}
+.pagination .btnNext {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 33px;
+    vertical-align: middle;
+    color: #444;
+}
+.review-cont .btn-write {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    padding-top: 7px;
+    width: 130px;
+    height: 32px;
+    box-sizing: border-box;
+    color: var(--white);
+    font-size: 13px;
+    text-align: center;
+    background: #6d82f3;
+}
+.review-cont .btn-write:before {
+    margin: 3px 9px 0 0;
+    width: 14px;
+    height: 14px;
+    background-position: 0 -20px;
+    content: "";
+}
+.review-cont .btn-write {
+    color: var(--white);
+    font-size: 13px;
+    text-align: center;
+}
