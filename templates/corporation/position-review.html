@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>포지션 후기 등록(기업)</title>
+        <link rel="stylesheet" href="/static/css/main.css" />
+        <link
+            rel="stylesheet"
+            href="/static/css/corporation/positioner-review-write.css"
+        />
+    </head>
+    <body>
+        <header></header>
+        <div
+            id="interview-write-sri-section"
+            class="interview-write-layout-full"
+        >
+            <div id="interview-write-sri-wrap">
+                <div id="interview-write-content">
+                    <div class="interview-write-wrap-title-recruit">
+                        <h1 class="interview-write-title-common">
+                            포지셔너 후기 등록(기업)
+                        </h1>
+                        <p class="interview-write-txt-write-info">
+                            포지션 경험을 바탕으로 후기를 작성합니다. 작성해주신
+                            포지셔너 후기는
+                            <b>포지셔너 후기</b>
+                            (으)로 등록됩니다.
+                        </p>
+                    </div>
+                    <div class="interview-write-wrap-interview-review">
+                        <form name="interview-write-review-form">
+                            <input
+                                type="hidden"
+                                name="interview-write-idx"
+                                value
+                            />
+                            <fieldset>
+                                <div class="interview-write-review-write">
+                                    <h2 class="interview-write-tit-step">
+                                        기본 정보 입력
+                                    </h2>
+                                    <p class="interview-write-txt-point">
+                                        <span
+                                            class="interview-write-spr-review interview-write-point"
+                                        >
+                                            <span class="interview-write-blind"
+                                                >필수</span
+                                            >
+                                        </span>
+                                        는 필수입력정보입니다
+                                    </p>
+                                    <div class="interview-write-tblType">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width: 170px" />
+                                                <col />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <label
+                                                            for="companyName"
+                                                            class="interview-write-tit-item"
+                                                        >
+                                                            기업명
+                                                            <span
+                                                                class="interview-write-spr-review interview-write-point"
+                                                            >
+                                                                <span
+                                                                    class="interview-write-blind"
+                                                                    >필수</span
+                                                                >
+                                                            </span>
+                                                        </label>
+                                                    </th>
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <div
+                                                            class="interview-write-auto-search"
+                                                        >
+                                                            <div
+                                                                id="companyName"
+                                                                class="interview-write-Typo"
+                                                                title="기업명"
+                                                            >
+                                                                기업명 정보
+                                                                들어가야됨
+                                                            </div>
+                                                        </div>
+                                                        <em
+                                                            class="interview-write-msgInvalid interview-write-msgCompanynm interview-write-hide"
+                                                            >필수
+                                                            항목입니다.</em
+                                                        >
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <label
+                                                            for="companyName"
+                                                            class="interview-write-tit-item"
+                                                        >
+                                                            포지셔너
+                                                            <span
+                                                                class="interview-write-spr-review interview-write-point"
+                                                            >
+                                                                <span
+                                                                    class="interview-write-blind"
+                                                                    >필수</span
+                                                                >
+                                                            </span>
+                                                        </label>
+                                                    </th>
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <div
+                                                            class="interview-write-auto-search"
+                                                        >
+                                                            <div
+                                                                id="companyName"
+                                                                class="interview-write-Typo"
+                                                                title="포지셔너"
+                                                            >
+                                                                포지셔너 이름
+                                                                정보 들어가야됨
+                                                            </div>
+                                                        </div>
+                                                        <em
+                                                            class="interview-write-msgInvalid interview-write-msgCompanynm interview-write-hide"
+                                                            >필수
+                                                            항목입니다.</em
+                                                        >
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <label
+                                                            for="jobCategory"
+                                                            class="interview-write-tit-item"
+                                                        >
+                                                            직무·직업
+                                                            <span
+                                                                class="interview-write-spr-review interview-write-point"
+                                                            >
+                                                                <span
+                                                                    class="interview-write-blind"
+                                                                    >필수</span
+                                                                >
+                                                            </span>
+                                                        </label>
+                                                    </th>
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <div
+                                                            class="interview-write-auto-search"
+                                                        >
+                                                            <div
+                                                                id="companyName"
+                                                                class="interview-write-Typo"
+                                                                title="직무·직업"
+                                                            >
+                                                                경험한 포지션에
+                                                                대한 직무·직업
+                                                                들어가야됨
+                                                            </div>
+                                                        </div>
+
+                                                        <em
+                                                            class="interview-write-msgInvalid interview-write-msgJobCategory interview-write-hide"
+                                                            >필수
+                                                            항목입니다.</em
+                                                        >
+                                                    </td>
+                                                </tr>
+                                                <!-- 면접 당시 경력 -->
+                                                <!-- <tr>
+                                                    <th scope="row" class="interview-write-txtLeft">
+                                                        <strong class="interview-write-tit-item"></strong>
+                                                    </th>
+                                                    <td class="interview-write-txtLeft"></td>
+                                                </tr> -->
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <strong
+                                                            class="interview-write-tit-item"
+                                                        >
+                                                            포지션 경험 일자
+                                                            <span
+                                                                class="interview-write-spr-review interview-write-point"
+                                                            >
+                                                                <span
+                                                                    class="interview-write-blind"
+                                                                    >필수</span
+                                                                >
+                                                            </span>
+                                                        </strong>
+                                                    </th>
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <div
+                                                            class="interview-write-range-option"
+                                                        >
+                                                            <span
+                                                                class="interview-write-inpSel"
+                                                            >
+                                                                <select
+                                                                    name="interview-date-year"
+                                                                    id="interviewDateYear"
+                                                                    title="연도 선택"
+                                                                >
+                                                                    <option
+                                                                        value
+                                                                    >
+                                                                        연도
+                                                                        선택
+                                                                    </option>
+                                                                    <option
+                                                                        value="2021"
+                                                                    >
+                                                                        2021년
+                                                                    </option>
+                                                                    <option
+                                                                        value="2022"
+                                                                    >
+                                                                        2022년
+                                                                    </option>
+                                                                    <option
+                                                                        value="2023"
+                                                                    >
+                                                                        2023년
+                                                                    </option>
+                                                                    <option
+                                                                        value="2024"
+                                                                    >
+                                                                        2024년
+                                                                    </option>
+                                                                </select>
+                                                            </span>
+                                                            <span
+                                                                class="interview-write-inpSel"
+                                                            >
+                                                                <select
+                                                                    name="interview-date-month"
+                                                                    id="interviewDateMonth"
+                                                                    title="월 선택"
+                                                                >
+                                                                    <option
+                                                                        value
+                                                                    >
+                                                                        월 선택
+                                                                    </option>
+                                                                    <option
+                                                                        value="01"
+                                                                    >
+                                                                        01월
+                                                                    </option>
+                                                                    <option
+                                                                        value="02"
+                                                                    >
+                                                                        02월
+                                                                    </option>
+                                                                    <option
+                                                                        value="03"
+                                                                    >
+                                                                        03월
+                                                                    </option>
+                                                                    <option
+                                                                        value="04"
+                                                                    >
+                                                                        04월
+                                                                    </option>
+                                                                    <option
+                                                                        value="05"
+                                                                    >
+                                                                        05월
+                                                                    </option>
+                                                                    <option
+                                                                        value="06"
+                                                                    >
+                                                                        06월
+                                                                    </option>
+                                                                    <option
+                                                                        value="07"
+                                                                    >
+                                                                        07월
+                                                                    </option>
+                                                                    <option
+                                                                        value="08"
+                                                                    >
+                                                                        08월
+                                                                    </option>
+                                                                    <option
+                                                                        value="09"
+                                                                    >
+                                                                        09월
+                                                                    </option>
+                                                                    <option
+                                                                        value="10"
+                                                                    >
+                                                                        10월
+                                                                    </option>
+                                                                    <option
+                                                                        value="11"
+                                                                    >
+                                                                        11월
+                                                                    </option>
+                                                                    <option
+                                                                        value="12"
+                                                                    >
+                                                                        12월
+                                                                    </option>
+                                                                </select>
+                                                            </span>
+                                                        </div>
+                                                        <em
+                                                            class="interview-write-msgInvalid interview-write-msgInterviewDate interview-write-hide"
+                                                        ></em>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="interview-write-review-write">
+                                    <h2 class="interview-write-tit-step">
+                                        포지셔너 후기 입력
+                                    </h2>
+                                    <p class="interview-write-txt-point">
+                                        <span
+                                            class="interview-write-spr-review interview-write-point"
+                                        >
+                                            <span class="interview-write-blind"
+                                                >필수</span
+                                            >
+                                        </span>
+                                        는 필수입력정보입니다
+                                    </p>
+                                    <div class="interview-write-tblType">
+                                        <table>
+                                            <colgroup>
+                                                <col style="width: 170px" />
+                                                <col />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <strong
+                                                            class="interview-write-tit-item"
+                                                        >
+                                                            전반적 평가
+                                                            <span
+                                                                class="interview-write-spr-review interview-write-point"
+                                                            >
+                                                                <span
+                                                                    class="interview-write-blind"
+                                                                    >필수</span
+                                                                >
+                                                            </span>
+                                                        </strong>
+                                                    </th>
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <span
+                                                            class="interview-write-inpRdoSw interview-write-colorWhite"
+                                                        >
+                                                            <span
+                                                                class="interview-write-inOption"
+                                                            >
+                                                                <input
+                                                                    type="radio"
+                                                                    name="evaluation"
+                                                                    id="evaluation1"
+                                                                    value="1"
+                                                                />
+                                                                <label
+                                                                    for="evaluation1"
+                                                                    class="interview-write-lbl"
+                                                                    >긍정적</label
+                                                                >
+                                                            </span>
+                                                            <span
+                                                                class="interview-write-inOption"
+                                                            >
+                                                                <input
+                                                                    type="radio"
+                                                                    name="evaluation"
+                                                                    id="evaluation2"
+                                                                    value="2"
+                                                                />
+                                                                <label
+                                                                    for="evaluation2"
+                                                                    class="interview-write-lbl"
+                                                                    >보통</label
+                                                                >
+                                                            </span>
+                                                            <span
+                                                                class="interview-write-inOption"
+                                                            >
+                                                                <input
+                                                                    type="radio"
+                                                                    name="evaluation"
+                                                                    id="evaluation3"
+                                                                    value="3"
+                                                                />
+                                                                <label
+                                                                    for="evaluation3"
+                                                                    class="interview-write-lbl"
+                                                                    >부정적</label
+                                                                >
+                                                            </span>
+                                                        </span>
+                                                        <em
+                                                            class="interview-write-msgInvalid interview-write-msgEvaluation interview-write-hide"
+                                                            >필수
+                                                            항목입니다.</em
+                                                        >
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <strong
+                                                            class="interview-write-tit-item"
+                                                        >
+                                                            난이도
+                                                            <span
+                                                                class="interview-write-spr-review interview-write-point"
+                                                            >
+                                                                <span
+                                                                    class="interview-write-blind"
+                                                                    >필수</span
+                                                                >
+                                                            </span>
+                                                        </strong>
+                                                    </th>
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <span
+                                                            class="interview-write-inpRdoSw interview-write-colorWhite"
+                                                        >
+                                                            <span
+                                                                class="interview-write-inOption"
+                                                            >
+                                                                <input
+                                                                    type="radio"
+                                                                    name="difficult"
+                                                                    id="difficult1"
+                                                                    value="1"
+                                                                />
+                                                                <label
+                                                                    for="difficult1"
+                                                                    class="interview-write-lbl"
+                                                                    >쉬움</label
+                                                                >
+                                                            </span>
+                                                            <span
+                                                                class="interview-write-inOption"
+                                                            >
+                                                                <input
+                                                                    type="radio"
+                                                                    name="difficult"
+                                                                    id="difficult2"
+                                                                    value="2"
+                                                                />
+                                                                <label
+                                                                    for="difficult2"
+                                                                    class="interview-write-lbl"
+                                                                    >보통</label
+                                                                >
+                                                            </span>
+                                                            <span
+                                                                class="interview-write-inOption"
+                                                            >
+                                                                <input
+                                                                    type="radio"
+                                                                    name="difficult"
+                                                                    id="difficult3"
+                                                                    value="3"
+                                                                />
+                                                                <label
+                                                                    for="difficult3"
+                                                                    class="interview-write-lbl"
+                                                                    >어려움</label
+                                                                >
+                                                            </span>
+                                                        </span>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <label
+                                                            for="interviewDetails"
+                                                            class="interview-write-tit-item"
+                                                        >
+                                                            업무 내용 및
+                                                            <br />
+                                                            진행방식
+
+                                                            <span
+                                                                class="interview-write-spr-review interview-write-point"
+                                                            >
+                                                                <span
+                                                                    class="interview-write-blind"
+                                                                    >필수</span
+                                                                >
+                                                            </span>
+                                                        </label>
+                                                    </th>
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <div
+                                                            class="interview-write-textarea"
+                                                        >
+                                                            <textarea
+                                                                name="contents"
+                                                                id="interviewDetails"
+                                                                class="interview-write-tf-input"
+                                                                title="전형 및 면접 진행방식"
+                                                                cols="25"
+                                                                rows="5"
+                                                                placeholder="어떤 내용의 업무를 전달하셨나요? (사실이 아닌 비방이나 개인적인 의견은 등록이 거절될 수 있습니다.)"
+                                                            ></textarea>
+                                                            <span
+                                                                class="interview-write-txt-byte"
+                                                            >
+                                                                <em
+                                                                    class="interview-write-emph"
+                                                                >
+                                                                    현재
+                                                                    <span
+                                                                        >00</span
+                                                                    >자
+                                                                </em>
+                                                                / 최소 50자
+                                                            </span>
+                                                            <em
+                                                                class="interview-write-msgInvalid interview-write-msgContents interview-write-hide"
+                                                                >필수
+                                                                항목입니다.</em
+                                                            >
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th
+                                                        scope="row"
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <label
+                                                            for="interviewDetails"
+                                                            class="interview-write-tit-item"
+                                                        >
+                                                            TIP 및 특이사항
+                                                            <span
+                                                                class="interview-write-spr-review interview-write-point"
+                                                            >
+                                                                <span
+                                                                    class="interview-write-blind"
+                                                                    >필수</span
+                                                                >
+                                                            </span>
+                                                        </label>
+                                                    </th>
+                                                    <td
+                                                        class="interview-write-txtLeft"
+                                                    >
+                                                        <div
+                                                            class="interview-write-textarea"
+                                                        >
+                                                            <textarea
+                                                                name="contents"
+                                                                id="interviewDetails"
+                                                                class="interview-write-tf-input"
+                                                                title="전형 및 면접 진행방식"
+                                                                cols="25"
+                                                                rows="5"
+                                                                placeholder="포지셔너에게 전하고 싶은 TIP 또는 특이사항이 있나요? (사실이 아닌 비방이나 개인적인 의견은 등록이 거절될 수 있습니다.)"
+                                                            ></textarea>
+                                                            <span
+                                                                class="interview-write-txt-byte"
+                                                            >
+                                                                <em
+                                                                    class="interview-write-emph"
+                                                                >
+                                                                    현재
+                                                                    <span
+                                                                        >00</span
+                                                                    >자
+                                                                </em>
+                                                                / 최소 50자
+                                                            </span>
+                                                            <em
+                                                                class="interview-write-msgInvalid interview-write-msgContents interview-write-hide"
+                                                                >필수
+                                                                항목입니다.</em
+                                                            >
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="interview-write-review-write">
+                                    <button
+                                        type="button"
+                                        class="interview-write-btn-confirm"
+                                    >
+                                        등록 요청
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/static/js/corporation/interview-review-write.js"></script>
+</html>

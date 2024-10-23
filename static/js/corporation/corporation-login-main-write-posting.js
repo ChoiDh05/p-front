@@ -1,3 +1,18 @@
+const dueDateValue = document.getElementById("dueDate");
+const curr = new Date();
+const KRdueDateValue = 9 * 60 * 60 * 1000; // 한국 시간대의 UTC 오프셋
+
+// 현재 시간을 한국 시간으로 변환
+const KRcurrentDate = new Date(curr.getTime() + KRdueDateValue);
+
+// dueDateValue에 한국 시간의 ISO 문자열을 설정합니다.
+dueDateValue.value = KRcurrentDate.toISOString().slice(0, 16);
+
+// min 속성에도 한국 시간으로 현재 시간을 설정합니다.
+dueDateValue.min = KRcurrentDate.toISOString().slice(0, 16); // 현재 시간을 기준으로 설정
+
+console.log(dueDateValue.value);
+
 // 버튼 클릭 시 on 클래스 토글
 document
     .getElementById("interview-write-selected-job")
@@ -50,6 +65,8 @@ document.getElementById("interviewDateYear").addEventListener("change", (e) => {
         monthSelect.appendChild(option);
     });
 });
+
+//
 
 // 직무,직업쪽 자바스크립트
 

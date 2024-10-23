@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon_report" fill="none">
+        <path d="M0.5 11C0.5 10.7239 0.723858 10.5 1 10.5H11C11.2761 10.5 11.5 10.7239 11.5 11V12C11.5 12.2761 11.2761 12.5 11 12.5H1C0.723858 12.5 0.5 12.2761 0.5 12V11Z" stroke="#8491A7"></path>
+        <path d="M10.5 10V5C10.5 2.51472 8.48528 0.5 6 0.5V0.5C3.51472 0.5 1.5 2.51472 1.5 5V10" stroke="#8491A7"></path>
+        <path d="M3.5 5.49999C3.5 4.5 4 3 5.5 3" stroke="#949494" stroke-linecap="round" stroke-linejoin="round"></path>
+    </symbol>
+</svg>

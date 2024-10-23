@@ -1,3 +1,4 @@
+// 직무직업 부분 미완성
 // 버튼 클릭 시 on 클래스 토글
 document
     .getElementById("interview-write-selected-job")
@@ -10,54 +11,6 @@ document
         // on 클래스 추가
         targetElement.classList.toggle("on");
     });
-
-// document.getElementById("interviewDateYear").addEventListener("change", (e) => {
-//     const year = this.value;
-//     const monthSelect = document.getElementById("interviewDateMonth");
-
-//     // 모든 월 옵션 초기화
-//     monthSelect.innerHTML = `
-//             <option value>월 선택</option>
-//             <option value="01">01월</option>
-//             <option value="02">02월</option>
-//             <option value="03">03월</option>
-//             <option value="04">04월</option>
-//             <option value="05">05월</option>
-//             <option value="06">06월</option>
-//             <option value="07">07월</option>
-//             <option value="08">08월</option>
-//             <option value="09">09월</option>
-//             <option value="10">10월</option>
-//             <option value="11">11월</option>
-//             <option value="12">12월</option>
-//         `;
-
-//     // 연도에 따라 월을 필터링
-//     if (year === "2021") {
-//         // 2021년은 11월과 12월만 가능
-//         monthSelect.innerHTML = `
-//                 <option value>월 선택</option>
-//                 <option value="11">11월</option>
-//                 <option value="12">12월</option>
-//             `;
-//     } else if (year === "2024") {
-//         // 2024년은 1월부터 10월까지만 가능
-//         monthSelect.innerHTML = `
-//                 <option value>월 선택</option>
-//                 <option value="01">01월</option>
-//                 <option value="02">02월</option>
-//                 <option value="03">03월</option>
-//                 <option value="04">04월</option>
-//                 <option value="05">05월</option>
-//                 <option value="06">06월</option>
-//                 <option value="07">07월</option>
-//                 <option value="08">08월</option>
-//                 <option value="09">09월</option>
-//                 <option value="10">10월</option>
-//             `;
-//     }
-//     // 2022년, 2023년은 모든 월 가능 (기본값 유지)
-// });
 
 document.getElementById("interviewDateYear").addEventListener("change", (e) => {
     const year = this.value;
@@ -99,9 +52,9 @@ document.getElementById("interviewDateYear").addEventListener("change", (e) => {
     });
 });
 
-// // 직무,직업쪽 자바스크립트
+// 직무,직업쪽 자바스크립트
 
-// // 1단계 자바스크립트
+// 1단계 자바스크립트
 // document
 //     .querySelector(".interview-write-btn-add-modify")
 //     .addEventListener("click", function () {
@@ -2495,99 +2448,3 @@ const categorys = {
         ],
     },
 };
-
-// let text = ``;
-
-// // 대분류 카테고리만 반복
-// Object.keys(category).forEach((디자인) => {
-//     text += `
-//       <li class="item_job depth1_btn_wrapper">
-//         <button type="button" class="first_depth">
-//           <span class="txt">${디자인}</span>
-//         </button>
-//       </li>
-//     `;
-// });
-
-// console.log(category.디자인);
-
-// // ul 요소에 생성된 HTML을 삽입
-// const lists = document.querySelector(
-//     ".interview-write-list.ineterview-write.overview"
-// );
-// console.log(lists);
-// // .innerHTML += text;
-
-// 대분류 카테고리만 반복
-// forEach 다음에는 변수명 선언..
-// 대카테고리에 클릭이벤트, 클릭이벤트 2번
-
-// let text = ``;
-// Object.keys(categorys).forEach((category) => {
-//     text += `
-//       <li class="item_job depth1_btn_wrapper">
-//         <button type="button" class="first_depth">
-//           <span class="txt">${category}</span>
-//         </button>
-//       </li>
-//     `;
-// });
-
-// console.log(text);
-
-// Object.keys(categorys).forEach((mainCategory) => {
-//     console.log(`대분류 카테고리: ${mainCategory}`);
-
-//     // 하위 항목들 (직무·직업, 전문분야 등) 출력
-//     Object.keys(categorys[mainCategory]).forEach((subCategory) => {
-//         console.log(` 중카테고리: ${subCategory}`);
-
-//         // 각 하위 카테고리에 속하는 세부 항목들 출력
-//         categorys[mainCategory][subCategory].forEach((item) => {
-//             console.log(` 소카테고리: ${item}`);
-//         });
-//     });
-// });
-
-// Object.keys(categorys).forEach((mainCategory) => {
-//     console.log(mainCategory);
-// });
-
-let text = ``;
-Object.keys(categorys).forEach((categoryA) => {
-    text += `
-            <li
-                class="interview-write-item-job interview-write-depth1-btn-wrapper on"
-                data-mcls-cd-no="16"
-            >
-                <button
-                    type="button"
-                    data-mcls-cd-no="16"
-                    class="interview-write-first-depth"
-                >
-                    <span
-                        class="interview-write-txt"
-                        >${categoryA}</span
-                    >
-                </button>
-            </li>
-                `;
-    Object.keys(categorys[categoryA]).forEach((categoryB) => {
-        text += `
-                    <dt>
-                        <button>
-                            <span>${categoryB}</span>
-                        </button>
-                    </dt>
-                `;
-        categorys[categoryA][categoryB].forEach((categoryC) => {
-            text += `
-                    <dd>
-                        <button>${categoryC}</button>
-                    </dd>
-                `;
-        });
-    });
-});
-
-console.log(text);

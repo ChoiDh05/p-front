@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/css/main.css" />
+        <link
+            rel="stylesheet"
+            href="/static/css/interview-review/interview-review.css"
+        />
+        <title>일반회원 인턴십 후기 목록</title>
+    </head>
+    <body>
+        <div id="sri-section" class="layout-full">
+            <div id="sri-wrap">
+                <div id="content">
+                    <!-- 메인 사진쪽 -->
+                    <div class="header-interview-review">
+                        <div class="inner">
+                            <p class="txt-noti">
+                                포지션의 A~Z까지 사람인 포지션후기에서
+                                확인해보세요!
+                                <br />
+                                #전형 #진행방식 #포지션질문 #포지션후기
+                            </p>
+                            <a href="" class="btn-review-write">
+                                포지션 후기 등록하기
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 지금까지 공유된 경험들 -->
+                    <div class="wrap-interview-review">
+                        <div class="review-cont">
+                            <form
+                                action=""
+                                name="search-form"
+                                autocomplete="off"
+                            >
+                                <div class="title-area">
+                                    <h2 class="tit-review">
+                                        지금까지 공유된 경험들
+                                    </h2>
+                                </div>
+                                <div class="search-area">
+                                    <span class="inpSel">
+                                        <select
+                                            name="orderby"
+                                            style="width: 85px"
+                                            title="정렬 기준 선택"
+                                        >
+                                            <option value="registration">
+                                                등록순
+                                            </option>
+                                            <option value="interview">
+                                                진행순
+                                            </option>
+                                        </select>
+                                    </span>
+                                    <div class="search-right">
+                                        <span class="inpSel">
+                                            <select
+                                                name="career_cd"
+                                                style="width: 103px"
+                                                title="경력 선택"
+                                            >
+                                                <option value>경력 전체</option>
+                                                <option value="1">신입</option>
+                                                <option value="2">경력</option>
+                                            </select>
+                                        </span>
+                                        <span class="inpSel">
+                                            <select
+                                                name="job_category"
+                                                style="width: 127px"
+                                                title="직업선택"
+                                            >
+                                                <option value>
+                                                    직무·직업 전체
+                                                </option>
+                                                <option value="1">직업1</option>
+                                                <option value="2">직업2</option>
+                                                <option value="3">직업3</option>
+                                                <!-- 필요하면 위에거 복사후 수정 -->
+                                            </select>
+                                        </span>
+                                        <div class="search-typoBox">
+                                            <input
+                                                type="text"
+                                                name="company-name"
+                                                class="inp-typo"
+                                                placeholder="기업명"
+                                                title="기업명을 입력하세요."
+                                            />
+                                            <button
+                                                type="submit"
+                                                class="btn-typo-search"
+                                            >
+                                                검색
+                                            </button>
+                                            <button
+                                                type="button"
+                                                class="btn-typo-reset"
+                                                title="검색초기화"
+                                            >
+                                                초기화
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <span class="num-count"
+                                        >총
+                                        <b>29934</b>
+                                        건
+                                    </span>
+                                </div>
+                                <div class="list-review">
+                                    <!-- 목록 첫번째 -->
+                                    <div class="box-review">
+                                        <div class="view-title">
+                                            <strong class="txt-company">
+                                                율하부부한의원
+                                                <span class="result pass"
+                                                    >합격</span
+                                                >
+                                            </strong>
+                                            <span class="txt-date"
+                                                >2024.10.14</span
+                                            >
+                                            <ul class="info-interview">
+                                                <li>간호조무사</li>
+                                                <li>2022년 하반기</li>
+                                                <li>신입</li>
+                                            </ul>
+                                            <button
+                                                type="button"
+                                                class="spr-review btn-view"
+                                            >
+                                                <span class="blind"
+                                                    >후기 상세보기</span
+                                                >
+                                            </button>
+                                        </div>
+                                        <!-- 화살표눌렀을때 div -->
+                                        <div class="view-cont">
+                                            <!-- 이모티콘있는곳 -->
+                                            <div class="info-emoticon">
+                                                <dl class="review">
+                                                    <dt>전반적 평가</dt>
+                                                    <dd
+                                                        class="spr-review smile"
+                                                    >
+                                                        긍정적
+                                                    </dd>
+                                                </dl>
+                                                <dl class="review difficulty">
+                                                    <dt>난이도</dt>
+                                                    <dd class="spr-review">
+                                                        쉬움
+                                                    </dd>
+                                                </dl>
+                                                <dl class="review result">
+                                                    <dt>결과</dt>
+                                                    <dd
+                                                        class="spr-review smile"
+                                                    >
+                                                        합격
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <!-- 포지션유형 -->
+                                            <div class="info-view">
+                                                <strong class="tit-view"
+                                                    >포지션 직무</strong
+                                                >
+                                                <ul class="list-item">
+                                                    <li>디자인</li>
+                                                    <li>기타</li>
+                                                </ul>
+                                            </div>
+                                            <!-- 포지션인원 -->
+                                            <!-- <div class="info-view">
+                                                <strong class="tit-view"
+                                                    >포지션 유형</strong
+                                                >
+                                                <ul class="list-item">
+                                                    <li>1:1 포지션</li>
+                                                </ul>
+                                            </div> -->
+                                            <!-- 진행 및 포지션 진행 방식 -->
+                                            <div class="info-view">
+                                                <strong class="tit-view"
+                                                    >전형 및 포지션 진행
+                                                    방식</strong
+                                                >
+                                                <p class="txt-desc">
+                                                    포지션전 설문?인터뷰? 작성
+                                                    <br />
+
+                                                    내유외강 스타일 원장님.
+                                                    스케쥴조절 가능. 최대한 잘
+                                                    맞춰주심. 식사제공.
+                                                    저녁대신오후간식제공.
+                                                    근무선생님들 다 좋음. 다만
+                                                    너어무 바쁨.
+                                                </p>
+                                            </div>
+                                            <!-- 포지션 질문 Q 밑에 1:1 포지션 저거 있어야함 카테고리로 -->
+                                            <div class="info-view">
+                                                <strong class="tit-view"
+                                                    >포지션 질문</strong
+                                                >
+                                                <ul class="list-question">
+                                                    <!-- 추가로 필요하면 li부터 복붙 -->
+                                                    <li>
+                                                        회사 문화와 분위기가
+                                                        어떤가요?
+                                                    </li>
+                                                </ul>
+                                                <!-- 여기가 목록들 -->
+                                                <ul
+                                                    class="list-item-1"
+                                                    style="margin-bottom: 30px"
+                                                >
+                                                    <li>
+                                                        협력적이고 친근한 분위기
+                                                    </li>
+                                                    <li>
+                                                        업무 중심의 형식적인
+                                                        분위기
+                                                    </li>
+                                                    <li>
+                                                        경직되고 소통이 부족한
+                                                        분위기
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="info-view">
+                                                <strong
+                                                    class="tit-view"
+                                                ></strong>
+                                                <ul class="list-question">
+                                                    <!-- 추가로 필요하면 li부터 복붙 -->
+                                                    <li>
+                                                        복장 규정은 어떤가요?
+                                                    </li>
+                                                </ul>
+                                                <!-- 여기가 목록들 -->
+                                                <ul
+                                                    class="list-item-1"
+                                                    style="margin-bottom: 30px"
+                                                >
+                                                    <li>
+                                                        자유로운 캐주얼 복장
+                                                    </li>
+                                                    <li>
+                                                        비즈니스 캐주얼 권장
+                                                    </li>
+                                                    <li>
+                                                        정장 등 엄격한 드레스
+                                                        코드
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="info-view">
+                                                <strong
+                                                    class="tit-view"
+                                                ></strong>
+                                                <ul class="list-question">
+                                                    <!-- 추가로 필요하면 li부터 복붙 -->
+                                                    <li>
+                                                        소프트 스킬 향상에
+                                                        도움이 되었나요?
+                                                    </li>
+                                                </ul>
+                                                <!-- 여기가 목록들 -->
+                                                <ul
+                                                    class="list-item-1"
+                                                    style="margin-bottom: 30px"
+                                                >
+                                                    <li>
+                                                        소프트 스킬 향상에 많이
+                                                        도움 됨
+                                                    </li>
+                                                    <li>
+                                                        소프트 스킬 향상에
+                                                        어느정도 도움 됨
+                                                    </li>
+                                                    <li>
+                                                        소프트 스킬 향상에
+                                                        별다른 도움 되지 않음
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="info-view">
+                                                <strong
+                                                    class="tit-view"
+                                                ></strong>
+                                                <ul class="list-question">
+                                                    <!-- 추가로 필요하면 li부터 복붙 -->
+                                                    <li>
+                                                        다른 포지셔너에게
+                                                        추천하시나요?
+                                                    </li>
+                                                </ul>
+                                                <!-- 여기가 목록들 -->
+                                                <ul
+                                                    class="list-item-1"
+                                                    style="margin-bottom: 30px"
+                                                >
+                                                    <li>포지션 적극 추천</li>
+                                                    <li>
+                                                        포지션 상황에 따라 추천
+                                                    </li>
+                                                    <li>
+                                                        포지션 추천하지 않음
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <!-- 특이사항 -->
+                                            <div
+                                                class="info-view"
+                                                style="margin-top: 20px"
+                                            >
+                                                <strong class="tit-view"
+                                                    >TIP 및 특이사항</strong
+                                                >
+                                                <p class="txt-desc">
+                                                    깔끔한 느낌 복장추천. 이력서
+                                                    지참 추천.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination">
+                                        <span class="page">1</span>
+                                        <a class="page" href="">
+                                            <span>2</span>
+                                        </a>
+                                        <a class="page" href="">
+                                            <span>3</span>
+                                        </a>
+                                        <a class="page" href="">
+                                            <span>4</span>
+                                        </a>
+                                        <a class="page" href="">
+                                            <span>5</span>
+                                        </a>
+                                        <a class="page" href="">
+                                            <span>6</span>
+                                        </a>
+                                        <a class="page" href="">
+                                            <span>7</span>
+                                        </a>
+                                        <a class="page" href="">
+                                            <span>8</span>
+                                        </a>
+                                        <a class="page" href="">
+                                            <span>9</span>
+                                        </a>
+                                        <a class="page" href="">
+                                            <span>10</span>
+                                        </a>
+                                        <a class="btnNext" title="다음" href=""
+                                            >다음</a
+                                        >
+                                    </div>
+                                </div>
+                                <!-- 후기 등록하기 -->
+                                <a href="" class="spr-review btn-write">
+                                    후기 등록하기
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="/static/js/interview-review/interview-review.js"></script>
+</html>
